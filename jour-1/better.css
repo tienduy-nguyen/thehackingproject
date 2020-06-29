@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #444;
+  font-size: 18px;
+  margin: 40px auto;
+  max-width: 650px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin: 23px auto;
+}
+p {
+  margin: 16px auto;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/google.png">
+  <link rel="stylesheet" type="text/css" href="./fontawesome/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <title>Google</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul class="navbar-list">
+      <li><a href="https://mail.google.com/">Gmail</a></li>
+      <li><a href="https://mail.google.com/">Images</a></li>
+      <li class="navbar-list__google-app"><a href="https://mail.google.com/"></a><i class="fas fa-th"></i></li>
+      <li>
+        <div class="navbar__user">
+          <div class="navbar__user-show" onclick="toggleUserMenu()">
+            <div href="" class="navbar__user-link-profile">
+              <img src="./img/ava1.jpeg" alt="" class="navbar__user-img">
+            </div>
+          </div>
+          <label for="navbar__user-menu " class="navbar__user-overlay" onclick="toggleUserMenu(true)"></label>
+          <ul hidden class="navbar__user-menu text-left p-0">
+            <div class="navbar__user-signed d-flex pt-3">
+              <a class="navbar__user-show ml-3" href="">
+                <img src="" alt="" class="navbar__user-img">
+              </a>
+              <div class="navbar__user-info-wrap flex-column ml-3 py-0">
+                <div class="font-weight-bold navbar__user-info-name">
+                  <a href="">
+                    username
+                  </a>
+                </div>
+                <div class="navbar__user-info-email">
+                  <a class="" href="">@username</a>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <li class=" nav-item">
+              <a class="nav-link py-1" href="">New story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-1" href="">Stories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-1" href="">Series</a>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link py-1" href="">Reading List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-1" href="">Following</a>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link py-1" href="">Profile</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link py-1" href="">Settings</a>
+            </li>
+            <li class="nav-item">
+              Logout
+            </li>
+
+          </ul>
+        </div>
+      </li>
+
+    </ul>
+  </nav>
+
+  <!-- Section Search -->
+  <section class="search-wrap">
+    <div class="dark-overlay">
+      <div class="search">
+        <img class="search__google-text" src="./img/google-text.png">
+        <div class="search__bar">
+          <div class="search__bar-icon-search">
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="search__bar-input"></div>
+          <div class="search__bar-icon-voice">
+            <img src="./img/google-icon-voice.png" alt="Google Voice">
+          </div class="search__bar-voice">
+        </div>
+        <div class="search__btn-wrap">
+          <button class="btn">Google Search</button>
+          <a href="https://www.google.com/doodles/" class="btn btn-link">I'm Feeling Lucky</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

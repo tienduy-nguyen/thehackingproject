@@ -52,3 +52,74 @@ a {
 .sv {
   cursor: not-allowed;
 }
+
+.img-small {
+  width: 16px;
+  height: 16px;
+}
+.img-medium {
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-large {
+  width: 300px;
+  height: 200px;
+}
+.fakepre {
+  font-family: monospace;
+  font-size: 0.9em;
+}
+.foufou::before {
+  content: '';
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: #444;
+}
+.foufi::before {
+  content: '';
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: #444;
+}
+
+.pic-container {
+  display: flex;
+}
+.pic-container__img {
+  margin-left: 1rem;
+  width: 45%;
+}
+.pic-container__text {
+  float: left;
+  width: 55%;
+}
+.pic-container__text p:first-child {
+  margin-top: 0;
+}
+.pic-container__text p {
+  margin-top: 0.8rem;
+}
+
+blockquote {
+  margin-left: 0;
+}
+blockquote::before {
+  font-family: 'Times New Roman', Times, serif;
+  color: #666;
+  content: open-quote;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 2rem auto;
+  margin-right: 1rem;
+}
+
+.citneed {
+  vertical-align: top;
+  font-size: 0.7em;
+  padding-left: 0.3em;
+}

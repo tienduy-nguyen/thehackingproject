@@ -1,0 +1,54 @@
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  font-size: 16px;
+  margin: 2rem auto;
+  padding: 1rem;
+  line-height: 1.4;
+  text-align: justify;
+  max-width: 800px;
+}
+h1 {
+  margin: 0.4rem auto;
+  font-size: 2rem;
+}
+h2,
+h3 {
+  margin: 1rem auto;
+}
+p {
+  margin: 0.5rem auto;
+}
+.wr1 {
+  color: #730000;
+}
+
+.wr2 {
+  color: #c0392b;
+  text-decoration: underline;
+}
+.list {
+  margin-left: 2.5rem;
+}
+
+small {
+  font-size: 0.4rem;
+}
+a {
+  color: #07a;
+}
+.sb {
+  color: #00e;
+}
+.sv {
+  color: #551a8b;
+}
+.sb,
+.sv {
+  cursor: not-allowed;
+}

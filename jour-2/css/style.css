@@ -102,6 +102,11 @@ img {
 .navbar-list a:hover {
   color: #666;
 }
+.navbar-list__google-apps-img {
+  width: 22px;
+  width: 22px;
+  cursor: pointer;
+}
 
 /* Navbar user menu */
 /* Top bar */

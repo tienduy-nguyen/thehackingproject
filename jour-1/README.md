@@ -7,5 +7,15 @@ We have 3 websites to reproduce:
 - [BestMotherFuckingWebsite](https://thebestmotherfucking.website/)
 
 The MotherFuckingWebsite is a very basic website that does not contains any CSS. It looks very werd.
+
 The BetterMotherFuckingWebsite is a better version of the first version. It contains a little bit CSS.
-The BestMotherFuckingWebsite is the newest version. It contains much more cool style with CSS. And it is used the new web technologies
+
+The BestMotherFuckingWebsite is the newest version. It contains much more cool styles with CSS and javascript. And it is used the new web technologies.
+
+Check my productions:
+
+[https://tienduy-nguyen.github.io/thehackingproject/jour-1/MotherfuckingWebsite.html](https://tienduy-nguyen.github.io/thehackingproject/jour-1/MotherfuckingWebsite.html)
+
+[https://tienduy-nguyen.github.io/thehackingproject/jour-1/BetterMotherFuckingWebsite.html](https://tienduy-nguyen.github.io/thehackingproject/jour-1/BetterMotherFuckingWebsite.html)
+
+[https://tienduy-nguyen.github.io/thehackingproject/jour-1/BestMotherFuckingWebsite.html](https://tienduy-nguyen.github.io/thehackingproject/jour-1/BestMotherFuckingWebsite.html)

@@ -16,20 +16,14 @@ a {
   text-decoration: none;
   color: #333;
 }
+a:hover {
+  text-decoration: underline;
+}
 ul {
   list-style: none;
 }
 img {
   width: 100%;
-}
-
-.container {
-  max-width: 100%;
-  margin: auto;
-  overflow: hidden;
-  padding: 0 2rem;
-  margin-top: 6rem;
-  margin-bottom: 3rem;
 }
 
 /* Button */
@@ -46,15 +40,41 @@ img {
   border-radius: 4px;
   transition: all 0.2 ease-in;
 }
+
+.btn:hover {
+  background: lighten(#333, 30%);
+  border: 1px solid #e4e4e4;
+}
 .btn.btn-link {
   line-height: 18px;
+  text-align: center;
 }
+.btn.btn-link:hover {
+  text-decoration: none;
+}
+.btn.btn-outline {
+  background: transparent;
+  border: 1px solid #e4e4e4;
+}
+.btn.btn-outline:hover {
+  background: #e4e4e4;
+}
+.btn.btn-circle {
+  border-radius: 999px;
+  border: 1px solid #e4e4e4;
+  padding: 0.2rem 1rem;
+}
+.text-light {
+  color: #696969;
+}
+
 /* //Navbar */
 .navbar {
-  position: fixed;
+  position: relative;
   top: 0;
   opacity: 0.9;
   width: 100%;
+  z-index: 1;
 }
 .navbar-list {
   display: flex;
@@ -62,7 +82,8 @@ img {
   margin-left: auto;
   padding: 0.5rem 2rem;
   margin-left: auto;
-  width: 16%;
+  width: 170px;
+  color: #333;
 }
 .navbar-list li {
   float: right;
@@ -70,8 +91,12 @@ img {
   padding: 0.45rem;
   color: #333;
 }
-.navbar-list__google-app {
+.navbar-list__google-apps {
   cursor: pointer;
+  position: relative;
+}
+.navbar-list__google-apps:hover i {
+  color: #666;
 }
 
 .navbar-list a:hover {
@@ -80,52 +105,29 @@ img {
 
 /* Navbar user menu */
 /* Top bar */
-
-.navbar__logo img {
-  width: 40px;
-  height: auto;
+.navbar__list-user {
+  position: relative;
 }
 
-.navbar__user-img {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-.navbar__icon {
-  color: #5f5f5f;
-}
-.navbar__user-show {
+.navbar__user {
   cursor: pointer;
+  font-size: 14px;
 }
-#topbar-search-form {
-  display: none;
-}
-/* .navbar__user-info-wrap div a {
-  color: #333;
-} */
-.navbar__user-info-name a:hover {
-  text-decoration: none;
-}
-
-.navbar__user-info-email a {
-  color: #999;
-}
-
 .navbar__user-menu {
   position: absolute;
-  border-radius: 1 solid #f1f1f1;
-  min-width: 200px;
-  overflow-x: scroll;
-  z-index: 2;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
-  font-size: 12px;
-  font-weight: 400;
-  list-style: none;
-  right: 10px;
-  display: none;
+  z-index: 9;
+  top: 50px;
+  right: 4%;
+  width: 300px;
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: none;
+  border: 1px solid #cacaca;
+  box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   background-color: #fff;
-  top: 45px;
+  display: none;
 }
 .navbar__user-menu li a {
   color: #666;
@@ -140,50 +142,301 @@ img {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.01);
+  background-color: rgba(0, 0, 0, 0.001);
   display: none;
   animation: fadeIn linear 0.2s;
 }
 
-.navbar__user-menu::before {
+.navbar__user-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.navbar__user-primary {
+  padding: 01rem 0.5rem;
+  text-align: center;
+  border-bottom: 1px solid #cacaca;
+  cursor: default;
+}
+.navbar__user-primary img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.navbar__user-primary-avatar {
+  margin-bottom: 0.5rem;
+  cursor: default;
+  position: relative;
+}
+.navbar__user-primary-camera {
+  /* color: white; */
   position: absolute;
-  z-index: 2;
-  top: -22px;
-  right: 4px;
-  content: '';
-  border-width: 12px 16px;
-  border-style: solid;
-  border-color: transparent transparent #fff transparent;
+  background: #fff;
+  border: 1px solid #cacaca;
+  padding: 0.1rem;
+  border-radius: 50%;
+  top: 65%;
+  right: 40%;
+  cursor: pointer;
+}
+.navbar__user-primary-email {
+  margin-bottom: 1rem;
+}
+.navbar__user-btn-manage-account {
+  margin-bottom: 0.2rem;
+}
+.navbar__user-btn-manage-account a {
+  margin-bottom: 0.2rem;
+  font-size: 13px;
 }
 
-.navbar__user-menu:after {
-  content: '';
-  display: block;
-  position: absolute;
-  right: 0;
+.navbar__icon {
+  color: #5f5f5f;
+}
+.navbar__user-show {
+  cursor: pointer;
+}
+.navbar__user-others-account {
+  border-bottom: 1px solid #cacaca;
+}
+.navbar__user-one-account {
+  display: flex;
+  padding: 0.6rem 1rem;
+}
+.navbar__user-one-account-img {
+  width: 9.2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navbar__user-one-account-img i {
+  margin-left: 0.5rem;
+}
+.navbar__user-one-account-text {
+  float: left;
+  margin-left: 0.5rem;
+  width: 70%;
+}
+.navbar__user-one-account.first {
+  background: #ececec;
+}
+.navbar__user-one-account:hover {
+  background: #ececec;
+  text-decoration: none;
+}
+
+.navbar__user-one-account p {
+  line-height: 14px;
+  color: #666;
+}
+
+.navbar__signout {
+  text-align: center;
+  margin: 1rem auto;
+  border-bottom: 1px solid #cacaca;
+}
+.navbar__signout button {
+  margin-bottom: 1rem;
+}
+.navbar__privacy {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+/* Form Search */
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+.search-wrap {
+  background-color: transparent;
+  position: relative;
+  height: 85vh;
+  top: 0;
+  z-index: 0;
+}
+.dark-overlay {
+  height: 95%;
   width: 100%;
-  top: -16px;
-  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent center center/cover;
+  z-index: 0;
 }
-
-/* Section Search */
-.search__bar {
+.search {
+  color: #333;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  z-index: 1;
+}
+.search__bar.input-group-append {
   height: 45px;
   width: 484px;
-  border: 1px solid #dfdddd;
-  border-radius: 999px;
   display: flex;
   vertical-align: middle;
+  align-items: center;
+  position: relative;
+  margin: auto;
 }
 .search__google-text {
   width: 272px;
-  height: 100%;
 }
 .search__bar-icon-search i {
   color: #999;
   font-size: large;
+  position: absolute;
+  margin-left: 0.8rem;
+  transform: translateY(-50%);
 }
 .search__bar-icon-voice img {
-  height: 24px;
-  width: 24px;
+  height: 22px;
+  width: 18px;
+  position: absolute;
+  transform: translateY(-50%);
+  right: 0.8rem;
+  cursor: pointer;
+}
+
+.form {
+  align-items: center;
+  justify-content: center;
+}
+.form-group {
+  margin: auto 0;
+}
+.search__bar-input.form-control {
+  font: inherit;
+  width: 100%;
+  border: 1px solid #e4e4e4;
+  border-radius: 999px;
+  padding: 10px 45px;
+}
+.search__bar-input.form-control:focus,
+.search__bar-input.form-control:hover {
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.search__btn-wrap {
+  margin-top: 30px;
+}
+
+.change-language {
+  margin-top: 2rem;
+}
+.change-language a {
+  color: #4373e8;
+}
+
+/* Footer */
+.footer {
+  background: #f2f2f2;
+  margin-bottom: 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.footer__location {
+  border-bottom: 1px solid #dadada;
+  padding: 8px 30px;
+}
+.footer__list {
+  display: flex;
+  padding: 8px 0 8px 30px;
+  justify-content: space-between;
+}
+.footer__list div ul {
+  display: flex;
+}
+.footer__list div ul li {
+  margin-right: 2rem;
+}
+
+/* Google apps list */
+.google-apps-wrap {
+  position: absolute;
+  z-index: 9;
+  top: 50px;
+  right: 2%;
+  width: 300px;
+  height: 400px;
+  overflow-y: scroll;
+  border: 1px solid #cacaca;
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.01);
+  -webkit-box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  display: none;
+}
+.google-apps {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+.google-apps__row {
+  display: flex;
+  padding: 1rem auto;
+}
+
+.google-apps__item {
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.google-apps__item span {
+  display: block;
+}
+.google-apps__item:hover {
+  background-color: #eeffff;
+}
+.google-apps__item img {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  margin-top: 10%;
+}
+.google-apps__item.avatar img {
+  border-radius: 50%;
+}
+.line {
+  height: 1px;
+  background: #ccc;
+  margin: 0;
+  padding: 0;
+}
+
+.google-apps__overlay {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.001);
+  display: block;
+  animation: fadeIn linear 0.2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

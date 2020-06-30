@@ -106,6 +106,8 @@ img {
   width: 22px;
   width: 22px;
   cursor: pointer;
+  position: relative;
+  top: 3px;
 }
 
 /* Navbar user menu */
@@ -117,6 +119,8 @@ img {
 .navbar__user {
   cursor: pointer;
   font-size: 14px;
+  position: relative;
+  top: 2px;
 }
 .navbar__user-menu {
   position: absolute;

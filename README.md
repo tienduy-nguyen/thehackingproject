@@ -10,7 +10,7 @@ Training web dev at The Hacking Project
 
 <div align="center">
   <img src="https://img.shields.io/badge/Licence-MIT-green" alt="License">
-  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/tienduy-nguyen/django-web">
+  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/tienduy-nguyen/thehackingproject">
 </div>
 
 ## Training program

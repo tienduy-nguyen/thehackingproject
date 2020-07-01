@@ -39,7 +39,7 @@ img {
   outline: none;
   border-radius: 4px;
   transition: all 0.2 ease-in;
-  font-size: 0.875rem;
+  font-size: 14px;
 }
 
 .btn:hover {

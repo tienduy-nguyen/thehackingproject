@@ -39,14 +39,14 @@ Training web dev at The Hacking Project
 
 ## Completed Project
 
-|  #  | Project                                                                                               | Live Demo                                                                                              |
-| :-: | :---------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| 01  | [MotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/jour-1)       | [Live Demo](https://adev42.xyz/thehackingproject/jour-1/MotherfuckingWebsite.html)                     |
-| 02  | [BetterMotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/jour-1) | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/jour-1/BetterMotherFuckingWebsite.html) |
-| 03  | [BestMotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/jour-1)   | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/jour-1/BestMotherFuckingWebsite.html)   |
-| 04  | [Google Page](https://github.com/tienduy-nguyen/thehackingproject/tree/master/jour-2)                 | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/jour-2/index.html)                      |
-| 05  | [...]()                                                                                               | [...]()                                                                                                |
-| 06  | [...]()                                                                                               | [...]()                                                                                                |
-| 07  | [...]()                                                                                               | [...]()                                                                                                |
-| 08  | [...]()                                                                                               | [...]()                                                                                                |
-| 09  | [...]()                                                                                               | [...]()                                                                                                |
+|  #  | Project                                                                                             | Live Demo                                                                                            |
+| :-: | :-------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
+| 01  | [MotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/day1)       | [Live Demo](https://adev42.xyz/thehackingproject/day1/MotherfuckingWebsite.html)                     |
+| 02  | [BetterMotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/day1) | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/day1/BetterMotherFuckingWebsite.html) |
+| 03  | [BestMotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/day1)   | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/day1/BestMotherFuckingWebsite.html)   |
+| 04  | [Google Page](https://github.com/tienduy-nguyen/thehackingproject/tree/master/jour-2)               | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/jour-2/index.html)                    |
+| 05  | [...]()                                                                                             | [...]()                                                                                              |
+| 06  | [...]()                                                                                             | [...]()                                                                                              |
+| 07  | [...]()                                                                                             | [...]()                                                                                              |
+| 08  | [...]()                                                                                             | [...]()                                                                                              |
+| 09  | [...]()                                                                                             | [...]()                                                                                              |

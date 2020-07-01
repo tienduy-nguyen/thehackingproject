@@ -104,7 +104,7 @@ img {
 }
 .navbar-list__google-apps-img {
   width: 22px;
-  width: 22px;
+  height: 22px;
   cursor: pointer;
   position: relative;
   top: 3px;

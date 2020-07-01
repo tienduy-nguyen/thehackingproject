@@ -16,8 +16,12 @@ Training web dev at The Hacking Project
 ## Training program
 
 ### Week 1: Introduction Week
+<<<<<<< HEAD
 
 - Day 1: Start learning HTML, CSS and create the first page: MotherFuckingWebsite with 3 version
+=======
+- Day 1: Start learning HTML, CSS and create the first page: MotherFuckingWebsite with 3 different versions
+>>>>>>> 641d142b0b442a42bfae749dea3b71b19f91606e
 - Day 2: Reproduce google page
 - Day 3: Start learning git, github and deploy online google page of day 2 with githubpage
 

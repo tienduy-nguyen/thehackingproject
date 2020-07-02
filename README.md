@@ -35,9 +35,8 @@ Training web dev at The Hacking Project
 - Day 4: Start learning bootstrap and create our page startup
 - Day 5: Create a landing page
 - Weekend: Review ourselves
--
 
-:arrow_right: --> In progress: I'm here
+:arrow_right: In progress: I'm here
 
 <a name="week2"></a>
 
@@ -45,15 +44,15 @@ Training web dev at The Hacking Project
 
 <a name="week5"></a>
 
-### :clock12: Week 5-7: Ruby On Rails
+### :clock10: Week 5-7: Ruby On Rails
 
 <a name="week8"></a>
 
-### :clock12: Week 8-9: Front-End design, HTML, CSS, JavaScript
+### :clock10: Week 8-9: Front-End design, HTML, CSS, JavaScript
 
 <a name="week10"></a>
 
-### :clock12: Week 10-12: Final project
+### :clock10: Week 10-12: Final project
 
 ---
 

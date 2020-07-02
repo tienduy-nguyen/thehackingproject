@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/logos/google.png">
+  <link rel="stylesheet" type="text/css" href="./fontawesome/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <title>Google</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul class="navbar-list">
+      <li><a href="https://mail.google.com/" target="_blank">Gmail</a></li>
+      <li><a href="https://www.google.fr/imghp?hl=en&tab=wi&authuser=0&ogbl" target="_blank">Images</a></li>
+      <label for="google-apps-wrap" class="google-apps__overlay" onclick="toggleOverlayAppsList(true)"></label>
+      <li class="navbar-list__google-apps" onclick="toggleGoogleAppsList()">
+        <!-- <img class="navbar-list__google-apps-img" src="./img/logos/google-apps.png"> -->
+        <i class="fas fa-th"></i>
+        <div class="google-apps-wrap" id="google-apps-list">
+          <div class="google-apps">
+            <div class="google-apps__row">
+              <a class="google-apps__item" href="https://translate.google.fr/?hl=en&tab=wT&authuser=0" target="_blank">
+                <div>
+                  <img src="./img/logos/google-translate.png" alt=""><span>Translate</span>
+                </div>
+              </a>
+              <a class="google-apps__item avatar"
+                href="https://myaccount.google.com/?utm_source=OGB&tab=wk&utm_medium=app" target="_blank"><img
+                  src="./img/avatars/ava1.jpeg" alt=""><span>Account</span></a>
+              <a class="google-apps__item" href="https://www.google.fr/webhp?tab=ww&authuser=0" target="_blank"><img
+                  src="./img/logos/google.png" alt=""><span>Search</span></a>
+            </div>
+            <div class="google-apps__row">
+              <a class="google-apps__item" href="https://www.google.fr/maps?hl=en&tab=wl&authuser=0"
+                target="_blank"><img src="./img/logos/google-map.png" alt=""><span>Map</span></a>
+              <a class="google-apps__item" href="https://www.youtube.com/?gl=FR&tab=w1" target="_blank"><img
+                  src="./img/logos/youtube.png" alt=""><span>Youtube</span></a>
+              <a class="google-apps__item" href="https://play.google.com/store?hl=en&tab=w8" target="_blank"><img
+                  src="./img/logos/google-play.png" alt=""><span>Play</span></a>
+            </div>
+            <div class="google-apps__row">
+              <a class="google-apps__item" href="https://mail.google.com/mail/u/0/?tab=wm#inbox" target="_blank"><img
+                  src="./img/logos/gmail.png" alt=""><span>Gmail</span></a>
+              <a class="google-apps__item" href="https://drive.google.com/drive/u/0/my-drive" target="_blank"><img
+                  src="./img/logos/google-drive.png" alt=""><span>Drive</span></a>
+              <a class="google-apps__item" href="https://calendar.google.com/calendar/r?tab=wc" target="_blank"><img
+                  src="./img/logos/google-calendar.png" alt=""><span>Calendar</span></a>
+            </div>
+            <div class="google-apps__row">
+              <a class="google-apps__item" href="https://photos.google.com/?tab=wq&pageId=none" target="_blank"><img
+                  src="./img/logos/google-photo.png" alt=""><span>Photos</span></a>
+              <a class="google-apps__item" href="https://meet.google.com/?hs=197&pli=1&authuser=0" target="_blank"><img
+                  src="./img/logos/google-meet.png" alt=""><span>Meets</span></a>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="google-apps">
+            <div class="google-apps__row">
+              <a class="google-apps__item" href="https://shopping.google.fr/u/0/?nord=1" target="_blank"><img
+                  src="./img/logos/google-shopping.svg" alt=""><span>Shopping</span></a>
+              <a class="google-apps__item" href="https://docs.google.com/document/u/0/" target="_blank"><img
+                  src="./img/logos/google-docs.png" alt=""><span>Docs</span></a>
+              <a class="google-apps__item" href="https://books.google.fr/bkshp?hl=en&tab=wp&authuser=0"
+                target="_blank"><img src="./img/logos/google-book.ico" alt=""><span>Books</span></a>
+            </div>
+            <div class="google-apps__row">
+              <a class="google-apps__item" href="" target="_blank"><img src="./img/logos/google-blogger.png" alt=""
+                  t><span>Blogger</span></a>
+              <a class="google-apps__item" href="" target="_blank"><img src="./img/logos/google-contact.png"
+                  alt=""><span>Contacts</span></a>
+              <a class="google-apps__item" href="" target="_blank"><img src="./img/logos/google-business.png"
+                  alt=""><span>Business</span></a>
+            </div>
+            <div class="google-apps__row">
+              <a class="google-apps__item" href="https://www.blogger.com/blogger.g?useLegacyBlogger=true#reading"
+                target="_blank"><img src="./img/logos/google-hangout.png" alt=""><span>Hangout</span></a>
+              <a class="google-apps__item" href="https://contacts.google.com/?hl=en&tab=wC" target="_blank"><img
+                  src="./img/logos/google-keep.png" alt=""><span>Keeps</span></a>
+              <a class="google-apps__item"
+                href="https://www.google.com/business/?ppsrc=GPDA2&gmbsrc=ww-ww-ot-gs-z-gmb-l-z-h~z-ogb-u"
+                target="_blank"><img src="./img/logos/google-classroom.png" alt=""><span>Classroom</span></a>
+            </div>
+            <div class="google-apps__row">
+              <a class="google-apps__item"
+                href="https://earth.google.com/web/@0,0,0a,22251752.77375655d,35y,0h,0t,0r/data=OgMKATA?authuser=0"
+                target="_blank"><img src="./img/logos/google-earth.png" alt=""><span>Earth</span></a>
+              <a class="google-apps__item" href="https://duo.google.com/?usp=duo_ald" target="_blank"><img
+                  src="./img/logos/google-duo.png" alt=""><span>Duo</span></a>
+              <a class="google-apps__item" href="https://docs.google.com/spreadsheets/u/0/" target="_blank"><img
+                  src="./img/logos/google-sheets.jpg" alt=""><span>Sheets</span></a>
+            </div>
+            <div class="google-apps__row">
+              <a class="google-apps__item" href="https://docs.google.com/presentation/u/0/" target="_blank"><img
+                  src="./img/logos/google-slides.jpg" alt=""><span>Slide</span></a>
+            </div>
+            <a class="btn btn-link" href="https://about.google/intl/en/products/?tab=wh" target="_blank">More from
+              google</a>
+          </div>
+
+        </div>
+
+      </li>
+      <label for="navbar__user-menu " class="navbar__user-overlay" onclick="toggleUserMenu(true)"></label>
+      <li class="navbar__list-user">
+        <div class="navbar__user">
+          <div class="navbar__user-show" onclick="toggleUserMenu()">
+            <div href="" class="navbar__user-link-profile">
+              <img src="./img/avatars/ava1.jpeg" alt="" class="navbar__user-img">
+            </div>
+          </div>
+          <div class="navbar__user-menu">
+            <div class="navbar__user-primary">
+              <div class="navbar__user-primary-avatar">
+                <img src="./img/avatars/ava1.jpeg">
+                <i class="fas fa-camera-retro navbar__user-primary-camera"></i>
+              </div>
+              <div class="navbar__user-primary-email">
+                <p><strong>Tien Duy NGUYEN</strong></p>
+                <p class="text-light">tienduy.nguyen@gmail.com</p>
+              </div>
+              <div class="navbar__user-btn-manage-account">
+                <a class="btn btn-ouline btn-circle"
+                  href="https://myaccount.google.com/?utm_source=OGB&tab=wk&utm_medium=act"
+                  target="_blank"><strong>Manage your
+                    Google Account</strong></a>
+              </div>
+            </div>
+
+            <div class="navbar__user-others-account">
+              <a class="navbar__user-one-account  first" href="https://google.com/webhp?authuser=1">
+                <img class="navbar__user-img navbar__user-one-account-img" src="img/avatars/ava3.jpeg">
+                <div class="navbar__user-one-account-text">
+                  <p><strong>John Doe</strong></p>
+                  <p><small>john.doe@gmail.com</small></p>
+                </div>
+              </a>
+              <a class="navbar__user-one-account" href="https://google.com/webhp?authuser=1">
+                <img class="navbar__user-img navbar__user-one-account-img" src="img/avatars/ava1.jpeg">
+                <div class="navbar__user-one-account-text">
+                  <p><strong>Adam Levin</strong></p>
+                  <p><small>adame.levin@gmail.com</small></p>
+                </div>
+              </a>
+              <a class="navbar__user-one-account" href="https://google.com/webhp?authuser=1">
+                <img class="navbar__user-img navbar__user-one-account-img" src="img/avatars/ava2.jpeg">
+                <div class="navbar__user-one-account-text">
+                  <p><strong>Karin Hoche</strong></p>
+                  <p><small>karin.hoche@gmail.com</small></p>
+                </div>
+              </a>
+              <a class="navbar__user-one-account" href="https://google.com/webhp?authuser=1">
+                <img class="navbar__user-img navbar__user-one-account-img" src="img/avatars/ava3.jpeg">
+                <div class="navbar__user-one-account-text">
+                  <p><strong>Eric Danton</strong></p>
+                  <p><small>eric.danton@gmail.com</small></p>
+                </div>
+              </a>
+              <a class="navbar__user-one-account" href="https://google.com/webhp?authuser=1">
+                <div class="navbar__user-one-account-img">
+                  <i class="fas fa-user-plus "></i>
+                </div>
+                <div class="navbar__user-one-account-text">
+                  <p><strong>Add another account</strong></p>
+                </div>
+              </a>
+            </div>
+            <div class="navbar__signout">
+              <button class="btn btn-outline">Sign out of all accounts</button>
+            </div>
+            <div class="navbar__privacy">
+              <a href="https://policies.google.com/privacy?hl=en"><small class="text-light">Privacy Policy
+                </small></a>
+              <span> - </span>
+              <a href="https://policies.google.com/terms?hl=en"><small class="text-light">Terms of Service</small></a>
+
+            </div>
+
+
+          </div>
+
+
+    </ul>
+    </div>
+    </li>
+
+    </ul>
+  </nav>
+
+
+  <div class="container">
+
+    <!-- Section Search -->
+    <section class="search-wrap">
+      <div class="dark-overlay">
+        <div class="search">
+          <img class="search__google-text" src="./img/logos/google-text.png">
+          <form class="form">
+            <div class="search__bar input-group-append">
+              <div class="search__bar-icon-search">
+                <i class="fas fa-search"></i>
+              </div>
+              <input class="search__bar-input form-control" type="text">
+              <div class="search__bar-icon-voice">
+                <img src="./img/logos/google-icon-voice.png" alt="Google Voice" title="Search by voice">
+              </div>
+            </div>
+            <div class="search__btn-wrap">
+              <button class="btn" type="submit">Google Search</button>
+              <a href="https://www.google.com/doodles/" class="btn btn-link" target="_blank">I'm Feeling Lucky</a>
+            </div>
+          </form>
+          <div class="change-language">
+            <p>Google offered in: <a href="#" target="_blank">Français</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class=footer>
+      <div class="footer__location">
+        <span>France</span>
+      </div>
+      <div class="footer__list">
+        <div class="footer__list-help">
+          <ul>
+            <li><a
+                href="https://ads.google.com/intl/en_fr/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"
+                target="_blank">Advertising</a>
+            </li>
+            <li><a
+                href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none"
+                target="_blank">Business</a>
+            </li>
+            <li><a href="https://about.google/?utm_source=google-FR&utm_medium=referral&utm_campaign=hp-footer&fg=1"
+                target="_blank">About</a>
+            </li>
+            <li><a href="https://www.google.com/search/howsearchworks/?fg=1" target="_blank">How Search
+                works</a></li>
+          </ul>
+        </div>
+        <div class="footer__list-info">
+          <ul>
+            <li><a
+                href="https://support.google.com/websearch/answer/7585859?p=fr_consumer_info&hl=en-FR&fg=1&visit_id=637291010449524252-666592862&rd=1"
+                target="_blank">Consumer
+                Information</a></li>
+            <li><a href="https://policies.google.com/privacy?fg=1" target="_blank">Privacy</a></li>
+            <li><a href="https://policies.google.com/terms?fg=1" target="_blank">Terms</a></li>
+            <li><a href="https://www.google.com/preferences?hl=en" target="_blank">Settings</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>

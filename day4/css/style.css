@@ -1,0 +1,21 @@
+#main-nav {
+  opacity: 0.9;
+}
+
+#home-section {
+  margin-top: 55px;
+  background: url('../img/home.jpeg') no-repeat center;
+  position: relative;
+  min-height: 500px;
+}
+#home-section .dark-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#points-section .card {
+  border: none;
+}

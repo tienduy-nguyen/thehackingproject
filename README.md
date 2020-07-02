@@ -13,29 +13,53 @@ Training web dev at The Hacking Project
   <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/tienduy-nguyen/thehackingproject">
 </div>
 
-## Training program
+## 📄 Table of Contents
+
+- [Week 1](#week1)
+- [Week 234](#week2)
+- [Week 567](#week5)
+- [Week 89](#week8)
+- [Week 10-12](#week10)
+- [Completed Projects](#completeprojects)
+- [License](#license)
+
+## :chart_with_upwards_trend: Training program
+
+<a name="week1"></a>
 
 ### Week 1: Introduction Week
 
 - Day 1: Start learning HTML, CSS and create the first page: MotherFuckingWebsite with 3 different versions
 - Day 2: Reproduce google page
 - Day 3: Start learning git, github and deploy online google page of day 2 with githubpage
-
-  > In progress: I'm here
-
 - Day 4: Start learning bootstrap and create our page startup
 - Day 5: Create a landing page
 - Weekend: Review ourselves
+-
+
+:arrow_right:
+
+> In progress: I'm here
+
+<a name="week2"></a>
 
 ### Week 2-4: Programming with Ruby
 
+<a name="week5"></a>
+
 ### Week 5-7: Ruby On Rails
 
+<a name="week8"></a>
+
 ### Week 8-9: Front-End design, HTML, CSS, JavaScript
+
+<a name="week10"></a>
 
 ### Week 10-12: Final project
 
 ---
+
+<a name="completedprojects"></a>
 
 ## Completed Projects
 
@@ -53,3 +77,11 @@ Training web dev at The Hacking Project
 | 31  | [...]()                                                                                             | [...]()                                                                                              |
 | 32  | [...]()                                                                                             | [...]()                                                                                              |
 | 33  | [...]()                                                                                             | [...]()                                                                                              |
+
+<a name="license"></a>
+
+# 📃 License
+
+MIT © [Tien-Duy NGUYEN](https://github.com/tienduy-nguyen)
+
+## :baby_chick:

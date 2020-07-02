@@ -27,7 +27,7 @@ Training web dev at The Hacking Project
 
 <a name="week1"></a>
 
-### Week 1: Introduction Week
+### :heavy_check_mark: Week 1: Introduction Week
 
 - Day 1: Start learning HTML, CSS and create the first page: MotherFuckingWebsite with 3 different versions
 - Day 2: Reproduce google page
@@ -37,25 +37,23 @@ Training web dev at The Hacking Project
 - Weekend: Review ourselves
 -
 
-:arrow_right:
-
-> In progress: I'm here
+:arrow_right: --> In progress: I'm here
 
 <a name="week2"></a>
 
-### Week 2-4: Programming with Ruby
+### :arrow_forward: Week 2-4: Programming with Ruby
 
 <a name="week5"></a>
 
-### Week 5-7: Ruby On Rails
+### :clock12: Week 5-7: Ruby On Rails
 
 <a name="week8"></a>
 
-### Week 8-9: Front-End design, HTML, CSS, JavaScript
+### :clock12: Week 8-9: Front-End design, HTML, CSS, JavaScript
 
 <a name="week10"></a>
 
-### Week 10-12: Final project
+### :clock12: Week 10-12: Final project
 
 ---
 

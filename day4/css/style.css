@@ -4,7 +4,9 @@
 
 #home-section {
   margin-top: 55px;
-  background: url('../img/home.jpeg') no-repeat center;
+  background: url('../img/home.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   min-height: 500px;
 }

@@ -15,13 +15,13 @@ Training web dev at The Hacking Project
 
 ## 📄 Table of Contents
 
-- [Week 1](#week1)
-- [Week 234](#week2)
-- [Week 567](#week5)
-- [Week 89](#week8)
-- [Week 10-12](#week10)
-- [Completed Projects](#completeprojects)
-- [License](#license)
+|                                         |                     |                    |
+| :-------------------------------------- | :------------------ | :----------------- |
+| [Week 1](#week1)                        | [Week 2](#week2)    | [Week 3](#week3)   |
+| [Week 4](#week4)                        | [Week 5](#week5)    | [Week 6](#week6)   |
+| [Week 7](#week7)                        | [Week 8](#week8)    | [Week 9](#week9)   |
+| [Week 10](#week10)                      | [Week 11](#week11)  | [Week 11](#week12) |
+| [Completed Projects](#completeprojects) | [License](#license) |                    |
 
 ## :chart_with_upwards_trend: Training program
 
@@ -60,20 +60,28 @@ Training web dev at The Hacking Project
 
 ## Completed Projects
 
-|  #  | Project                                                                                             | Live Demo                                                                                            |
-| :-: | :-------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
-| 11  | [MotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/day1)       | [Live Demo](https://adev42.xyz/thehackingproject/day1/MotherfuckingWebsite.html)                     |
-| 12  | [BetterMotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/day1) | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/day1/BetterMotherFuckingWebsite.html) |
-| 13  | [BestMotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/day1)   | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/day1/BestMotherFuckingWebsite.html)   |
-| 14  | [Google Page](https://github.com/tienduy-nguyen/thehackingproject/tree/master/day2)                 | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/day2/index.html)                      |
-| 15  | [The Surfing Project](https://github.com/tienduy-nguyen/thehackingproject/tree/master/day4)         | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/day4/index.html)                      |
-| 16  | [...]()                                                                                             | [...]()                                                                                              |
-| 21  | [...]()                                                                                             | [...]()                                                                                              |
-| 22  | [...]()                                                                                             | [...]()                                                                                              |
-| 23  | [...]()                                                                                             | [...]()                                                                                              |
-| 31  | [...]()                                                                                             | [...]()                                                                                              |
-| 32  | [...]()                                                                                             | [...]()                                                                                              |
-| 33  | [...]()                                                                                             | [...]()                                                                                              |
+#### Week 1
+|   #   | Project                                                                                             | Live Demo                                                                                            |
+| :---: | :-------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
+|  11   | [MotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/day1)       | [Live Demo](https://adev42.xyz/thehackingproject/day1/MotherfuckingWebsite.html)                     |
+|  12   | [BetterMotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/day1) | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/day1/BetterMotherFuckingWebsite.html) |
+|  13   | [BestMotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/day1)   | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/day1/BestMotherFuckingWebsite.html)   |
+|  14   | [Google Page](https://github.com/tienduy-nguyen/thehackingproject/tree/master/day2)                 | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/day2/index.html)                      |
+|  15   | [The Surfing Project](https://github.com/tienduy-nguyen/thehackingproject/tree/master/day4)         | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/day4/index.html)                      |
+|  16   | Landing Page                                                                                        | In progress                                                                                          |
+
+
+#### Week 2
+|   #   | Project | Live Demo |
+| :---: | :------ | :-------- |
+|  21   | [...]() | [...]()   |
+|  22   | [...]() | [...]()   |
+|  23   | [...]() | [...]()   |
+|  24   | [...]() | [...]()   |
+|  25   | [...]() | [...]()   |
+|  26   | [...]() | [...]()   |
+
+
 
 <a name="license"></a>
 

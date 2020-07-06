@@ -1,3 +1,6 @@
 {
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "sync.gist": "736e2d164bad09a2751af217e1412dce",
+  "sync.autoUpload": true,
+  "sync.autoDownload": true
 }

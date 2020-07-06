@@ -1,4 +1,4 @@
-# Day 2: Learning CSS framwork: Bootstrap4
+# Day 4: Learning CSS framwork: Bootstrap4
 
 The project of today is using bootstrap to create a landing page: The Surfing Project.
 

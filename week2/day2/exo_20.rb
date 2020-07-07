@@ -13,5 +13,5 @@ num_input = num_input.to_i
 puts "Here is a pyramid"
 
 num_input.times do |num|
-  puts " " * (num_input - num-1) + "#" * (num+1)
+  puts "#" * (num+1)
 end

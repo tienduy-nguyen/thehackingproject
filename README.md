@@ -73,25 +73,25 @@ Training web dev at The Hacking Project
 
 #### Week 1
 
-|  #  | Project                                                                                                   | Live Demo                                                                                                  |
-| :-: | :-------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
-| 11  | [MotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day1)       | [Live Demo](https://adev42.xyz/thehackingproject/week1/day1/MotherfuckingWebsite.html)                     |
-| 12  | [BetterMotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day1) | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/week1/day1/BetterMotherFuckingWebsite.html) |
-| 13  | [BestMotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day1)   | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/week1/day1/BestMotherFuckingWebsite.html)   |
-| 14  | [Google Page](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day2)                 | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/week1/day2/index.html)                      |
-| 15  | [The Surfing Project](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day4)         | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/week1/day4/index.html)                      |
-| 16  | Landing Page                                                                                              | In progress                                                                                                |
+|   #   | Project                                                                                                   | Live Demo                                                                                                  |
+| :---: | :-------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
+|  11   | [MotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day1)       | [Live Demo](https://adev42.xyz/thehackingproject/week1/day1/MotherfuckingWebsite.html)                     |
+|  12   | [BetterMotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day1) | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/week1/day1/BetterMotherFuckingWebsite.html) |
+|  13   | [BestMotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day1)   | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/week1/day1/BestMotherFuckingWebsite.html)   |
+|  14   | [Google Page](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day2)                 | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/week1/day2/index.html)                      |
+|  15   | [The Surfing Project](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day4)         | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/week1/day4/index.html)                      |
+|  16   | Landing Page                                                                                              | In progress                                                                                                |
 
 #### Week 2
 
-|  #  | Project                                                            | Live Demo |
-| :-: | :----------------------------------------------------------------- | :-------- |
-| 21  | [Repo team work](https://github.com/tienduy-nguyen/Big_Corpo_Food) | None      |
-| 22  | [Ruby basic I]()                                                   | None      |
-| 23  | [Ruby basic II]()                                                  | None      |
-| 24  | [...]()                                                            | None      |
-| 25  | [...]()                                                            | None      |
-| 26  | [...]()                                                            | None      |
+|   #   | Project                                                                                     | Live Demo |
+| :---: | :------------------------------------------------------------------------------------------ | :-------- |
+|  21   | [Repo team work](https://github.com/tienduy-nguyen/Big_Corpo_Food)                          | None      |
+|  22   | [Ruby basic I](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week2/day2)  | None      |
+|  23   | [Ruby basic II](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week2/day4) | None      |
+|  24   | [...]()                                                                                     | None      |
+|  25   | [...]()                                                                                     | None      |
+|  26   | [...]()                                                                                     | None      |
 
 <a name="license"></a>
 

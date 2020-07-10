@@ -2,17 +2,16 @@ journalists = ["@jcunniet","@PaulLampon","@Aziliz31","@ssoumier","@marionsouzeau
 
 #************************************************
 # Question: How many handles are there in this array
-def get_list_size (list)
-  return list.size #--> 381
-end
+puts "Number of handle in the list: "
+puts journalists.size #--> 381
 
 
 #************************************************
 # Question: Which handle is shortest in this list?
-def get_shortest_handle(list)
-  return list.min_by{|handle| handle.length}
-end
-
+shortest_handle = journalists.min_by{|handle| handle.length}
+puts '-' * 50
+puts "The shortest handle in the list: "
+puts shortest_handle #--> @min
 
 #************************************************
 # Question: How many handles contain 5 characters (the @ character doest not count as the one character
@@ -20,121 +19,56 @@ end
 # If we don't count the @, that means 6 chars for all. But here I need make sure the handle not only have the @
 # So I will remove it from handle and count it == 5
 # Loop through array and find all the handle with 5 characters (do not count the @)
-def count_handle_with_five_char(list)
-  return list.select{|handle| handle.tr('@','').length == 5}.size
-end
+count_handle_with_five_char  = journalists.select{|handle| handle.tr('@','').length == 5}.size
+puts '-' * 50
+puts "Number of handles with 5 characters in the list: "
+puts count_handle_with_five_char #--> 6
 
 
 #************************************************
 # Question: How many handles start with a upercase letter (The first letter just after the @)
-def count_handle_with_first_upercase(list)
-  return list.select{|handle| handle.tr('@','')[0].match(/[A-Z]/)}.size
-end
-
+count_handle_with_first_upercase = journalists.select{|handle| handle.tr('@','')[0].match(/[A-Z]/)}.size
+puts '-' * 50
+puts "Number of handles with the first uppercase character in the list: "
+puts count_handle_with_first_upercase #--> 209
 
 
 #************************************************
 # Question: Sort list alphabetically, ingore case
-def sort_list_by_alphabet(list)
-  return list.sort_by{|handle| handle.downcase}
-end
-
+puts '-' * 50
+puts "Sort list by alphabetic"
+puts journalists.sort_by{|handle| handle.downcase} #--> list
 
 #************************************************
 # Question: Sort list by handle size (smallest to largest)
-def sort_list_by_size(list)
-  return list.sort_by{|handle| handle.length} #--> list
-end
-
+puts '-' * 50
+puts "Sort list by size of character"
+puts journalists.sort_by{|handle| handle.length} #--> list
 
 
 #************************************************
 # Question: What is the position of the person @epenser in list
-def index_of_name_in_list(list,name)
-  return list.index(name)
-end
-
+puts '-' * 50
+puts "Index of @epenser in the list is: "
+puts journalists.index('@epenser') #--> 373
 
 #************************************************
 # Question: Get me a distribution of handles by size of them
-def count_handles_for_each_size(list)
-  # Get all size of handles in list
-  list_size = list.map{|handle| handle.length}.uniq.sort
+puts '-' * 50
+list_size = journalists.map{|handle| handle.length}.uniq.sort
 
-  # Loop through each size and get the handles for each them
-  list_size.each do |size|
-    puts '_' * 20
-    puts "List of handle with #{size} character (include @): "
-    each_result =  list.select{|handle| handle.length == size}
-    puts each_result
-    puts "There are #{each_result.size} handles which have #{size} characters"
-  end
+list_size.each do |size|
+  puts '_' * 20
+  puts "List of handle with #{size} character (include @): "
+  each_result =  journalists.select{|handle| handle.length == size}
+  puts each_result
+  puts "There are #{each_result.size} handles which have #{size} characters"
 end
-
 
 
 # Bonus: for the lasquestion: convert the result to hashes
-# results = Hash.new
-# list_size.each do |size|
-#   results.store(size,journalists.select{|handle| handle.length == size})
-# end
-# p results
-
-#*****************************************************************************************************
-# SHOW RESULTS TO THE SCREEN
-def show_result(list)
-
-
-  puts "Number of handle in the list: "
-  puts get_list_size(list) #--> 381
-  
-  
-  #************************************************
-  # Question: Which handle is shortest in this list?
-  puts '-' * 50
-  puts "The shortest handle in the list: "
-  puts get_shortest_handle(list) #--> @min
-  
-  #************************************************
-  # Question: How many handles contain 5 characters (the @ character doest not count as the one character
-  puts '-' * 50
-  puts "Number of handles with 5 characters in the list: "
-  puts count_handle_with_five_char(list) #--> 6
-  
-  
-  #************************************************
-  # Question: How many handles start with a upercase letter (The first letter just after the @)
-  puts '-' * 50
-  puts "Number of handles with the first uppercase character in the list: "
-  puts count_handle_with_first_upercase(list) #--> 209
-  
-  
-  #************************************************
-  # Question: Sort list alphabetically, ingore case
-  puts '-' * 50
-  puts "Sort list by alphabetic"
-  puts sort_list_by_alphabet(list)
-  
-  #************************************************
-  # Question: Sort list by handle size (smallest to largest)
-  puts '-' * 50
-  puts "Sort list by size of character"
-  puts sort_list_by_size(list)
-
-  
-  
-  #************************************************
-  # Question: What is the position of the person @epenser in list
-  puts '-' * 50
-  puts "Index of @epenser in the list is: "
-  puts index_of_name_in_list(list,'@epenser' ) #--> 373
-  
-  #************************************************
-  # Question: Get me a distribution of handles by size of them
-  puts '-' * 50
-  count_handles_for_each_size(list)
+results = Hash.new
+list_size.each do |size|
+  results.store(size,journalists.select{|handle| handle.length == size})
 end
-
-##########################*****IMPORTANT******##########################
-# CALL THE METHOD
-show_result(journalists)
+p results

@@ -29,3 +29,11 @@ Try to complete a serie of codeware on Ruby given by THP
   ```bash
   bundle exec rspec --init
   ```
+- Run all test
+  ```bash
+  bundle exec rspect
+  ```
+- Run a specific test
+  ```
+  bundle exec <ful_path_file_.rb>
+  ```

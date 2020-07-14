@@ -51,7 +51,19 @@ Training web dev at The Hacking Project
 
 <a name="week3"></a>
 
-### :clock10: Week 3-4: Programming with Ruby
+### :arrow_forward: Week 3: Programming with Ruby
+
+- Day 1: Team work on GitHub & installation all tools for Ruby & Ruby on Rails
+- Day 2: Validate project: the exercices in Ruby
+- Day 3: Correction project & OOP in Ruby
+- Day 4: Validate project: Ruby basics
+- Day 5: Correction project & Kata challenge day
+
+  :arrow_right: In progress: I'm here
+  
+<a name="week4"></a>
+
+### :clock10: Week 4: Programming with Ruby
 
 <a name="week5"></a>
 
@@ -84,14 +96,21 @@ Training web dev at The Hacking Project
 
 #### Week 2
 
-|   #   | Project                                                                                     | Live Demo |
-| :---: | :------------------------------------------------------------------------------------------ | :-------- |
-|  21   | [Repo team work](https://github.com/tienduy-nguyen/Big_Corpo_Food)                          | None      |
-|  22   | [Ruby basic I](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week2/day2)  | None      |
-|  23   | [Ruby basic II](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week2/day4) | None      |
-|  24   | [...]()                                                                                     | None      |
-|  25   | [...]()                                                                                     | None      |
-|  26   | [...]()                                                                                     | None      |
+|   #   | Project                                                                                      | Live Demo |
+| :---: | :------------------------------------------------------------------------------------------- | :-------- |
+|  21   | [Repo team work](https://github.com/tienduy-nguyen/Big_Corpo_Food)                           | None      |
+|  22   | [Ruby basic I](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week2/day2)   | None      |
+|  23   | [Ruby basic II](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week2/day4)  | None      |
+|  24   | [Kata Challenge](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week2/day5) | None      |
+
+#### Week 3
+
+|   #   | Project                                                                                              | Live Demo |
+| :---: | :--------------------------------------------------------------------------------------------------- | :-------- |
+|  31   | [Test Drive Development](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week3/day1) | None      |
+|  32   | [...]()                                                                                              | None      |
+|  33   | [...]()                                                                                              | None      |
+|  34   | [...]()                                                                                              | None      |
 
 <a name="license"></a>
 

@@ -5,9 +5,8 @@ def translate(str)
   words = str.split(' ')
   str_final  = ''
   words.each do |word|
-    # Detect the first vowel in each word
-    split_vowel = word.split /([aeio].*)/
-
+    # Detect and split the first vowel in each word to 2 elements in a array
+    split_vowel = word.split /([aeio].*)/ # ["Hello World"]
     # Recursion result
     str_final = str_final + split_vowel.last + split_vowel.first + 'ay '
   end

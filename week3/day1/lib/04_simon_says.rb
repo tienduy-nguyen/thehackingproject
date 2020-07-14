@@ -17,7 +17,7 @@ def titleize(str)
   little_words = ["and", "the", "or"]
   words = str.split
   title_words = Array.new
-  words.each_with_index {|word, index| 
+  words.each_with_index do |word, index| 
     if index == 0
         word = word.capitalize
     else
@@ -26,6 +26,6 @@ def titleize(str)
         end
     end
     title_words << word
-}
+  end
 return title_words.join(' ')
 end

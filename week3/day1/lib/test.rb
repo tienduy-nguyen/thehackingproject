@@ -1,1 +1,0 @@
-p "ello".split /([aeiou].*)/

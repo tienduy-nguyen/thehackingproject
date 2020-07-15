@@ -40,7 +40,14 @@ def hello_world_twitter
   end
 end
 
+def like_hello
+  client = login_twitter
+  tweets = client.search('#bonjour_monde', result_type: "recent").take(30)
+  client.favorite(tweets)
+end
+
 # Test
 # p get_random(get_journalists)
 # hello_world_twitter()
+# like_hello()
 

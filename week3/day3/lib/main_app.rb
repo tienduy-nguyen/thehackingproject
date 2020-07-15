@@ -133,9 +133,9 @@ end
 # p get_random(get_journalists)
 # hello_world_twitter()
 # like_hello()
-# follow_hello()
+follow_hello()
 # stream_random()
 # stream_by_topic()
 # stream_event() #Not work
-reponse_status_user()
+# reponse_status_user()
 

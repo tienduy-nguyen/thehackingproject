@@ -106,3 +106,10 @@
   media = %w(/path/to/media1.png /path/to/media2.png).map { |filename| File.new(filename) }
   client.update_with_media("I'm tweeting with @gem!", media)
   ```
+
+  Make a request "Tweets for user"
+  ```ruby
+  # get from user
+  tweets = client.user_timeline('rubyinside', count: 20)
+  tweets.each { |tweet| puts tweet.full_text }
+  ```

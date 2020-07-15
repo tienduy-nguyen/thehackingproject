@@ -36,6 +36,7 @@ def get_random(list)
   return result
 end
 
+
 def hello_world_twitter
   users = get_random(get_journalists)
   client = login_twitter
@@ -46,6 +47,18 @@ def hello_world_twitter
        Thank so much for your contribution.
         #hello_world #ruby #twitterapi #bonjour_monde
        ")
+  end
+end
+
+# Not work properly
+def reponse_status_user
+  client = login_twitter
+  # user = Twitter.user(1280509557811433483)
+  tweets = client.user_timeline("DamienB69511216").take(6)
+  tweets.each do |tweet| 
+    # puts tweet.id
+    # puts tweet.full_text
+    client.update("Hi @#{tweet.user.screen_name} from Ruby Twitter gems!", in_reply_to_status_id: tweet.id )
   end
 end
 
@@ -101,6 +114,20 @@ def stream_by_location
   end
 end
 
+def stream_specific_user
+  while true
+    begin
+      client = login_streaming_twitter()
+      client.filter(follow: '859350218416029696') do |tweet|
+        if tweet.is_a?(Twitter::Tweet)
+                puts tweet.text
+                puts tweet.created_at
+        end
+      end
+    end
+  end
+end
+
 
 # Test
 # p get_random(get_journalists)
@@ -108,6 +135,7 @@ end
 # like_hello()
 # follow_hello()
 # stream_random()
-stream_by_topic()
+# stream_by_topic()
 # stream_event() #Not work
+reponse_status_user()
 

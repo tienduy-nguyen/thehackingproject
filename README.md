@@ -107,9 +107,10 @@ Training web dev at The Hacking Project
 |   #   | Project                                                                                              | Live Demo |
 | :---: | :--------------------------------------------------------------------------------------------------- | :-------- |
 |  31   | [Test Drive Development](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week3/day1) | None      |
-|  32   | [...]()                                                                                              | None      |
-|  33   | [...]()                                                                                              | None      |
+|  32   | [Exercise Ruby & TDD](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week3/day2)    | None      |
+|  33   | [Bot Twitter](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week3/day3)            | None      |
 |  34   | [...]()                                                                                              | None      |
+|  35   | [...]()                                                                                              | None      |
 
 <a name="license"></a>
 

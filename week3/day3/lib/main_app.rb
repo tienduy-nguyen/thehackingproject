@@ -51,14 +51,14 @@ def hello_world_twitter
 end
 
 # Not work properly
-def reponse_status_user
+def reponse_status_user(username)
   client = login_twitter
   # user = Twitter.user(1280509557811433483)
-  tweets = client.user_timeline("DamienB69511216").take(6)
+  tweets = client.user_timeline(username).take(5)
   tweets.each do |tweet| 
     # puts tweet.id
     # puts tweet.full_text
-    client.update("Hi @#{tweet.user.screen_name} from Ruby Twitter gems!", in_reply_to_status_id: tweet.id )
+    client.update("Hi @#{tweet.user.screen_name}, I'm tweeting from Ruby Twitter gems!", in_reply_to_status_id: tweet.id )
   end
 end
 
@@ -133,9 +133,9 @@ end
 # p get_random(get_journalists)
 # hello_world_twitter()
 # like_hello()
-follow_hello()
+# follow_hello()
 # stream_random()
 # stream_by_topic()
 # stream_event() #Not work
-# reponse_status_user()
+reponse_status_user("JulienLamalle_")
 

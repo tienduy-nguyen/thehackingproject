@@ -6,8 +6,7 @@ def get_nokogiri_doc(url)
 end
 
 def get_info_townhall(url)
-  # puts "Loading data.........................."
-  # start = Time.now
+  start = Time.now
   doc = get_nokogiri_doc(url)
 
   # Get Nokogiri node
@@ -15,21 +14,25 @@ def get_info_townhall(url)
   city_email_node = doc.xpath('//table/tbody/tr[4]/td[2]').first
 
   # Get info
-  city_name = city_name_node.text
-  city_email = city_email_node.text
+  begin
+    city_name = city_name_node.text
+    city_email = city_email_node.text
 
-  hash = Hash.new
-  hash[city_name] = city_email
+    hash = Hash.new
+    hash[city_name] = city_email
+  rescue => exception
+    puts "An error has occured"
+  end 
 
-  # finish = Time.now
-  # puts "Time for scrapping data of #{city_name}: #{(finish-start).round(3)}"
+  # Count timer execution
+  finish = Time.now
+  puts "Time for scrapping data of #{city_name}: #{(finish-start).round(3)}"
   return hash
 end
 
 
 
 def get_result_all_city(url)
-  # start = Time.now
   doc = get_nokogiri_doc(url)
   all_city_node = doc.xpath('//a[contains(.,".html")]')
   results = []
@@ -38,8 +41,6 @@ def get_result_all_city(url)
     info = get_info_townhall(url+city_html)
     results.push(info)
   end
-  # finish = Time.now
-  # puts "Totle time execution for scrapping data of all city: #{(finish-start).round(2)} s"
   return results
 end
 
@@ -52,10 +53,7 @@ def save_data
   f.puts "Data save at #{Time.now}"
   f.puts "-----------------------------------------------"
 
-  list.select {|crypto|
-    crypto.each {|k,v| f.puts "#{k} : #{v}"} 
-  }
-  
+  f.puts list.inspect
   f.close
   puts "Data saved on city.txt"
 end

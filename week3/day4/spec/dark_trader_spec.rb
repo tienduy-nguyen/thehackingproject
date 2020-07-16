@@ -1,7 +1,7 @@
 require_relative '../lib/dark_trader.rb'
 
 describe "Dark Trader" do
-  it "Result must be an hashes" do
+  it "Result must be an array" do
     expect(get_cryptocurrencies).to be_an_instance_of(Array)
   end
   it "Result not be nill" do

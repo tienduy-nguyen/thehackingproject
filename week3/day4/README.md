@@ -2,7 +2,9 @@
 
 - Dark trader
   
-  Crawler data from [coinmarketcap.com](https://coinmarketcap.com/all/views/all/)
+  Crawler data from 
+  
+  [coinmarketcap.com](https://coinmarketcap.com/all/views/all/)
   
   Stock the key of each cryptocurrency and their price to an array of hash
 
@@ -16,7 +18,9 @@
 
 - Mairie christmas
   
-  Get all emails of all villes Val-d'Oise from [List all city Val d'Oise](http://annuaire-des-mairies.com/)
+  Get all emails of all villes Val-d'Oise from 
+  
+  [List all city Val d'Oise](http://annuaire-des-mairies.com/)
 
   ```ruby
     a = [
@@ -29,6 +33,8 @@
 - Cher député
   
   Crawl list infomation of deputy in France
+
+  [List of deputies in France](http://www2.assemblee-nationale.fr/deputes/liste/alphabetique)
 
   ```ruby
     a = [

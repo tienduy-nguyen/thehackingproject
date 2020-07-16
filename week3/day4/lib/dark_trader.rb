@@ -34,11 +34,7 @@ def save_data
   f.puts "-----------------------------------------------"
   f.puts "Data save at #{Time.now}"
   f.puts "-----------------------------------------------"
-
-  list.select {|crypto|
-    crypto.each {|k,v| f.puts "#{k} : #{v}"} 
-  }
-  
+  f.puts list.inspect
   f.close
   puts "Data saved on data.txt"
 end

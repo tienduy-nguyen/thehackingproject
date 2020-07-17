@@ -40,6 +40,8 @@ def save_data
 end
 
 
+
+
 # Print the results
-# p get_cryptocurrencies()
-save_data()
+p get_cryptocurrencies()
+# save_data()

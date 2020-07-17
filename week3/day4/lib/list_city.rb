@@ -13,6 +13,7 @@ def get_info_townhall(url)
   city_name_node = doc.xpath('//h1').last
   city_email_node = doc.xpath('//table/tbody/tr[4]/td[2]').first
 
+
   # Get info
   begin
     city_name = city_name_node.text
@@ -60,5 +61,5 @@ end
 
 
 # p get_info_townhall('https://www.annuaire-des-mairies.com/95/ableiges.html')
-# p get_result_all_city('https://www.annuaire-des-mairies.com/95/')
-save_data()
+p get_result_all_city('https://www.annuaire-des-mairies.com/95/')
+# save_data()

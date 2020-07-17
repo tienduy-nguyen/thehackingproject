@@ -56,5 +56,5 @@ end
 
 
 # p get_info_deputy('http://www2.assemblee-nationale.fr/deputes/fiche/OMC_PA719842')
-# p get_result_all_deputy('http://www2.assemblee-nationale.fr/deputes/liste/alphabetique')
-save_data()
+p get_result_all_deputy('http://www2.assemblee-nationale.fr/deputes/liste/alphabetique')
+# save_data()

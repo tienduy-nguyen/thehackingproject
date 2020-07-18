@@ -50,7 +50,7 @@ Training web dev at The Hacking Project
 
 <a name="week3"></a>
 
-### :arrow_forward: Week 3: Programming with Ruby
+### :heavy_check_mark: Week 3: Programming with Ruby
 
 - Day 1: Validating project: Testing with RSPEC in Ruby
 - Day 2: Testing and exercices Ruby
@@ -58,15 +58,26 @@ Training web dev at The Hacking Project
 - Day 4: Validating project: Art of scrapping
 - Day 5: Automatisation, serialization in Ruby
 
-  :arrow_right: In progress: I'm here
   
 <a name="week4"></a>
 
-### :clock10: Week 4: Programming with Ruby
+### :arrow_forward: Week 4: Object Oriented Programming in Ruby
+
+- Day 1: Discover OOP
+- Day 2: Validating project: OOP Advances
+- Day 3: Work with Excel
+- Day 4: Validating project: Create a program in OOP
+- Day 5: MVC - Ruby version
+  
+  :arrow_right: In progress: I'm here
 
 <a name="week5"></a>
 
-### :clock10: Week 5-7: Ruby On Rails
+### :clock10: Week 5: Ruby On Rails
+
+<a name="week6"></a>
+
+### :clock10: Week 6-7: Ruby On Rails
 
 <a name="week8"></a>
 
@@ -109,8 +120,18 @@ Training web dev at The Hacking Project
 |  31   | [Test Drive Development](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week3/day1) | None      |
 |  32   | [Exercise Ruby & TDD](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week3/day2)    | None      |
 |  33   | [Bot Twitter](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week3/day3)            | None      |
-|  34   | [...]()                                                                                              | None      |
-|  35   | [...]()                                                                                              | None      |
+|  34   | [Art of scrapping](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week3/day4)       | None      |
+|  35   | [Automation scripts](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week3/day5)     | None      |
+
+#### Week 4
+
+|   #   | Project                                                                           | Live Demo |
+| :---: | :-------------------------------------------------------------------------------- | :-------- |
+|  41   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day1) | None      |
+|  42   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day2) | None      |
+|  43   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day3) | None      |
+|  44   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day4) | None      |
+|  45   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day5) | None      |
 
 <a name="license"></a>
 

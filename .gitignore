@@ -82,3 +82,4 @@ xerial*.*
 # Enviroment variable
 .env
 .vscode
+*.vscode

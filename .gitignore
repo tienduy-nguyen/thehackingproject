@@ -83,3 +83,5 @@ xerial*.*
 .env
 .vscode
 *.vscode
+/vscode
+/.vscode

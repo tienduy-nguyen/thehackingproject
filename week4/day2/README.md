@@ -15,5 +15,25 @@ Content of game:
 
 ```
 
-## The second version
+## The second version: version 2.0
 
+Content of game:
+
+```
+- Upgrade level for version 1.0
+- Create a Human Player to battle with 2 bots
+- Equipe the different weapons
+- Have the health pack
+
+```
+
+## The second version: version 3.0
+
+Content of game:
+
+```
+- Upgrade level for version 2.0
+- Human player battle with 10 bots
+- Add random bots each round
+
+```

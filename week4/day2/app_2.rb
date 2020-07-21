@@ -51,7 +51,14 @@ puts "|Welcome to 'THEY WANT ALL MY OOP     !|"
 puts "|The goals is to be the last survivor !|"
 puts "----------------------------------------"
 
-player1 = HumanPlayer.new("Iliana")
+puts "What is your name?"
+print ">"
+name_player = gets.chomp
+player1 = HumanPlayer.new(name_player)
+puts "Hi #{name_player}, welcome!"
+puts "Press any key to start game and enjoy the game ......"
+gets.chomp
+
 bots  = call_enemies(["Josiane","José"])
 
 

@@ -12,6 +12,7 @@ puts "|The goals is to be the last survivor !|"
 puts "----------------------------------------"
 
 my_game = Game.new("Wolverine")
+my_game.new_players_in_sight
 
 # Loop attack round
 while my_game.is_still_ongoing?
@@ -20,12 +21,12 @@ while my_game.is_still_ongoing?
   puts " "
   puts "--------------------------------------"
   puts "The new round to attack"
+  my_game.new_players_in_sight
   my_game.human_player.show_state
   my_game.menu_choice
-
-  puts " "
-  puts "The bots attack you!"
-  my_game.enemies_attack
+  if my_game.is_still_ongoing?
+    my_game.enemies_attack
+  end
   
 end
 my_game.end_game

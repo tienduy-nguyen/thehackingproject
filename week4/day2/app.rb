@@ -30,6 +30,6 @@ puts player1.life_points > 0 ?
 "Player #{player2.name} win the battle!"
 puts "*"*50
 
-# binding.pry
+binding.pry
 
 

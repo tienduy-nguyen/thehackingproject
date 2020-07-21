@@ -1,11 +1,11 @@
 require_relative './player.rb'
 
 class  Game
-  attr_accessor :human_player,:player_left, :enemies_in_sight
+  attr_accessor :human_player,:players_left, :enemies_in_sight
 
   def initialize(name_player)
     @human_player = HumanPlayer.new(name_player)
-    @player_left = 10
+    @players_left = 10
     @enemies_in_sight = []
   end
 
@@ -15,7 +15,7 @@ class  Game
   end
 
   def new_players_in_sight
-    if @players_left == @enemies_in_sight.size
+    if @enemies_in_sight.size > @players_left
       return puts "All the players are already in sight"
     end
     key = rand(1..6)
@@ -74,8 +74,10 @@ class  Game
     case choice
     when "a"
         @human_player.search_weapon
+        @human_player.show_state
     when "s"
       @human_player.search_health_pack
+      @human_player.show_state
     when ("0"..@enemies_in_sight.size.to_s)
       bot = @enemies_in_sight[choice.to_i]
       @human_player.attacks(bot)

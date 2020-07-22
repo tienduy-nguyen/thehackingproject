@@ -86,7 +86,7 @@ while player1.life_points >0 && !is_all_died?(bots)
     player1.search_weapon
   when "s"
     player1.search_health_pack
-  when "0".."1"
+  when "0".."1" 
     bot  = bots[choice.to_i]
     if bot.life_points > 0
       player1.attacks(bot)

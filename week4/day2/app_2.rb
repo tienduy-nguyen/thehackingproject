@@ -97,6 +97,7 @@ while player1.life_points >0 && !is_all_died?(bots)
     puts "You need to choice only a or s, please try it again"
     choice = gets.chomp
   end
+  gets.chomp
 
   puts " "
   puts "The bots attack you!"

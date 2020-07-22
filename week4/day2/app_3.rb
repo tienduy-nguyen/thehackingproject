@@ -31,6 +31,8 @@ while my_game.is_still_ongoing?
   my_game.new_players_in_sight
   my_game.human_player.show_state
   my_game.menu_choice
+  gets.chomp
+  
   if my_game.is_still_ongoing?
     my_game.enemies_attack
   end

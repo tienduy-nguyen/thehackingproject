@@ -83,6 +83,7 @@ class  Game
       @human_player.attacks(bot)
       if bot.life_points <= 0
         kill_player(bot)
+        @players_left -=1
       end
       
     else

@@ -2,11 +2,12 @@ require_relative 'board_case.rb'
 class Board
   #TO DO : la classe a 1 attr_accessor : un array/hash qui contient les BoardCases.
   #Optionnellement on peut aussi lui rajouter un autre sous le nom @count_turn pour compter le nombre de coups joué
-  attr_accessor :board
+  attr_accessor :board, :is_won
 
   def initialize
     empty = BoardCase.empty
     @board = [empty,empty,empty,empty,empty,empty,empty,empty,empty]
+    @is_won = false
   end
 
   WIN_COMBINATIONS = [ 
@@ -23,11 +24,11 @@ class Board
   def display_board
     puts
     puts "Board game: "
-    puts "  #{@board[0]} |  #{@board[1]} | #{@board[2]} "
+    puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
     puts "-----------"
-    puts "  #{@board[3]} |  #{@board[4]} | #{@board[5]} "
+    puts " #{@board[3]} | #{@board[4]} | #{@board[5]} "
     puts "-----------"
-    puts "  #{@board[6]} |  #{@board[7]} | #{@board[8]} "
+    puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
 
   end
 
@@ -35,7 +36,7 @@ class Board
     @board[index] = token
   end
 
-  def postion_taken?(index)
+  def position_taken?(index)
     return (@board[index].strip != "")
   end
 
@@ -53,12 +54,13 @@ class Board
 
   def play_turn
     puts "Please enter 1-9"
-    input = gets.chomp.strip.to_i
-    while ![1..9].include?(input)
+    input = gets.chomp.strip.to_i-1
+    while !(0..8).to_a.include?(input)
       puts "Accept only the number 1-9, please try again:"
-      input = gets.chomp.strip.to_i
+      input = gets.chomp.strip.to_i-1
     end
     if !valid_move?(input)
+      puts "This position has already taken, pleade take another one."
       play_turn
     end
     move(input, current_player_token)
@@ -71,14 +73,16 @@ class Board
       windex_2 = win_case[1]
       windex_3 = win_case[2]
 
-      val_1 = @board[windex_1]
-      val_2 = @board[windex_2]
-      val_3 = @board[windex_3]
+      val1 = @board[windex_1]
+      val2 = @board[windex_2]
+      val3 = @board[windex_3]
 
-      if (val_1 == val_2 && val2 == val3 && val_1.strip != "")
-        return val_1
+      if (val1 == val2 && val2 == val3 && val1.strip != "")
+        @is_won = true
+        return val1
       end
     end
+    @is_won = false
     return false
   end
 
@@ -88,11 +92,13 @@ class Board
 
   # Defined a tied game
   def draw?
-    return (!won? && full?)
+    won?
+    return (!@is_won && full?)
   end
 
   def over?
-    return (draw? || won?)
+    won?
+    return (draw? || @is_won)
   end
 
 end

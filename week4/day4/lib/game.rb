@@ -11,6 +11,7 @@ class Game
   def play
     init_player()
     init_board()
+    puts "Test game play"
   end
 
   def init_player
@@ -32,8 +33,6 @@ class Game
       token1= gets.chomp.strip.upcase
     end
 
-
-    puts
     print ">Name player 2: "
     name2 = gets.chomp.strip
     token2 = token1 == "X" ? "O": "X"
@@ -53,7 +52,7 @@ class Game
   end
 
   def turn
-    puts "Turn #{@board.count_turn + 1}, player #{get_current_player} choose:"
+    puts "Turn #{@board.count_turn + 1}, player #{get_current_player.name} choose:"
     @board.play_turn
   end
 
@@ -62,32 +61,28 @@ class Game
   end  
 
   def winner
-    check = @board.won?
-    if !check
-      player = player1.token == check ? player1 : player2
-      puts "Congratualations #{player}! You have won this match."
-      puts "Press anykey to continue ..."
-      gets.chomp
-    end
+    if @board.over?
+      check = @board.won?
+        if check != false
+          player = player1.token == check ? player1 : player2
+          puts
+          puts "|***************************************************************|"
+          puts "Congratualations #{player.name}! You have won this match."
+          puts "|***************************************************************|"
+          puts "Press anykey to continue ..."
+          gets.chomp
+        else
+          puts "End game. There's no winner. This is tied game :("
+        end
+     end
   end
 
   def is_end_game?
     @status= "End"
-    return @aboad.over?
+    return @board.over?
   end
 
   def end_game
     puts "Thank to play my game. See you again."
   end
-
-  def announce_end_game
-   if @board.over?
-      if @abord.won? 
-        winner()
-      else
-        puts "End game. There's no winner. This is tied game :("
-      end
-   end
-  end  
-
 end

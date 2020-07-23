@@ -18,7 +18,7 @@ class BoardCase
     return (@first == "X") ? "O" : "X"
   end
   def self.empty
-    return ""
+    return " "
   end
 
 end

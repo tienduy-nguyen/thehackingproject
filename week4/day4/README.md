@@ -88,3 +88,8 @@ Somes rules of games:
 ### Class Show
 
 - Display a view of board game on terminal (not very necessary)
+
+
+## TODO
+
+- Interesting functionality allows us to play with an computer

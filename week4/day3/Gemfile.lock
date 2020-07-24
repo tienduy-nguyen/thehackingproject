@@ -75,6 +75,7 @@ PLATFORMS
 DEPENDENCIES
   google_drive
   json
+  nokogiri
   pry
   rspec
 

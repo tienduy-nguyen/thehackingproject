@@ -8,4 +8,4 @@ require'app/email_sender'
 require'views/done'
 require'views/index'
 
-Scrapper.new.perform
+Scrapper.new.perform("csv")

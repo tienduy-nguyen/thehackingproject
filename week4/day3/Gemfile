@@ -10,4 +10,5 @@ gem 'rspec'
 gem 'pry'
 gem 'json'
 gem 'google_drive'
+gem 'nokogiri'
 

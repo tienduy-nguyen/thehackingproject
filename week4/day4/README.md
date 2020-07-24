@@ -1,5 +1,42 @@
 # Game Tic Tac Toe
 
+## Installation
+
+This app is using Ruby version 2.7.1
+
+To install project, follow the simple steps:
+
+1. This project is at weeke4/day4, you need to return the base of repository **thehackingprojec**
+2. Copy the link of reposiotory and use `git clone` to clone the project on your computer
+3. In the folder **thehackingproject** clone, go to directly in the folder **week4/day4** and open your terminal on this folder. Or you can use the command `cd` to go to in that folder: `cd week4/day4`
+4. If you use the Ruby version 2.5.1 on your machine, you need to change in the Gemfile to take that version
+   
+  My Gemfile with the ruby version: 2.7.1
+  ```ruby
+  #Gem file
+  source "https://rubygems.org"
+
+  git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+
+  ruby '2.7.1'
+  gem 'rspec'
+  gem 'pry'
+  ```
+
+  Gemfile to change with the Ruby version 2.5.1
+  ```ruby
+  #Gem file
+  source "https://rubygems.org"
+
+  git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+
+  ruby '2.5.1'
+  gem 'rspec'
+  gem 'pry'
+  ```
+5. Use command `bundle install` to install all the gem dependencies.
+6. To launch the program, tape `ruby app.rb`
+
 ## Instroduction game Tic Tac Toe
 
 What's the [Game Tic-Tac-Toe](https://en.wikipedia.org/wiki/Tic-tac-toe) ?

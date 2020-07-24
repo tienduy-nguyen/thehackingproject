@@ -36,8 +36,9 @@ To install project, follow the simple steps:
   ```
 5. Use command `bundle install` to install all the gem dependencies.
 6. To launch the program, tape `ruby app.rb`
+   
 
-## Instroduction game Tic Tac Toe
+## Introduction game Tic Tac Toe
 
 What's the [Game Tic-Tac-Toe](https://en.wikipedia.org/wiki/Tic-tac-toe) ?
 
@@ -75,15 +76,15 @@ Somes rules of games:
 - Tied case: 1 case
 - Methods: display_board, move(to update board), valid_move?, current_player, turn_count(to define current player), show_board_win, check_board_full?, won?, check_draw?( if not won), over? (check if the game is tied or there's winner), winner(Annouce winner)
 
-### BoardCase
+### Class BoardCase
 
 - 9 squares/cases in this class
 
-### Application
+### Class Application
 
 - Start game
 - Loop turns
 
-### Show
+### Class Show
 
-- Display a view of board game on terminal
+- Display a view of board game on terminal (not very necessary)

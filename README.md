@@ -73,7 +73,7 @@ Training web dev at The Hacking Project
 
 <a name="week5"></a>
 
-### :clock10: Week 5: Ruby On Rails
+### :clock10: Week 5: Discovar Ruby On Rails
 
 - Day 1: Validating project: Franck Sinatra
 - Day 2: Discover SQL

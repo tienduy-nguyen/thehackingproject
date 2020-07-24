@@ -1,7 +1,5 @@
 require_relative 'board_case.rb'
 class Board
-  #TO DO : la classe a 1 attr_accessor : un array/hash qui contient les BoardCases.
-  #Optionnellement on peut aussi lui rajouter un autre sous le nom @count_turn pour compter le nombre de coups joué
   attr_accessor :board, :is_won
 
   def initialize
@@ -10,6 +8,7 @@ class Board
     @is_won = false
   end
 
+  # List win cases
   WIN_COMBINATIONS = [ 
     [0,1,2], # top_row 
     [3,4,5], # middle_row 
@@ -21,6 +20,7 @@ class Board
     [6,4,2] # right_diagonal 
     ]
 
+  # Displayer the current status of board
   def display_board
     puts
     puts "Board game: "
@@ -32,6 +32,7 @@ class Board
 
   end
 
+  # Fill the board when player choose a position
   def move(index,token)
     @board[index] = token
   end
@@ -67,6 +68,7 @@ class Board
     display_board
   end
 
+  # Check if found a win case. If found it, return token of player "X" or "O", it not win, return false
   def won?
     WIN_COMBINATIONS.each do |win_case|
       windex_1 = win_case[0]
@@ -96,6 +98,7 @@ class Board
     return (!@is_won && full?)
   end
 
+  # Check if game finish
   def over?
     won?
     return (draw? || @is_won)

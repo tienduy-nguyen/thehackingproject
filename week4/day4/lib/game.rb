@@ -8,12 +8,14 @@ class Game
     @status= "On going"
   end
 
+  # Call it when we start game
   def play
     init_player()
     init_board()
     puts "Test game play"
   end
 
+  # Initialize two players for game
   def init_player
     puts "|************************|"
     puts "|   TIC TAC TOE GAME     |"
@@ -42,24 +44,30 @@ class Game
     @player2 = Player.new(name2, token2)
     @current_player = @player1
   end
+
+  # Initialize board game, empty when restart
   def init_board
     @board = Board.new
     @board.display_board
   end
 
+  # Return curren_player
   def get_current_player
     @board.count_turn % 2 == 0 ? (@current_player = @player1) : (@current_player  = @player2)
   end
 
+  # Change the turn of each player
   def turn
     puts "Turn #{@board.count_turn + 1}, player #{get_current_player.name} choose:"
     @board.play_turn
   end
 
+  # Restart game, but not restart player
   def new_round
     init_board()
   end  
 
+  # Get winner or tied game, give an annoucement on the console
   def winner
     if @board.over?
       check = @board.won?
@@ -77,11 +85,13 @@ class Game
      end
   end
 
+  # Check if the game is end
   def is_end_game?
     @status= "End"
     return @board.over?
   end
 
+  # Use this method when user don't want to take the new round
   def end_game
     puts "Thank to play my game. See you again."
   end

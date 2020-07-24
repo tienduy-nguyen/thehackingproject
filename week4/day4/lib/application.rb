@@ -1,12 +1,14 @@
 require_relative 'game.rb'
 
 class Application
+  # Rub program
   def perform
     game = Game.new
     game.play
     loop_turn(game)
   end
 
+  # Loop to change each turn of game if not finish
   def loop_turn(game)
     while !game.is_end_game?
       game.turn

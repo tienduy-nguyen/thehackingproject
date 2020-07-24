@@ -35,7 +35,7 @@ To install project, follow the simple steps:
   gem 'pry'
   ```
 5. Use command `bundle install` to install all the gem dependencies.
-6. To launch the program, tape `ruby app.rb`
+6. To launch the program, tap `ruby app.rb`
    
 
 ## Introduction game Tic Tac Toe

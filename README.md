@@ -75,6 +75,12 @@ Training web dev at The Hacking Project
 
 ### :clock10: Week 5: Ruby On Rails
 
+- Day 1: Validating project: Franck Sinatra
+- Day 2: Discover SQL
+- Day 3: Switching from SQL to ActiveRecord
+- Day 4: Validating project: Relation between databases
+- Day 5: Validation & conception of databases
+  
 <a name="week6"></a>
 
 ### :clock10: Week 6-7: Ruby On Rails
@@ -125,14 +131,23 @@ Training web dev at The Hacking Project
 
 #### Week 4
 
+|   #   | Project                                                                                                       | Live Demo |
+| :---: | :------------------------------------------------------------------------------------------------------------ | :-------- |
+|  41   | [Calendar CLI](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day1)                    | None      |
+|  42   | [Mini combat game](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day2)                | None      |
+|  43   | [Scrapping and save to json, csv](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day3) | None      |
+|  44   | [Game Tic Tac Toe](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day4)                | None      |
+|  45   | [Gossip Project](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day5)                  | None      |
+
+#### Week 5
+
 |   #   | Project                                                                           | Live Demo |
 | :---: | :-------------------------------------------------------------------------------- | :-------- |
-|  41   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day1) | None      |
-|  42   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day2) | None      |
-|  43   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day3) | None      |
-|  44   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day4) | None      |
-|  45   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day5) | None      |
-
+|  51   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day1) | None      |
+|  52   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day2) | None      |
+|  53   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day3) | None      |
+|  54   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day5) | None      |
+|  55   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day5) |
 <a name="license"></a>
 
 # 📃 License

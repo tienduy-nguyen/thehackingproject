@@ -61,7 +61,7 @@ class ApplicationController < Sinatra::Base
 
   # Get all authors
   get '/authors/' do
-    list_authors = Gossip.all.map{|x| x['author']}
+    list_authors = Gossip.all.map{|x| x['author']}.uniq
     erb:authors, locals: {authors: list_authors}
   end
 

@@ -66,6 +66,6 @@ class ApplicationController < Sinatra::Base
   # Get all posts of author
   get '/author/:name/' do
     name=params['name']
-    erb:author, locals: {author: name, gossips: Gossip.all.select{|x| x['authors'] == name}}
+    erb:author, locals: {author: name, gossips: Gossip.all.select{|x| x['author'] == name}}
   end
 end

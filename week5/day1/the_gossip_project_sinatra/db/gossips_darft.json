@@ -51,26 +51,11 @@
   "id": "7d780023-7dfd-4b42-8932-6f9f4232b156",
   "author": "Alain",
   "content": "It's worked, awesome!",
-  "comments": [],
+  "comments": [{
+    "author": "A",
+    "content": "Test the first comment! It's worked or not?",
+    "create_at": "27/07/20 19:51:29"
+  }],
   "create_at": "27/07/20 17:03:01",
   "update_at": "27/07/20 17:03:01"
-}, {
-  "id": "2b2401e5-90ac-49d4-aa3b-5335b5e14fb0",
-  "author": "Alan Walker",
-  "comments": [],
-  "content": "I'am an awsome person! xD",
-  "update_at": "27/07/20 18:24:28"
-}, {
-  "id": "5f58dbd9-e145-42a5-b1c0-441616a93ed9",
-  "author": "TomorowLand",
-  "content": "I don't know to say with you guys. But I hope you have a nice day.",
-  "comments": [{
-      "author": "Someone"
-    },
-    {
-      "comment": "Here is my comment"
-    }
-  ],
-  "create_at": "27/07/20 18:19:21",
-  "update_at": "27/07/20 18:24:14"
 }]

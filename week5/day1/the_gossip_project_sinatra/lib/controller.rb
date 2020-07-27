@@ -71,17 +71,30 @@ class ApplicationController < Sinatra::Base
     erb:author, locals: {author: name, gossips: Gossip.all.select{|x| x['author'] == name}}
   end
 
-  # 
+  # Get comments
+
+
   # Post comments
-  post '/comments/:id' do
+  post '/gossips/:id/comment/' do
     id = params['id']
     gossip = Gossip.find_by_uuid(id)
-    new_comment = Hash.new
-    new_comment['author'] = params['comment_author']
-    new_comment['comment'] = params['comment_content']
-    gossip['comments'].push(new_comment)
-    gossips = Gossip.all.map{|x| x['id']==id ? gossip : x}
-    Gossip.save_new(gossips)
-    redirect ('/gossips/' + id + '/')
+    comment_content = params['comment_content'].strip
+    
+    if comment_content.length > 0 
+      comment_author = params['comment_author'].strip
+      comment_author = comment_author.length >0 ? comment_author : "Guest"
+      new_comment = Hash.new
+      create_at = Time.now.strftime("%d/%m/%y %k:%M:%S")
+      new_comment['author'] = comment_author
+      new_comment['content'] = comment_content
+      new_comment['create_at'] = create_at
+      gossip['comments'].push(new_comment)
+      gossips = Gossip.all.map{|x| x['id']==id ? gossip : x}
+      Gossip.save_new(gossips)
+      
+    end
+    detail_gossip = '/gossips/' + id + '/'
+    redirect detail_gossip
+    
   end
 end

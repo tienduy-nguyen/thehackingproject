@@ -75,7 +75,7 @@ Training web dev at The Hacking Project
 
 ### :clock10: Week 5: Discovar Ruby On Rails
 
-- Day 1: Validating project: Franck Sinatra
+- Day 1: Validating project: Sinatra Framework
 - Day 2: Discover SQL
 - Day 3: Switching from SQL to ActiveRecord
 - Day 4: Validating project: Relation between databases

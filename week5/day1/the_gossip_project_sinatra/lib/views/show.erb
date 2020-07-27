@@ -1,12 +1,85 @@
-<html>
-  <head>
-    <title>Page potin</title>
-  </head>
-  <body>
-    <h1>Voici la page du potion n° <%= id %></h1>
-    <p>Son auteur: <%= gossip["author"] %> </p>
-    <p>Son content: <%= gossip["content"] %> </p><br>
-    <a href="/">Revenir à la page d'arcueil</a>
+<!DOCTYPE html>
+<html lang="en">
 
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="icon" href="/img/favicon.ico">
+  <title>Detail Gossip</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" id="main-nav">
+    <div class="container-fluid">
+      <a href="/" class="navbar-brand ml-4">Gossip Project</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/gossips/new/" class="nav-link">New</a>
+          </li>
+          <li class="nav-item">
+            <a href="/profile/" class="nav-link">Authors</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN BODY -->
+  <div class="gossip_card-content py-4 px-4" style="margin-top: 50px">
+    <a class="btn btn-light mb-4" href="/"><i class="fas fa-arrow-left"></i> Back To Home Page</a>
+    <div class="card">
+      <div class="card-header">
+          <h4 class="card-heading">Here is the potin n° <%= id %></h4>
+      </div>
+      <div class="card-body">
+          <small>Author:   </small>
+          <a href="#author">
+            <span class="card-text text-info"><%= gossip["author"] %> </><br>          
+          </a>
+          <small>Content: </small><span class="card-text text-success"><%= gossip["content"] %> </span>
+      </div>
+    </div>
+  </div>
+
+
+ 
+  <!-- FOOTER -->
+  <footer id="main-footer" class="text-center pt-3 pb-0 mb-0 bg-light bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Copyright &copy;
+            <span id="year"></span> TienDuy</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" crossorigin="anonymous">
+  </script>
+  <script>
+    $('#year').text(new Date().getFullYear());
+  </script>
+</body>
+
 </html>

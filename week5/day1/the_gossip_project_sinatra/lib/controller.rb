@@ -30,4 +30,10 @@ class ApplicationController < Sinatra::Base
     erb:show ,locals: {gossip: Gossip.all[id], id: id}
   end
 
+  # Get edit
+  get '/gossips/:id/edit/' do
+    puts params
+    puts url
+  end
+
 end

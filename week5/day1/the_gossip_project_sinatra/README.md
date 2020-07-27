@@ -16,9 +16,9 @@ This app is using Ruby version 2.7.1
 
 To install project, follow the simple steps:
 
-1. You can see, this page is not in direct repository. It is at **thehackingproject/week4/day4**, you need to return the base of repository **thehackingproject**
+1. You can see, this page is not in direct repository. It is at **thehackingproject/week5/day1**, you need to return the base of repository **thehackingproject**
 2. Then, copy the link https of this reposiotory and use `git clone` to clone the project on your computer
-3. In the folder **thehackingproject** clone, go to directly in the folder **week4/day4** and open your terminal on this folder. Or you can use the command `cd` to go to in that folder: `cd week5/day1`
+3. In the folder **thehackingproject** clone, go to directly in the folder **week5/day1** and open your terminal on this folder. Or you can use the command `cd` to go to in that folder: `cd week5/day1`
 4. If you use the Ruby version 2.5.1 or other version on your machine, you need to change in the Gemfile to take that version
    
   For example for the 2.5.1 version: 

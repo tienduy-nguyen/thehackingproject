@@ -29,6 +29,7 @@ class Gossip
     potin["content"]= @content
     potin["create_at"]=create_at
     potin["update_at"]=create_at
+    potin["comments"] = []
 
     gossips.push(potin)
 
@@ -47,6 +48,14 @@ class Gossip
   def self.all
     file = File.read('db/gossips.json')
     return JSON.parse(file)
+  end
+
+  def self.find(id)
+    return self.all[id]
+  end
+
+  def self.find_by_uuid(uuid)
+    return self.all.select{|x| x['id'] == uuid}[0]
   end
 
 end

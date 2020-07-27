@@ -27,22 +27,26 @@ class ApplicationController < Sinatra::Base
   # Get detail of potin
   get '/gossips/:id/' do
     id = params['id']
-    erb:show ,locals: {gossip: Gossip.all.select{|x| x['id'] == id}, id: id}
+    gossip = Gossip.all.select{|x| x['id'] == id}[0]
+    erb:show ,locals: {gossip: gossip, id: id}
   end
 
   # Get edit
   get '/gossips/:id/edit/' do
     id = params['id']
-    erb:edit_gossip ,locals: {gossip: Gossip.all.select{|x| x['id'] == id}, id: id}
+    gossip = Gossip.all.select{|x| x['id'] == id}[0]
+    erb:edit_gossip ,locals: {gossip: gossip, id: id}
   end
 
   # Post edit
   post '/gossips/:id/edit/' do
     id = params['id']
-    potin = Hash.new
-    potin["author"] = params['gossip_author']
-    potin["content"]= params['gossip_content']
-    gossips = Gossip.all.map{|x| x['id']==id ? potin : x}
+    gossip = Gossip.all.select{|x| x['id'] == id}[0]
+    gossip["author"] = params['gossip_author']
+    gossip["content"]= params['gossip_content']
+    update_at = Time.now.strftime("%d/%m/%y %k:%M:%S")
+    gossip["update_at"] = update_at
+    gossips = Gossip.all.map{|x| x['id']==id ? gossip : x}
     Gossip.save_new(gossips)
     redirect '/'
   end
@@ -50,8 +54,7 @@ class ApplicationController < Sinatra::Base
   # Delete
   post '/gossips/:id/' do
     id = params['id']
-    gossips = Gossip.all
-    gossips.delete{|x| x['id'] == id};
+    gossips = Gossip.all.reject{|x| x['id'] == id};
     Gossip.save_new(gossips)
     redirect '/'
   end
@@ -66,5 +69,19 @@ class ApplicationController < Sinatra::Base
   get '/author/:name/' do
     name=params['name']
     erb:author, locals: {author: name, gossips: Gossip.all.select{|x| x['author'] == name}}
+  end
+
+  # 
+  # Post comments
+  post '/comments/:id' do
+    id = params['id']
+    gossip = Gossip.find_by_uuid(id)
+    new_comment = Hash.new
+    new_comment['author'] = params['comment_author']
+    new_comment['comment'] = params['comment_content']
+    gossip['comments'].push(new_comment)
+    gossips = Gossip.all.map{|x| x['id']==id ? gossip : x}
+    Gossip.save_new(gossips)
+    redirect ('/gossips/' + id + '/')
   end
 end

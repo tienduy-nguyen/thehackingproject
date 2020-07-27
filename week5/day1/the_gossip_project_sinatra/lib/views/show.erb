@@ -46,7 +46,8 @@
           <a class="btn btn-light mb-4" href="/"><i class="fas fa-arrow-left"></i> Back To Home Page</a>
           <div class="card">
             <div class="card-header">
-                <h4 class="card-heading">Here is the potin n° <%= id %></h4>
+                <h4 class="card-heading">Here is the potin with id:</h4>
+                <span><small> <%= id %></small></span>
             </div>
             <div class="card-body">
                 <small>Author:   </small>
@@ -67,7 +68,15 @@
 
       <!-- Add commeent -->
       <div class="row">
-
+          <div class="col-lg-12 p-0">
+            <form action="/comments/<%=id %>/" method="POST">
+              <input type="text" placeholder="Your name ..." class="form-control mb-1" name="comment_author">
+              <textarea class="form-control mb-2" rows="5" name='comment_content' placeholder="Enter your comment here ..."></textarea>
+              <div>
+              <button type="submit" class="btn btn-primary" style="float:right"><i class="fas fa-reply"></i> Reply</button>
+              </div>
+            </form>
+          </div>
       </div>
 
   </div>

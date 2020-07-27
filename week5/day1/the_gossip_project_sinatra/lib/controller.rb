@@ -26,33 +26,32 @@ class ApplicationController < Sinatra::Base
 
   # Get detail of potin
   get '/gossips/:id/' do
-    id = params['id'].to_i
-    erb:show ,locals: {gossip: Gossip.all[id], id: id}
+    id = params['id']
+    erb:show ,locals: {gossip: Gossip.all.select{|x| x['id'] == id}, id: id}
   end
 
   # Get edit
   get '/gossips/:id/edit/' do
-    id = params['id'].to_i
-    erb:edit_gossip ,locals: {gossip: Gossip.all[id], id: id}
+    id = params['id']
+    erb:edit_gossip ,locals: {gossip: Gossip.all.select{|x| x['id'] == id}, id: id}
   end
 
   # Post edit
   post '/gossips/:id/edit/' do
-    id = params['id'].to_i
+    id = params['id']
     potin = Hash.new
     potin["author"] = params['gossip_author']
     potin["content"]= params['gossip_content']
-    gossips = Gossip.all
-    gossips[id] = potin
+    gossips = Gossip.all.map{|x| x['id']==id ? potin : x}
     Gossip.save_new(gossips)
     redirect '/'
   end
 
   # Delete
   post '/gossips/:id/' do
-    id = params['id'].to_i
+    id = params['id']
     gossips = Gossip.all
-    gossips.delete_at(params['id'].to_i);
+    gossips.delete{|x| x['id'] == id};
     Gossip.save_new(gossips)
     redirect '/'
   end

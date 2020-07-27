@@ -49,21 +49,22 @@
               <div class="card-heading d-flex">
                   <div class="pull-left d-flex author">
                     <div class="pull-left mr-2">
-                        <img src="http://bootdey.com/img/Content/user_1.jpg" class="rounded-circle img-fluid" alt="user profile image" style="height:35px;width:35px">
+                        <img src="http://bootdey.com/img/Content/user_1.jpg" class="rounded-circle img-fluid" alt="user profile image" style="height:40px;width:40px">
                     </div>
-                    <div class="title h5 pt-1">
-                        <a href="/author/<%= gossip['author']%>/"><b><%= gossip["author"]%></b></a>
+                    <div class=" pt-1" style="positon: relative">
+                        <a class="h5" href="/author/<%= gossip['author']%>/"><b><%= gossip["author"]%></b></a><br>
+                        <small class="text-muted" style="margin-top:-1px;position:absolute"><sup><%= gossip['create_at']%></sup></small>
                     </div>
                   </div>
                   <div class="ml-auto d-flex">
                     <div>
-                      <a  href="/gossips/<%=gossips.length-index-1%>/edit/"%>
+                      <a  href="/gossips/<%=gossip['id']%>/edit/"%>
                         <i class="fas fa-edit mr-2 text-info"></i>
                       </a>
                     </div>
 
                     <div>
-                      <form action="/gossips/<%=gossips.length-index-1%>/" method="POST">
+                      <form action="/gossips/<%=gossip['id']%>/" method="POST">
                         <button type="submit" class="btn p-0"><i class="fas fa-trash text-danger"></i></button>
                       </form>
                     </div>
@@ -72,13 +73,15 @@
                   
               </div> 
                 <div class="card-body m-0 px-0 pt-3 pb-0 "> 
-                <a href="/gossips/<%=gossips.length-index-1%>/">
+                <a href="/gossips/<%=gossip['id']%>/">
                     <p class="text-muted"><%= gossip["content"] %></p>
                 </a>
                 </div>
                 <div class="card-footer m-0 p-0">
                   <div style="cursor: pointer">
-                    <i class="far fa-comment"> Comment</i>
+                    <a href="/gossips/<%=gossip['id']%>/">
+                      <i class="far fa-comment"> Read Comments</i>
+                    </a>
                   </div>
                 </div>
 

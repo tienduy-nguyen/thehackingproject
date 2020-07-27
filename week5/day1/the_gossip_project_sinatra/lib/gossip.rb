@@ -1,5 +1,7 @@
 require 'json'
 require 'csv'
+require 'securerandom'
+
 class Gossip
   attr_accessor :author, :content
   def initialize(author, content)
@@ -19,8 +21,15 @@ class Gossip
     
     # Creat new potin from the submit form
     potin = Hash.new
+    create_at = Time.now.strftime("%d/%m/%y %k:%M:%S")
+    update_at = create_at
+    id = SecureRandom.uuid
+    potin["id"] = id
     potin["author"] = @author
     potin["content"]= @content
+    potin["create_at"]=create_at
+    potin["update_at"]=create_at
+
     gossips.push(potin)
 
     # Write potin in database file

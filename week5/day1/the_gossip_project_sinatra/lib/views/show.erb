@@ -38,21 +38,40 @@
   </nav>
 
   <!-- MAIN BODY -->
-  <div class="gossip_card-content py-4 px-4 mb-5" style="margin-top: 50px">
-    <a class="btn btn-light mb-4" href="/"><i class="fas fa-arrow-left"></i> Back To Home Page</a>
-    <div class="card">
-      <div class="card-header">
-          <h4 class="card-heading">Here is the potin n° <%= id %></h4>
-      </div>
-      <div class="card-body">
-          <small>Author:   </small>
-          <a href="/author/<%= gossip['author']%>/">
-            <span class="card-text text-info"><%= gossip["author"] %> </><br>          
-          </a>
-          <small>Content: </small><span class="card-text text-success"><%= gossip["content"] %> </span>
+  <div class="container">
+    <div class="row">
+
+    <!-- Gossip -->
+      <div class="py-4 px-0 col-lg-12" style="margin-top: 50px">
+          <a class="btn btn-light mb-4" href="/"><i class="fas fa-arrow-left"></i> Back To Home Page</a>
+          <div class="card">
+            <div class="card-header">
+                <h4 class="card-heading">Here is the potin n° <%= id %></h4>
+            </div>
+            <div class="card-body">
+                <small>Author:   </small>
+                <a href="/author/<%= gossip['author']%>/">
+                  <span class="card-text text-info"><%= gossip["author"] %> </><br>          
+                </a>
+                <small>Content: </small><span class="card-text text-success"><%= gossip["content"] %> </span>
+            </div>
+          </div>
       </div>
     </div>
+
+      <!-- Comments -->
+      <div class='row'>
+      <h2>Comments</h2><hr>
+      
+      </div>
+
+      <!-- Add commeent -->
+      <div class="row">
+
+      </div>
+
   </div>
+  
 
 
  

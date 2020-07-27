@@ -28,6 +28,11 @@ class Gossip
       f.write(gossips.to_json)
     end
   end
+  def self.save_new(array)
+    File.open('db/gossips.json','w') do |f|
+      f.write(array.to_json)
+    end
+  end
  
   # Get all potins from databases
   def self.all

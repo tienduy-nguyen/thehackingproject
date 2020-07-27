@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="icon" href="./img/favicon.ico">
+  <title>Gossip Project</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" id="main-nav">
+    <div class="container-fluid">
+      <a href="/" class="navbar-brand ml-4">Gossip Project</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/gossips/new/" class="nav-link">New</a>
+          </li>
+          <li class="nav-item">
+            <a href="/profile/" class="nav-link">Profile</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN BODY -->
+  <section id="gossip-section" class="py-4" style="margin-top: 40px">
+    <div class="container">
+
+    <% gossips.each_with_index do |gossip, index|%>
+        <div class="row my-3">
+            <div class="col-md-12">
+              <div class="card p-2">
+              <div class="card-heading d-flex">
+                    <div class="pull-left mr-2">
+                        <img src="http://bootdey.com/img/Content/user_1.jpg" class="rounded-circle img-fluid" alt="user profile image" style="height:35px;width:35px">
+                    </div>
+                    <div class="title pull-left h5 pt-1">
+                        <a href="#"><b><%= gossip["author"]%></b></a>
+                    </div>
+              </div> 
+                <div class="card-body m-0 px-0 pt-3 pb-0"> 
+                    <p class="text-muted"><%= gossip["content"] %></p>
+                </div>
+                <div class="card-footer m-0 p-0">
+                  <div style="cursor: pointer">
+                    <i class="far fa-comment"> Comment</i>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+    <%end%>
+    </div>
+  </section>
+
+ 
+  <!-- FOOTER -->
+  <footer id="main-footer" class="text-center pt-3 pb-0 mb-0 bg-light bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Copyright &copy;
+            <span id="year"></span> TienDuy</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" crossorigin="anonymous">
+  </script>
+  <script>
+    $('#year').text(new Date().getFullYear());
+  </script>
+</body>
+
+</html>

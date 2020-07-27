@@ -1,0 +1,19 @@
+#main-nav {
+  opacity: 0.9;
+}
+.gossip {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+}
+
+#main-footer {
+  position: fixed;
+  height: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
+  opacity: 0.9;
+}

@@ -27,8 +27,6 @@ class ApplicationController < Sinatra::Base
   # Get detail of potin
   get '/gossips/:id/' do
     id = params['id'].to_i
-    p params
-    p params['id']
     erb:show ,locals: {gossip: Gossip.all[id], id: id}
   end
 
@@ -57,5 +55,17 @@ class ApplicationController < Sinatra::Base
     gossips.delete_at(params['id'].to_i);
     Gossip.save_new(gossips)
     redirect '/'
+  end
+
+  # Get all authors
+  get '/authors/' do
+    list_authors = Gossip.all.map{|x| x['author']}
+    erb:authors, locals: {authors: list_authors}
+  end
+
+  # Get all posts of author
+  get '/author/:name/' do
+    name=params['name']
+    erb:author, locals: {author: name, gossips: Gossip.all.select{|x| x['authors'] == name}}
   end
 end

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +11,7 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="icon" href="/img/favicon.ico">
-  <title>Detail Gossip</title>
+  <title>New Gossip</title>
 </head>
 
 <body>
@@ -37,27 +38,36 @@
     </div>
   </nav>
 
-  <!-- MAIN BODY -->
-  <div class="gossip_card-content py-4 px-4 mb-5" style="margin-top: 50px">
-    <a class="btn btn-light mb-4" href="/"><i class="fas fa-arrow-left"></i> Back To Home Page</a>
-    <div class="card">
-      <div class="card-header">
-          <h4 class="card-heading">Here is the potin n° <%= id %></h4>
-      </div>
-      <div class="card-body">
-          <small>Author:   </small>
-          <a href="/author/<%= gossip['author']%>/">
-            <span class="card-text text-info"><%= gossip["author"] %> </><br>          
-          </a>
-          <small>Content: </small><span class="card-text text-success"><%= gossip["content"] %> </span>
-      </div>
-    </div>
-  </div>
+    <!-- MAIN BODY -->
+  <div class="container py-4" style="margin-top: 50px">
+    <h2 class="mb-3">List of all authors</h2>
+      <div class="row">
 
+      <% authors.each do |author| %>
+
+        <div class="mb-2 col-6 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <div class="pull-left d-flex author">
+                    <div class="pull-left mr-2">
+                        <img src="http://bootdey.com/img/Content/user_1.jpg" class="rounded-circle img-fluid" alt="user profile image" style="height:35px;width:35px">
+                    </div>
+                    <div class="title h5 pt-1">
+                        <a href="/author/<%= author%>/"><b><%= author%></b></a>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <% end %>
+
+      </div>
+  </div>
 
  
   <!-- FOOTER -->
-  <footer id="main-footer" class="text-center pt-3 pb-0 mb-0  bg-light bg-dark text-white">
+  <footer id="main-footer" class="text-center pt-3 pb-0 mb-0 bg-light bg-dark text-white">
     <div class="container">
       <div class="row">
         <div class="col">

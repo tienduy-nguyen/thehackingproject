@@ -61,7 +61,7 @@ Training web dev at The Hacking Project
   
 <a name="week4"></a>
 
-### :arrow_forward: Week 4: Object Oriented Programming in Ruby
+### :heavy_check_mark: Week 4: Object Oriented Programming in Ruby
 
 - Day 1: Discover OOP
 - Day 2: Validating project: OOP Advances
@@ -69,17 +69,17 @@ Training web dev at The Hacking Project
 - Day 4: Validating project: Create a program in OOP
 - Day 5: MVC - Ruby version
   
-  :arrow_right: In progress: I'm here
-
 <a name="week5"></a>
 
-### :clock10: Week 5: Discovar Ruby On Rails
+### :arrow_forward: Week 5: Discover Ruby framwork and SQL
 
 - Day 1: Validating project: Sinatra Framework
-- Day 2: Discover SQL
-- Day 3: Switching from SQL to ActiveRecord
+- Day 2: Discover SQL with sqlite3
+- Day 3: Switching from SQL to ActiveRecord using rails
 - Day 4: Validating project: Relation between databases
 - Day 5: Validation & conception of databases
+
+  :arrow_right: In progress: I'm here
   
 <a name="week6"></a>
 
@@ -141,13 +141,13 @@ Training web dev at The Hacking Project
 
 #### Week 5
 
-|   #   | Project                                                                           | Live Demo |
-| :---: | :-------------------------------------------------------------------------------- | :-------- |
-|  51   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day1) | None      |
-|  52   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day2) | None      |
-|  53   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day3) | None      |
-|  54   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day5) | None      |
-|  55   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day5) |
+|   #   | Project                                                                                                            | Live Demo |
+| :---: | :----------------------------------------------------------------------------------------------------------------- | :-------- |
+|  51   | [Gossip Project with Sinatra Framwork](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day1) | None      |
+|  52   | [Sqlite3](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day2)                              | None      |
+|  53   | [Rails & SQL](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day3)                          | None      |
+|  54   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day5)                                  | None      |
+|  55   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day5)                                  |
 <a name="license"></a>
 
 # 📃 License

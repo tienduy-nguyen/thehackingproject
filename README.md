@@ -101,43 +101,43 @@ Training web dev at The Hacking Project
 
 #### Week 1
 
-|   #   | Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Live Demo &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;                                                 |
-| :---: | :-------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
-|  11   | [MotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day1)                                                       | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/week1/day1/MotherfuckingWebsite.html)       |
-|  12   | [BetterMotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day1)                                                 | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/week1/day1/BetterMotherFuckingWebsite.html) |
-|  13   | [BestMotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day1)                                                   | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/week1/day1/BestMotherFuckingWebsite.html)   |
-|  14   | [Google Page](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day2)                                                                 | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/week1/day2/index.html)                      |
-|  15   | [The Surfing Project](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day4)                                                         | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/week1/day4/index.html)                      |
-|  16   | Landing Page                                                                                                                                              | In progress                                                                                                |
+|   #   | Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; | Live Demo &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;                                                 |
+| :---: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
+|  11   | [MotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day1)                                                                    | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/week1/day1/MotherfuckingWebsite.html)       |
+|  12   | [BetterMotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day1)                                                              | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/week1/day1/BetterMotherFuckingWebsite.html) |
+|  13   | [BestMotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day1)                                                                | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/week1/day1/BestMotherFuckingWebsite.html)   |
+|  14   | [Google Page](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day2)                                                                              | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/week1/day2/index.html)                      |
+|  15   | [The Surfing Project](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day4)                                                                      | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/week1/day4/index.html)                      |
+|  16   | Landing Page                                                                                                                                                           | In progress                                                                                                |
 
 #### Week 2
 
-|   #   | Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Live Demo &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
-| :---: | :--------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------- |
-|  21   | [Repo team work](https://github.com/tienduy-nguyen/Big_Corpo_Food)                                                                                         | None                                                       |
-|  22   | [Ruby basic I](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week2/day2)                                                                 | None                                                       |
-|  23   | [Ruby basic II](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week2/day4)                                                                | None                                                       |
-|  24   | [Kata Challenge](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week2/day5)                                                               | None                                                       |
+|   #   | Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Live Demo &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
+| :---: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------- |
+|  21   | [Repo team work](https://github.com/tienduy-nguyen/Big_Corpo_Food)                                                                                                       | None                                                       |
+|  22   | [Ruby basic I](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week2/day2)                                                                               | None                                                       |
+|  23   | [Ruby basic II](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week2/day4)                                                                              | None                                                       |
+|  24   | [Kata Challenge](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week2/day5)                                                                             | None                                                       |
 
 #### Week 3
 
-|   #   | Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Live Demo &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
-| :---: | :-------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------- |
-|  31   | [Test Drive Development](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week3/day1)                                                      | None                                                       |
-|  32   | [Exercise Ruby & TDD](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week3/day2)                                                         | None                                                       |
-|  33   | [Bot Twitter](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week3/day3)                                                                 | None                                                       |
-|  34   | [Art of scrapping](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week3/day4)                                                            | None                                                       |
-|  35   | [Automation scripts](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week3/day5)                                                          | None                                                       |
+|   #   | Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Live Demo &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
+| :---: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------- |
+|  31   | [Test Drive Development](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week3/day1)                                                                    | None                                                       |
+|  32   | [Exercise Ruby & TDD](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week3/day2)                                                                       | None                                                       |
+|  33   | [Bot Twitter](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week3/day3)                                                                               | None                                                       |
+|  34   | [Art of scrapping](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week3/day4)                                                                          | None                                                       |
+|  35   | [Automation scripts](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week3/day5)                                                                        | None                                                       |
 
 #### Week 4
 
-|   #   | Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Live Demo &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
-| :---: | :--------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------- |
-|  41   | [Calendar CLI](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day1)                                                                 | None                                                       |
-|  42   | [Mini combat game](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day2)                                                             | None                                                       |
-|  43   | [Scrapping and save to json, csv](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day3)                                              | None                                                       |
-|  44   | [Game Tic Tac Toe](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day4)                                                             | None                                                       |
-|  45   | [Gossip Project](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day5)                                                               | None                                                       |
+|   #   | Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Live Demo &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
+| :---: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------- |
+|  41   | [Calendar CLI](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day1)                                                                               | None                                                       |
+|  42   | [Mini combat game](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day2)                                                                           | None                                                       |
+|  43   | [Scrapping and save to json, csv](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day3)                                                            | None                                                       |
+|  44   | [Game Tic Tac Toe](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day4)                                                                           | None                                                       |
+|  45   | [Gossip Project](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day5)                                                                             | None                                                       |
 
 #### Week 5
 

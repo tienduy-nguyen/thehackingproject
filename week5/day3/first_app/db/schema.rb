@@ -51,24 +51,10 @@ ActiveRecord::Schema.define(version: 2020_07_30_145441) do
     t.index ["part_id"], name: "index_assemblies_parts_on_part_id"
   end
 
-  create_table "author", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "authors", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "book", force: :cascade do |t|
-    t.integer "author_id"
-    t.datetime "published_at"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["author_id"], name: "index_book_on_author_id"
   end
 
   create_table "books", force: :cascade do |t|

@@ -10,13 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_30_215430) do
+ActiveRecord::Schema.define(version: 2020_07_30_235335) do
 
   create_table "cities", force: :cascade do |t|
     t.string "name"
     t.string "zip_code"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "comments", force: :cascade do |t|
@@ -46,11 +44,9 @@ ActiveRecord::Schema.define(version: 2020_07_30_215430) do
   end
 
   create_table "likes", force: :cascade do |t|
-    t.bigint "user_id"
-    t.bigint "gossip_id"
-    t.bigint "comment_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.integer "gossip_id"
+    t.integer "comment_id"
     t.index ["comment_id"], name: "index_likes_on_comment_id"
     t.index ["gossip_id"], name: "index_likes_on_gossip_id"
     t.index ["user_id"], name: "index_likes_on_user_id"
@@ -68,8 +64,6 @@ ActiveRecord::Schema.define(version: 2020_07_30_215430) do
 
   create_table "tags", force: :cascade do |t|
     t.string "title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

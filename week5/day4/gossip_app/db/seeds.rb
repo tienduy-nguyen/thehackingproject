@@ -40,6 +40,28 @@ user3 = User.find(3)
 user4 = User.find(4)
 user5 = User.find(5)
 
+
 msg = PrivateMessage.create(content: "Hey, I just send you a message! ", sender: user1, recipient: user2)
 
 # Create 20 comments
+20.times do |i|
+  user = User.find(rand(1..10))
+  gossip  =Gossip.find(rand(1..20))
+  Comment.create(content: "Hi, I love your gossip!", user:user,gossip: gossip)
+end
+
+# Create 20 likes
+20.times do |i|
+  user = User.find(rand(1..10))
+  gossip  =Gossip.find(rand(1..20))
+  comment = Comment.find(rand(1..20))
+  choice = rand(1..2)
+  if choice == 1
+    Like.create(user:user,gossip: gossip)
+  else
+    Like.create(user:user,comment: comment)
+  end
+end
+
+puts "End of the world!!!!"
+puts "--------------------"

@@ -4,7 +4,6 @@ class CreateLikes < ActiveRecord::Migration[5.2]
       t.bigint :user_id
       t.bigint :gossip_id
       t.bigint :comment_id
-      t.timestamps
     end
 
     add_index :likes, :user_id

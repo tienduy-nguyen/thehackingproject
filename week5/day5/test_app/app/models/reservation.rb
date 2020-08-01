@@ -11,6 +11,7 @@ class Reservation < ApplicationRecord
     valid = self.start_date && self.end_date && self.start_date < self.end_date
     errors.add(:start_date, "Must before end date") unless valid
   end
+  
   def duration
     return (self.end_date - self.start_date).to_i
   end

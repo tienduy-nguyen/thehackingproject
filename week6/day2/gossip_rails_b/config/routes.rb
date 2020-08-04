@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
-  root to:'welcome#show'
+  root to: 'static_pages#home'
 
-  get 'team', to: 'team#show'
-  get 'contact', to: 'contact#show'
-  get 'welcome/:first_name', to: 'welcome#show'
-  get 'gossips/:id', to: 'gossip#gossip', as:'gossip'
+  get 'team', to: 'static_pages#team'
+  get 'contact', to: 'static_pages#contact'
+  get 'welcome/:first_name', to: 'static_pages#home'
+  get 'welcome', to: 'users#new'
+  post 'welcome', to: 'users#create'
 
-  get 'profile/:first_name', to: 'profile#profile', as: 'profile'
+
+  resources :users, except: [:destroy] 
+  resources :gossips
 end
+

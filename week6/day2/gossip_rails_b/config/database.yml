@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: the_gossip_project_views_development
+  database: Gossip_db
   host: localhost
   username: postgres
   password: postgres

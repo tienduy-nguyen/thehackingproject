@@ -12,7 +12,7 @@
     <div class="container mt-2">
       <h1>Welcome <%= @first_name %> </h1>
 
-      <h4 class="mb-5 mt-3">Voici la liste de potins de tous moussaillons at THP</h4>
+      <h4 class="mb-5 mt-3">Voici la liste de potins de tous moussaillons chez THP</h4>
         <div class="row mb-3">
       <% Gossip.all.each do |gossip|%>
     
@@ -35,7 +35,7 @@
             </div>
 
             <div class="card-body ">
-              <%= link_to gossip.id.to_s + "-" +gossip.title, gossip_path(:id => gossip.id) %>
+              Gossip n° <%= gossip.id.to_s%>: <%= link_to  gossip.title, gossip_path(:id => gossip.id) %>
             </div>
 
           </div>

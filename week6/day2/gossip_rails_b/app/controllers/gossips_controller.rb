@@ -17,12 +17,14 @@ class GossipsController < ApplicationController
 
   # POST /gossips
   def create 
-    @gossip = Gossip.new(title: gossip_params[:title], content: gossip_params[:content], user: User.all.sample)
+    @gossip = Gossip.new(gossip_params)
     if @gossip.save
       flash[:success] = "Create Gossip Success!"
       redirect_to root_path
     else
-      flash[:error] = "Create Gossip Fail!"
+      @gossip.errors.full_messages.each do |message|
+        flash[:error] = message
+      end
       render :new
     end
   end
@@ -44,10 +46,10 @@ class GossipsController < ApplicationController
 
   private
     def gossip_params
-      params.require(:gossip).permit(:title, :content)
+      params.require(:gossip).permit(:title, :content, :user)
     end
     def gossip_filter
-      @flat = Flat.find(params[:id])
+      @gossip = Gossip.find(params[:id])
     end
 
 end

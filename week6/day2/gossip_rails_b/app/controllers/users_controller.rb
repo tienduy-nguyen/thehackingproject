@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :user_filter, only: [:show, :edit, :update, :destroy]
   # GET /users
   def index
     if params[:query].present?
@@ -12,16 +12,17 @@ class UsersController < ApplicationController
 
   # GET /users/:id
   def show
-
+    @user = User.find_by(:id => params[:id])
   end
 
   # GET /users/new
   def new
-    @gossip = Gossip.new
+    @user = User.new
   end
 
   # POST /users
   def create 
+    @user = User.new()
   end
 
   # GET /users/:id/edit
@@ -38,6 +39,14 @@ class UsersController < ApplicationController
   def destroy
 
   end
+
+  private
+    def user_params
+      params.require(:user).permit(:first_name, :last_name, :age, :email, :description, :city)
+    end
+    def user_filter
+      @user = User.find(params[:id])
+    end
 
 
 end

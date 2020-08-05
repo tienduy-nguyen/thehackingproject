@@ -38,6 +38,11 @@
   }
 }
 
+.gossip-lastest-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .blog-listing {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -54,6 +59,7 @@
   background: #ffffff;
   margin-top: 15px;
   margin-bottom: 15px;
+  height: 280px;
 
   &:hover {
     box-shadow: 0px 1px 8px 2px rgba(0, 0, 0, 0.25);
@@ -62,8 +68,8 @@
 
 .blog-grid .blog-img {
   position: relative;
-  height: 150px;
-  width: 600px;
+  min-height: 150px;
+  width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .blog-card-user-name {
@@ -85,23 +91,24 @@
   a:hover {
     text-decoration: none;
   }
+  span {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700;
+  }
 }
-.blog-grid .blog-img .blog-card-user-name span {
-  font-size: 22px;
-  line-height: 22px;
-  font-weight: 700;
-}
+
 .blog-img-heading {
   padding: 4px;
   margin-top: 80px;
-  margin-right: 75px;
-
-  float: right;
+  margin-right: 10px;
   min-width: 200px;
-
+  float: right;
   span {
     display: block;
+    padding: auto 20px;
     top: 20%;
+    text-align: end;
   }
 }
 
@@ -134,4 +141,20 @@
 }
 .tag-cloud a:hover {
   background: #fc5356;
+}
+
+// Carousel
+.carousel-nav-icon {
+  height: 48px;
+  width: 48px;
+}
+.carousel-item {
+  .col,
+  .col-sm,
+  .col-md {
+    margin: 8px;
+
+    background-size: cover;
+    background-position: center center;
+  }
 }

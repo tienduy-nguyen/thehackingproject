@@ -46,7 +46,7 @@ class GossipsController < ApplicationController
 
   private
     def gossip_params
-      params.require(:gossip).permit(:title, :content, :user)
+      params.require(:gossip).permit(:title, :content, :user_id)
     end
     def gossip_filter
       @gossip = Gossip.find(params[:id])

@@ -1,0 +1,42 @@
+   <div class="row mb-3">
+
+      <% @gossips.each do |gossip|%>
+        <div class="col-md-6 mb-2">
+          <div class="card p-2">
+            <div class="card-heading d-flex">
+              <div class="pull-left d-flex author">
+                <div class="pull-left mr-2">
+                  <img src="http://bootdey.com/img/Content/user_1.jpg" class="rounded-circle img-fluid"
+                    alt="user profile image" style="height:40px;width:40px">
+                </div>
+                <div class=" pt-1" style="positon: relative">
+                  <%= link_to gossip.user.first_name, user_path(:id => gossip.user.id), :class =>'h5'%>
+                  
+                  <br><small class="text-muted"
+                    style="margin-top:-1px;position:absolute"><sup><%= gossip.created_at %></sup></small>
+                </div>
+              </div>
+
+               <!-- Edit - Delete -->
+               <div class="ml-auto d-flex">
+                    <div>
+                      <%= link_to edit_gossip_path(:id => gossip.id) do %>
+                          <i class="fas fa-edit mr-2 text-info"></i>
+                      <% end %>
+                    </div>
+
+                    <div>
+                    <a href="<%= gossip_path(gossip.id) %>" class="btn p-0" data-confirm="Are you sure want to delete it?" data-method="DELETE"><i class="fas fa-trash text-danger"></i></a>
+                    </div>
+              </div>
+
+            </div>
+
+            <div class="card-body ">
+              Gossip n° <%= gossip.id.to_s%>: <%= link_to  gossip.title, gossip_path(:id => gossip.id) %>
+            </div>
+
+          </div>
+        </div>
+      <%end%>
+      </div>

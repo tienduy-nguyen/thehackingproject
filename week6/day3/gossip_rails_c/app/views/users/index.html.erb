@@ -1,25 +1,40 @@
-<p id="notice"><%= notice %></p>
+<!DOCTYPE html>
+<html>
 
-<h1>Users</h1>
+<head>
+  <% content_for :title, "Users" %>
+</head>
+<body>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<!-- MAIN BODY -->
+  <div class="container py-4" style="margin-top: 20px">
+    <h2 class="mb-4">List of all availables users</h2>
+      <div class="row">
+      <% @users.each do |user| %>
 
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+        <div class="mb-2 col-6 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <div class="pull-left d-flex user">
+                    <div class="pull-left mr-2">
+                        <img src="http://bootdey.com/img/Content/user_1.jpg" class="rounded-circle img-fluid" alt="user profile image" style="height:35px;width:35px">
+                    </div>
+                    <div class="title h5 pt-1">
+                        <a href="<%= user_path(user.id) %>"><b><%= user.first_name %></b></a>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<br>
+        <div>
 
-<%= link_to 'New User', new_user_path %>
+      <% end %>
+      </div>
+  </div>
+
+</body>
+
+</html>
+
+  

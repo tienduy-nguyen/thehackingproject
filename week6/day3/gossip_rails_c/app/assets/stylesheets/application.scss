@@ -10,4 +10,9 @@
   margin-bottom: 0;
   opacity: 0.9;
 }
-@import 'gossip';
+
+html {
+  scroll-behavior: smooth;
+}
+@import 'gossips';
+@import 'static_pages';

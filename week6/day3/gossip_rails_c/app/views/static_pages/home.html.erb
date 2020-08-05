@@ -6,14 +6,29 @@
 </head>
 <body>
 
+  <!-- Header Landing Page -->
+  <section id="welcome-section" class="py-5 mb-5">
+    <div class="dark-overlay">
+        <div class="welcome-inner container align-middle">
+            <div class="row flex-column text-center">
+                <h1 id="welcome-text"  class="display-2">Welcome To Our Project</h1>
+                <p class="lead">We make the life become more meaningful, hapiness.</p>
+            <a class="btn btn-primary btn-lg m-auto" href="#line-welcome" role="button">Learn more >> </a>
+            </div>
+        </div>
+    </div>
+  
+  </section>
+   <hr id="line-welcome">
 
-  <!-- MAIN BODY -->
-  <section id="gossip-section" class="py-1 mb-5">
+
+  <!-- GOSSIP LIST-->
+  <section id="gossip-section" class="py-1 mb-5" style="margin-top: 80px;">
     <div class="container">
       <div class="row mb-4">
         <div class="col-lg-10">
-          <h1>Welcome <%= @first_name %> </h1>
-          <h4 class="mt-2">Voici la liste de potins de tous moussaillons chez THP</h4>
+          <h1>Hi <%= @first_name %> </h1>
+          <h4 class="mt-2">Here is the list gossips of all Moussaillons at THP</h4>
         </div>
         <div class="col-lg-2 mt-2">
           <div>
@@ -26,7 +41,7 @@
       </div>
       
       <div class="row mb-3">
-      <% Gossip.all.each do |gossip|%>
+      <% @gossips.each do |gossip|%>
     
 
         <div class="col-md-6 mb-2">
@@ -44,6 +59,7 @@
                     style="margin-top:-1px;position:absolute"><sup><%= gossip.created_at %></sup></small>
                 </div>
               </div>
+             
             </div>
 
             <div class="card-body ">
@@ -52,6 +68,7 @@
 
           </div>
         </div>
+
       <%end%>
       </div>
     </div>

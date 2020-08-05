@@ -15,9 +15,15 @@ class UsersController < ApplicationController
     @user = User.find_by(:id => params[:id])
   end
 
+  # GET /users/:first_name
+  def show_by_first_name
+    @user = User.find_by(:first_name => params[:first_name])
+  end
+
   # GET /users/new
   def new
     @user = User.new
+    @city_id = City.all.sample.id
   end
 
   # POST /users
@@ -27,7 +33,8 @@ class UsersController < ApplicationController
 
   # GET /users/:id/edit
   def edit
-
+    @user = User.find(params[:id])
+    @city_id = City.all.sample.id
   end
 
   # PUT /users/:id/edit
@@ -45,7 +52,7 @@ class UsersController < ApplicationController
       params.require(:user).permit(:first_name, :last_name, :age, :email, :description, :city)
     end
     def user_filter
-      @user = User.find(params[:id])
+      @user = User.find_by(:id => params[:id]) or not_found
     end
 
 

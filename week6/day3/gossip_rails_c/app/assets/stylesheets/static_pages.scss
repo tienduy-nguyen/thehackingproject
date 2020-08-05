@@ -1,3 +1,39 @@
-// Place all the styles related to the StaticPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#welcome-section {
+  position: relative;
+  min-height: 100vh;
+  background-image: image-url('welcome.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -100px;
+
+  .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .welcome-inner {
+    margin-top: 20em;
+    margin-bottom: auto;
+    color: #fff;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  #welcome-section {
+    #welcome-text {
+      font-size: 4rem;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  #welcome-section {
+    #welcome-text {
+      font-size: 3.5rem;
+    }
+  }
+}

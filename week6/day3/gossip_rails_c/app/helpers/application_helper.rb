@@ -5,7 +5,7 @@ module ApplicationHelper
   
   def flash_class(level)
     case level
-        when "notice "
+        when "notice"
           return "alert alert-info"
         when "success"
           return "alert alert-success"

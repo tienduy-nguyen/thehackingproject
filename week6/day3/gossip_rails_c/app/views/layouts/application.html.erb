@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %> | The Gossips Project</title>
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+  <body>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"id="main-nav">
+    <div class="container">
+     <a class="navbar-brand" href="/">Gossip Project</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item <%= active_class(root_path) %>">
+       <%= link_to "Home", root_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item <%= active_class(team_path) %>">
+          <%= link_to "Users", users_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item <%= active_class(team_path) %>">
+          <%= link_to "Team", team_path, class: "nav-link" %>
+      </li>
+      
+      <li class="nav-item <%= active_class(contact_path) %>">
+        <%= link_to "Contact", contact_path, class: "nav-link" %>
+      </li>
+    </ul>
+
+    </div>
+    </div>
+
+</nav>
+
+
+
+<!-- Main content of body -->
+<div class="container" style="margin-top:80px; margin-bottom:60px;">
+
+<% flash.each do |key, value| %>
+    <div class="mb-3 alert-dismissible text-center p-2 <%= flash_class(key) %>">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <%= value unless value.blank? %>
+    </div>
+
+<% end %>
+
+  <%= yield %>
+</div>
+
+  <!-- FOOTER -->
+  <footer id="main-footer" class="text-center pt-3 pb-0 mb-0 bg-light bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Copyright &copy;
+            <span id="year"></span> The Best Team</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script>
+    $('#year').text(new Date().getFullYear());
+    $(".alert" ).fadeOut(8000);
+  </script>
+
+</body>
+</html>

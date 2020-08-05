@@ -19,62 +19,60 @@
     </div>
   
   </section>
-   <hr id="line-welcome">
+   <hr class="p-0 m-0" id="line-welcome">
 
 
-  <!-- GOSSIP LIST-->
-  <section id="gossip-section" class="py-1 mb-5" style="margin-top: 80px;">
-    <div class="container">
-      <div class="row mb-4">
-        <div class="col-lg-10">
-          <h1>Hi <%= @first_name %> </h1>
-          <h4 class="mt-2">Here is the list gossips of all Moussaillons at THP</h4>
-        </div>
-        <div class="col-lg-2 mt-2">
-          <div>
-          <%= link_to new_gossip_path, :class => 'btn btn-success text-white' do %>
-            <i class="fas fa-plus"></i><span> New Gossip</span>
-          <% end %>
-          
-          </div>
-        </div>
-      </div>
-      
-      <div class="row mb-3">
-      <% @gossips.each do |gossip|%>
-    
-
-        <div class="col-md-6 mb-2">
-          <div class="card p-2">
-            <div class="card-heading d-flex">
-              <div class="pull-left d-flex author">
-                <div class="pull-left mr-2">
-                  <img src="http://bootdey.com/img/Content/user_1.jpg" class="rounded-circle img-fluid"
-                    alt="user profile image" style="height:40px;width:40px">
-                </div>
-                <div class=" pt-1" style="positon: relative">
-                  <%= link_to gossip.user.first_name, user_path(:id => gossip.user.id), :class =>'h5'%>
-                  
-                  <br><small class="text-muted"
-                    style="margin-top:-1px;position:absolute"><sup><%= gossip.created_at %></sup></small>
-                </div>
+<section class="blog-listing gray-bg">
+        <div class="container">
+         <h1>Welcome <%= @first_name %> </h1>
+          <h4 class="mt-2">Here is the list gossips of all Moussaillons at THP</h4><br>
+          <div class="row">
+          <% @gossips.each do |gossip| %>
+          <!-- Card Gossip -->
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                  <div class="blog-grid">
+                      <div class="blog-img">
+                          <div class="blog-card-user-name">
+                            <a href="<%= user_path(gossip.user.id)%>" >
+                              <i class="fas fa-user"></i> <span><%= gossip.user.first_name %></span>
+                            </a>
+                          </div>
+                          <div class="blog-img-heading">
+                              <span><small>Created at: <%= gossip.created_at %></small></span>
+                              <span><small>Updated at: <%= gossip.updated_at %></small></span>
+                          </div>
+                      </div>
+                      <div class="blog-info">
+                          <h5><a href="<%= gossip_path(gossip.id) %>"><%= gossip.title %></a></h5>
+                          <p class=""><%= truncate(gossip.content, :length => 200) %></p>
+                          <div class="btn-bar">
+                             <% gossip.gossip_tags do |tag|%>
+                                <span class="card-tag">
+                                  tag
+                                </span>
+                             <% end %>
+                          </div>
+                      </div>
+                  </div>
               </div>
-             
-            </div>
+          <!-- End Card Gossip -->
+      <% end %>
 
-            <div class="card-body ">
-              Gossip n° <%= gossip.id.to_s%>: <%= link_to  gossip.title, gossip_path(:id => gossip.id) %>
-            </div>
 
           </div>
-        </div>
-
-      <%end%>
       </div>
-    </div>
-  </section>
+    </section>
 
+  <script>
+  let colors = ['#E6E6FA', '#FFF0F5', '#87CEFA','#FFB6C1','#FFA07A','#B0C4DE', '#66CDAA','#D3D3D3'];
+  
+  cards = document.getElementsByClassName("blog-img");
+   Array.from(cards).forEach( ca => {
+     let random_color = colors[Math.floor(Math.random() * colors.length)];
+     ca.style.background = random_color;
+   })
 
+  </script>
 
 
 </body>

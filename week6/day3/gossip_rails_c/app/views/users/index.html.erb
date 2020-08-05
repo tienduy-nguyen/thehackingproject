@@ -4,37 +4,53 @@
 <head>
   <% content_for :title, "Users" %>
 </head>
+
 <body>
 
-<!-- MAIN BODY -->
+  <!-- MAIN BODY -->
   <div class="container py-4" style="margin-top: 20px">
-    <h2 class="mb-4">List of all availables users</h2>
-      <div class="row">
-      <% @users.each do |user| %>
+    <h2 class="mb-4">List of all available users</h2>
+    <div class="row">
 
-        <div class="mb-2 col-6 col-sm-6 col-md-4 col-lg-3">
-          <div class="card">
-            <div class="card-body">
-              <div class="pull-left d-flex user">
-                    <div class="pull-left mr-2">
-                        <img src="http://bootdey.com/img/Content/user_1.jpg" class="rounded-circle img-fluid" alt="user profile image" style="height:35px;width:35px">
-                    </div>
-                    <div class="title h5 pt-1">
-                        <a href="<%= user_path(user.id) %>"><b><%= user.first_name %></b></a>
-                    </div>
+      <% @users.each do |user| %>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-4">
+        <div class="card card-user">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-4">
+                <div class="pull-left mr-2">
+                  <img src="http://bootdey.com/img/Content/user_1.jpg" class="rounded-circle img-fluid"
+                    alt="user profile image">
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="card-user-item">
+                  <a href="<%= user_path(user.id) %>" class="h5"><%= user.first_name%> <%= user.last_name%></a>
+                </div>
+                <div class="card-user-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span><%= user.city.name %></span>
+                </div>
+                <div class="card-user-item">
+                  <i class="fas fa-envelope"></i>
+                  <span><%= user.email %></span>
+                </div>
+                <div class="card-user-item">
+                  <i class="fas fa-at"></i>
+                  <span>Age: <%= user.age %></span>
+                </div>
               </div>
             </div>
+
           </div>
         </div>
-
-        <div>
+      </div>
 
       <% end %>
-      </div>
+
+    </div>
   </div>
 
 </body>
 
 </html>
-
-  

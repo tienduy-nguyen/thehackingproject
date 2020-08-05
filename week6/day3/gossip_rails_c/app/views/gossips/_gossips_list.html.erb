@@ -33,7 +33,9 @@
             </div>
 
             <div class="card-body ">
-              Gossip n° <%= gossip.id.to_s%>: <%= link_to  gossip.title, gossip_path(:id => gossip.id) %>
+            <span>Gossip n° <%= gossip.id.to_s%>: <%= link_to  gossip.title, gossip_path(:id => gossip.id) %><br>
+            </span>
+               <span class="text-muted"><%= truncate(gossip.content, :length => 200) %></span>
             </div>
 
           </div>

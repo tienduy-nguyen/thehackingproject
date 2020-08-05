@@ -12,45 +12,48 @@
     <h2 class="mb-4">List of all available users</h2>
     <div class="row">
 
+      <% @users.each do |user| %>
       <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-2">
         <div class="card">
           <div class="card-body">
-            <div class="pull-left d-flex user">
-              <div class="pull-left mr-2">
-                <img src="http://bootdey.com/img/Content/user_1.jpg" class="rounded-circle img-fluid"
-                  alt="user profile image" style="height:35px;width:35px">
+            <div class="row">
+              <div class="col-4">
+                <div class="pull-left mr-2">
+                  <img src="http://bootdey.com/img/Content/user_1.jpg" class="rounded-circle img-fluid"
+                    alt="user profile image">
+                </div>
               </div>
-              <div class="card-user-info">
-                <a href="<%= user_path(user.id) %>"><b><%= user.first_name user.last_name%></b></a>
+              <div class="col-8">
+                <div class="">
+                  <a href="<%= user_path(user.id) %>"><b><%= user.first_name user.last_name%></b></a>
+                </div>
+                <div class="d-flex">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>user.city.name</span>
+                </div>
+                <div class="d-flex">
+                  <i class="fas fa-envelope-square"></i>
+                  <span>user.city.name</span>
+                </div>
+                <div class="d-flex">
+                  <i class="fas fa-envelope-square"></i>
+                  <span>user.email</span>
+                </div>
+                <div class="d-flex">
+                  <i class="fas fa-life-ring"></i>
+                  <span>user.age</span>
+                </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
 
-      <% @users.each do |user| %>
+      <% end %>
 
-      <div class="mb-2 col-6 col-sm-6 col-md-4 col-lg-3">
-        <div class="card">
-          <div class="card-body">
-            <div class="pull-left d-flex user">
-              <div class="pull-left mr-2">
-                <img src="http://bootdey.com/img/Content/user_1.jpg" class="rounded-circle img-fluid"
-                  alt="user profile image" style="height:35px;width:35px">
-              </div>
-              <div class="title h5 pt-1">
-                <a href="<%= user_path(user.id) %>"><b><%= user.first_name %></b></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div>
-
-        <% end %>
-      </div>
     </div>
+  </div>
 
 </body>
 

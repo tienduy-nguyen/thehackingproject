@@ -2,12 +2,7 @@ class UsersController < ApplicationController
   before_action :user_filter, only: [:show, :edit, :update, :destroy]
   # GET /users
   def index
-    if params[:query].present?
-      @query = params[:query]
-      @users = User.where("name iLike '%#{params[:query]}%'")
-    else
-      @users = User.all
-    end
+    @users = User.all
   end
 
   # GET /users/:id
@@ -54,6 +49,4 @@ class UsersController < ApplicationController
     def user_filter
       @user = User.find_by(:id => params[:id]) or not_found
     end
-
-
 end

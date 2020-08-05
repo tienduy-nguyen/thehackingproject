@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   resources :gossips do
     resources :comments
   end
+  resources :tags
 
   resources :comments do
     resources :comments

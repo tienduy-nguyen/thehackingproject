@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% content_for :title, "Welcome" %>
+</head>
+
+<body>
+
+  <!-- Header Landing Page -->
+  <section id="welcome-section" class="py-5 mb-5">
+    <div class="dark-overlay">
+      <div class="welcome-inner container align-middle">
+        <div class="row flex-column text-center">
+          <h1 id="welcome-text" class="display-2">Welcome To Our Project</h1>
+          <p class="lead">We make the life become more meaningful, hapiness.</p>
+          <button class="btn btn-primary btn-lg m-auto" onClick='window.location="#line-welcome"'>Learn more >>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <hr class="p-0 m-0" id="line-welcome">
+  <br>
+
+  <section class="lastes-posts-section d-md-block d-none d-sm-none">
+    <div class="my-5 text-center container-fluid">
+      <div class="row mb-2">
+        <div class="col text-center">
+          <h1 class="mt-2">The lastest gossips of all Mousaillons at THP</h1>
+        </div>
+      </div>
+      <div class="row d-flex align-items-center">
+        <div class="col-1 d-flex align-items-center justify-content-center">
+          <a href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <div class="carousel-nav-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path
+                  d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z" />
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="col-10">
+          <!--Start carousel-->
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <% @lastest_1.each do |gossip| %>
+                  <% @tags = get_tags_by_gossipid(gossip.id) %>
+                  <!-- Card Gossip -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="blog-grid">
+                      <div class="blog-img">
+                        <div class="blog-card-user-name">
+                          <a href="<%= user_path(gossip.user.id)%>">
+                            <i class="fas fa-user"></i> <span><%= gossip.user.first_name %></span>
+                          </a>
+                        </div>
+                        <div class="blog-img-heading">
+                          <span><small>Created at: <%= gossip.created_at %></small></span>
+                          <span><small>Updated at: <%= gossip.updated_at %></small></span>
+                        </div>
+                      </div>
+                      <div class="blog-info">
+                        <div class="blog-info-text">
+                          <h5><a href="<%= gossip_path(gossip.id) %>"><%= gossip.title %></a></h5>
+                          <p class=""><%= truncate(gossip.content, :length => 90) %></p>
+                        </div>
+                        <div class="btn-bar">
+                          <% @tags.each do |tag|%>
+                          <a class="card-tag" href="<%= tag.title %>">
+                            <%= tag.title %>
+                          </a>
+                          <% end %>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Card Gossip -->
+                  <% end %>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <% @lastest_2.each do |gossip| %>
+                  <% @tags = get_tags_by_gossipid(gossip.id) %>
+                  <!-- Card Gossip -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="blog-grid">
+                      <div class="blog-img">
+                        <div class="blog-card-user-name">
+                          <a href="<%= user_path(gossip.user.id)%>">
+                            <i class="fas fa-user"></i> <span><%= gossip.user.first_name %></span>
+                          </a>
+                        </div>
+                        <div class="blog-img-heading">
+                          <span><small>Created at: <%= gossip.created_at %></small></span>
+                          <span><small>Updated at: <%= gossip.updated_at %></small></span>
+                        </div>
+                      </div>
+                      <div class="blog-info">
+                        <div class="blog-info-text">
+                          <h5><a href="<%= gossip_path(gossip.id) %>"><%= gossip.title %></a></h5>
+                          <p class=""><%= truncate(gossip.content, :length => 90) %></p>
+                        </div>
+                        <div class="btn-bar">
+                          <% @tags.each do |tag|%>
+                          <a class="card-tag" href="<%= tag.title %>">
+                            <%= tag.title %>
+                          </a>
+                          <% end %>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Card Gossip -->
+                  <% end %>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <% @lastest_3.each do |gossip| %>
+                  <% @tags = get_tags_by_gossipid(gossip.id) %>
+                  <!-- Card Gossip -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="blog-grid">
+                      <div class="blog-img">
+                        <div class="blog-card-user-name">
+                          <a href="<%= user_path(gossip.user.id)%>">
+                            <i class="fas fa-user"></i> <span><%= gossip.user.first_name %></span>
+                          </a>
+                        </div>
+                        <div class="blog-img-heading">
+                          <span><small>Created at: <%= gossip.created_at %></small></span>
+                          <span><small>Updated at: <%= gossip.updated_at %></small></span>
+                        </div>
+                      </div>
+                      <div class="blog-info">
+                        <div class="blog-info-text">
+                          <h5><a href="<%= gossip_path(gossip.id) %>"><%= gossip.title %></a></h5>
+                          <p class=""><%= truncate(gossip.content, :length => 90) %></p>
+                        </div>
+                        <div class="btn-bar">
+                          <% @tags.each do |tag|%>
+                          <a class="card-tag" href="<%= tag.title %>">
+                            <%= tag.title %>
+                          </a>
+                          <% end %>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Card Gossip -->
+                  <% end %>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <% @lastest_4.each do |gossip| %>
+                  <% @tags = get_tags_by_gossipid(gossip.id) %>
+                  <!-- Card Gossip -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="blog-grid">
+                      <div class="blog-img">
+                        <div class="blog-card-user-name">
+                          <a href="<%= user_path(gossip.user.id)%>">
+                            <i class="fas fa-user"></i> <span><%= gossip.user.first_name %></span>
+                          </a>
+                        </div>
+                        <div class="blog-img-heading">
+                          <span><small>Created at: <%= gossip.created_at %></small></span>
+                          <span><small>Updated at: <%= gossip.updated_at %></small></span>
+                        </div>
+                      </div>
+                      <div class="blog-info">
+                        <div class="blog-info-text">
+                          <h5><a href="<%= gossip_path(gossip.id) %>"><%= gossip.title %></a></h5>
+                          <p class=""><%= truncate(gossip.content, :length => 90) %></p>
+                        </div>
+                        <div class="btn-bar">
+                          <% @tags.each do |tag|%>
+                          <a class="card-tag" href="<%= tag.title %>">
+                            <%= tag.title %>
+                          </a>
+                          <% end %>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Card Gossip -->
+                  <% end %>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!--End carousel-->
+        </div>
+        <div class="col-1 d-flex align-items-center justify-content-center"><a href="#carouselExampleIndicators"
+            data-slide="next">
+            <div class="carousel-nav-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path
+                  d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z" />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- End Lastest Post Section -->
+
+  <!-- All Gossips Section -->
+  <section class="blog-listing gray-bg">
+    <div class="container">
+      <h1 class="mt-5 text-center">Here is the list of all gossips</h1><br>
+      <div class="row">
+        <% @gossips.each do |gossip| %>
+        <% @tags = get_tags_by_gossipid(gossip.id) %>
+        <!-- Card Gossip -->
+        <div class="col-sm-12 col-md-12 col-lg-4">
+          <div class="blog-grid">
+            <div class="blog-img">
+              <div class="blog-card-user-name">
+                <a href="<%= user_path(gossip.user.id)%>">
+                  <i class="fas fa-user"></i> <span><%= gossip.user.first_name %></span>
+                </a>
+              </div>
+              <div class="blog-img-heading">
+                <span><small>Created at: <%= gossip.created_at %></small></span>
+                <span><small>Updated at: <%= gossip.updated_at %></small></span>
+              </div>
+            </div>
+            <div class="blog-info">
+              <div class="blog-info-text">
+                <h5><a href="<%= gossip_path(gossip.id) %>"><%= gossip.title %></a></h5>
+                <p class=""><%= truncate(gossip.content, :length => 90) %></p>
+              </div>
+              <div class="btn-bar">
+                <% @tags.each do |tag|%>
+                <a class="card-tag" href="<%= tag.title %>">
+                  <%= tag.title %>
+                </a>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Card Gossip -->
+        <% end %>
+
+      </div>
+    </div>
+  </section>
+  <!-- End all Gossip Section -->
+
+  <script>
+    let colors = ['#E6E6FA', '#FFF0F5', '#87CEFA', '#FFB6C1', '#FFA07A', '#B0C4DE', '#66CDAA', '#D3D3D3'];
+
+    cards = document.getElementsByClassName("blog-img");
+    Array.from(cards).forEach(ca => {
+      let random_color = colors[Math.floor(Math.random() * colors.length)];
+      ca.style.background = random_color;
+    });
+
+    // Configure Slider
+    $('.carousel').carousel({
+      interval: 6000,
+      pause: 'hover'
+    });
+  </script>
+
+
+
+</body>
+
+</html>

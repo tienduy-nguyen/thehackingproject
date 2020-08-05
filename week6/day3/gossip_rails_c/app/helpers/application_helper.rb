@@ -18,4 +18,25 @@ module ApplicationHelper
     end
   end
 
+  def get_tags_by_gossipid(gossip_id)
+    @tags =[]
+    gossip_tags = GossipTag.where(gossip_id: gossip_id)
+    if !gossip_tags.nil?
+      begin
+        gossip_tags.each do |go|
+          if !@tags.include?(go.tag)
+            @tags.push(go.tag)
+          end
+        end
+      rescue => exception
+        @tag.push(gossip_tags.tag)
+      end
+    end
+    return @tags
+  end
+
+  def get_time(time_utc)
+    return time_utc.strftime("%Y-%m%-d %k:%M:%S")
+  end
+
 end

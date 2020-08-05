@@ -1,11 +1,11 @@
 
-User.destroy_all
-City.destroy_all
-Gossip.destroy_all
-PrivateMessage.destroy_all
-Comment.destroy_all
-GossipTag.destroy_all
-Tag.destroy_all
+# # # User.destroy_all
+# # # City.destroy_all
+# # # Gossip.destroy_all
+# # # PrivateMessage.destroy_all
+# # # Comment.destroy_all
+# # # GossipTag.destroy_all
+# # # Tag.destroy_all
 
 10.times do
   City.create(
@@ -29,16 +29,18 @@ puts "Users created!"
 
 20.times do
   Gossip.create(
-    title: Faker::Movie.title,
-    content: Faker::Quote.famous_last_words,
+    title: Faker::Movie.title[0..11],
+    content: Faker::Quote.matz,
     user: User.all.sample,
   )
 end
 puts "Gossips created!"
 
 10.times do
+  title = Faker::Dessert.variety.strip.downcase
+  title.gsub!(/\s+/, '-')
   Tag.create(
-    title: "#" + Faker::Dessert.variety,
+    title: title,
   )
 end
 puts "Tags created!"

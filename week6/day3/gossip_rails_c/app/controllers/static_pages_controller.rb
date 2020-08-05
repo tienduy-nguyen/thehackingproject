@@ -14,7 +14,8 @@ class StaticPagesController < ApplicationController
     @lastest_3= @lastest_gossips[8..11]
     @lastest_4 = @lastest_gossips[12..15]
 
-    # @tags = @gossip.gossip_tags
-    # p @tags
+    
+  
   end
+
 end

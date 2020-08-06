@@ -13,7 +13,7 @@
       <div class="col-lg-10">
         <h1 class="mt-4"><%= @gossip.title %></h1>
         <p class="lead">by
-          <a href="#"><%= @gossip.user.first_name%> <%= @gossip.user.last_name %></a>
+          <a href="<%= user_path(@gossip.user.id)%>"><%= @gossip.user.first_name%> <%= @gossip.user.last_name %></a>
         </p>
         <hr>
         <!-- Date/Time -->

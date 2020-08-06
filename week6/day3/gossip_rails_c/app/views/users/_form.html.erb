@@ -1,8 +1,7 @@
 <%= form_for @user do |f| %>
   <div class="form-group">
     <ul class="p-0 m-0 text-danger">
-      <li class="nav-link p-0 m-0">* <small>Title length must be between 3 and 14 characters</small></li>
-      <li class="nav-link p-0 m-0">* <small>Content must be not empty</small></li>
+      <li class="nav-link p-0 m-0">* <small>First name, Email, Description are required.</small></li>
     </ul>
   </div>
 
@@ -25,12 +24,12 @@
 
   <div class="form-group">
     <%= f.label :description %>
-    <%= f.text_area :description, required: true, class: 'form-control', rows: '5', placeholder: '* Description' %>
+    <%= f.text_area :description, required: true, class: 'form-control', rows: '10', placeholder: '* Description' %>
   </div>
   <%= hidden_field_tag "user[city_id]", @city_id %>
 
   <div class="mt-3 d-flex">
     <%= f.submit class: 'btn btn-primary' %>
-    <%= link_to 'Back To Gossips Page', users_path, class: 'btn btn-dark ml-auto' %>
+    <%= link_to 'Back To Users Page', users_path, class: 'btn btn-dark ml-auto' %>
   </div>
 <% end %>

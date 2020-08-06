@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   before_action :user_filter, only: [:show, :edit, :update, :destroy]
   # GET /users
   def index
-    @users = User.all
+    @users = User.all.order(updated_at: :desc)
   end
 
   # GET /users/:id
@@ -23,7 +23,16 @@ class UsersController < ApplicationController
 
   # POST /users
   def create 
-    @user = User.new()
+    @user = User.new(user_params)
+    if @user.save
+      flash[:sucess] = "Create User Sucessfull!"
+      redirect_to users_path
+    else
+      @user.errors.full_messages.each do |message|
+        flash[:error] = message
+      end
+      render :new
+    end
   end
 
   # GET /users/:id/edit
@@ -34,7 +43,16 @@ class UsersController < ApplicationController
 
   # PUT /users/:id/edit
   def update
-
+    @user = User.find(params[:id])
+    if @user.update(user_params)
+      flash[:success] = "Update User succesfull!"
+      redirect_to users_path
+    else
+      @user.errors.full_messages.each do |message|
+        flash[:error] = message
+      end
+      render :edit
+    end
   end
 
   # DELETE /uses/:id

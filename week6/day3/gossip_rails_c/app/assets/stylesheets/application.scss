@@ -11,6 +11,22 @@
   opacity: 0.9;
 }
 
+.card-tag {
+  display: inline-block;
+  padding: 4px 15px;
+  font-size: 13px;
+  color: #ffffff;
+  background: #20247b;
+  border-radius: 4px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+.card-tag:hover {
+  background: #fc5356;
+  text-decoration: none;
+}
+
 html {
   scroll-behavior: smooth;
 }

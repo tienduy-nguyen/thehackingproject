@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% content_for :title, "Gossip Detail"%>
+</head>
+
+<body>
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <!-- Post Content Column -->
+      <div class="col-lg-10">
+        <h1 class="mt-4"><%= @gossip.title %></h1>
+        <p class="lead">by
+          <a href="#"><%= @gossip.user.first_name%> <%= @gossip.user.last_name %></a>
+        </p>
+        <hr>
+        <!-- Date/Time -->
+        <p class="text-muted">Posted on <%= get_time_verbose(@gossip.created_at)%></p>
+        <hr>
+        <img class="img-fluid rounded" src="https://source.unsplash.com/random?workspace" alt="">
+        <hr>
+        <!-- Post Content -->
+        <p class="lead"><% @gossip.content %></p>
+        <hr>
+      </div>
+
+      <!-- Tags Widget -->
+      <% @tags = get_tags_by_gossipid(@gossip.id) %>
+      <div class="col-lg-2 card my-4 p-0" style="height: 100px; overflow-y: scroll;">
+        <h5 class="card-header ">Tags</h5>
+        <div class="card-body">
+          <div class="row">
+            <div class="btn-bar">
+              <% @tags.each do |tag|%>
+              <a class="card-tag" href="<%= tag.title %>">
+                <%= tag.title %>
+              </a>
+              <% end %>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <!-- Comments Form -->
+      <div class="col-lg-12 card my-4">
+        <h5 class="card-header">Leave a Comment:</h5>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Single Comment -->
+      <div class="media mb-4">
+        <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+        <div class="media-body">
+          <h5 class="mt-0">Commenter Name</h5>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+          vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
+          lacinia congue felis in faucibus.
+        </div>
+      </div>
+
+      <!-- Comment with nested comments -->
+      <div class="media mb-4">
+        <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+        <div class="media-body">
+          <h5 class="mt-0">Commenter Name</h5>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+          vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
+          lacinia congue felis in faucibus.
+
+          <div class="media mt-4">
+            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+            <div class="media-body">
+              <h5 class="mt-0">Commenter Name</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+              odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+              fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+          </div>
+
+          <div class="media mt-4">
+            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+            <div class="media-body">
+              <h5 class="mt-0">Commenter Name</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+              odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+              fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+  </div>
+  <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+
+
+</body>
+
+</html>

@@ -36,7 +36,10 @@ module ApplicationHelper
   end
 
   def get_time(time_utc)
-    return time_utc.strftime("%Y-%m%-d %k:%M:%S")
+    return time_utc.strftime("%Y-%m-%d %k:%M:%S")
+  end
+  def get_time_verbose(time_utc)
+    return time_utc.strftime("%B %d,%Y at %k:%M:%p")
   end
 
 end

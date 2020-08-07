@@ -1,0 +1,32 @@
+#gossip-section {
+  position: relative;
+  background-color: #f2d4ab;
+  top: -20px;
+}
+.card-gossip {
+  height: 380px;
+}
+.card-information {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  height: 150px;
+  margin-bottom: 6px;
+}
+
+.card-bar {
+  overflow-y: hidden;
+  height: 45px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 6px;
+}
+
+.card-comments-btn i {
+  color: #999;
+}
+
+.user-liked {
+  color: #027bff !important;
+  font-weight: 600 !important;
+  i {
+    color: #027bff;
+  }
+}

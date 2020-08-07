@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% content_for :title, "Gossip Detail"%>
+</head>
+
+<body>
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <!-- Post Content Column -->
+      <div class="col-lg-12">
+        <h1 class="mt-4"><%= @gossip.title %></h1>
+        <p class="lead">by
+          <a href="<%= user_path(@gossip.user.id)%>"><%= @gossip.user.full_name || @gossip.user.first_name %></a>
+        </p>
+        <hr>
+        <!-- Date/Time -->
+        <p class="text-muted">Posted on <%= get_time_verbose(@gossip.created_at)%></p>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-10">
+        <img class="img-fluid rounded" 
+        src="https://source.unsplash.com/random?nature/1600x900" alt=""
+        style="max-height:400px; width: 100%">
+
+        <section class="gossip-content-section my-5">
+          <p class="lead"><%= @gossip.content %></p>
+        </section>
+      </div>
+
+      <!-- Tags Widget -->
+      <% @tags = get_tags_by_gossipid(@gossip.id) %>
+      <div class="col-lg-2 card p-0 card-gossip-tag" style="max-height: 400px;">
+        <h5 class="card-header ">Tags</h5>
+        <div class="card-body">
+          <div class="row">
+            <div class="btn-bar">
+              <% @tags.each do |tag|%>
+              <a class="card-tag" href="<%= tag.title %>">
+                <%= tag.title %>
+              </a>
+              <% end %>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Eng tag widget -->
+    </div>
+
+
+
+    <hr>
+    <div class="gossip-comments d-flex">
+      <a class="btn btn-light btn-like <%= user_liked_class(@gossip) %>" 
+      href="<%= gossip_likes_path(@gossip)%>"
+      data-method="post"
+      style="float-left"><i class="fas fa-thumbs-up py-3"></i> Like</a>
+      <div class="ml-4 p-1" style="font-size: 2rem"><%= @gossip.likes.size %> <%=(@gossip.likes.count) == 1 ? ' Like' : ' Likes'%></div>
+    </div>
+
+
+    <div class="row">
+      <!-- Comments Form -->
+      <div class="col-lg-12 card my-4 p-0">
+        <h5 class="card-header"><i class="fas fa-comment" style="color: #888;"></i> Leave a comment:</h5>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+
+
+      <!-- Single Comment -->
+      <div class="media mb-4">
+        <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+        <div class="media-body">
+          <h5 class="mt-0">Commenter Name</h5>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+          vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
+          lacinia congue felis in faucibus.
+        </div>
+      </div>
+
+      <!-- Comment with nested comments -->
+      <div class="media mb-4">
+        <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+        <div class="media-body">
+          <h5 class="mt-0">Commenter Name</h5>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+          vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
+          lacinia congue felis in faucibus.
+
+          <div class="media mt-4">
+            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+            <div class="media-body">
+              <h5 class="mt-0">Commenter Name</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+              odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+              fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+          </div>
+
+          <div class="media mt-4">
+            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+            <div class="media-body">
+              <h5 class="mt-0">Commenter Name</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+              odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+              fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  <!-- /.container -->
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+#user-section {
+  position: relative;
+  background-color: #f2d4ab;
+  top: -20px;
+}
+.card-user:hover {
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
+}
+.card-user-item {
+  margin-bottom: 10px;
+  i {
+    color: #666;
+  }
+}
+
+.user_card {
+  width: 350px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: #eeeeee;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+.form_container {
+  margin-top: 20px;
+}
+
+#form-title {
+  color: #fff;
+}
+
+.login_btn {
+  width: 100%;
+  background: #33ccff;
+  color: white;
+}
+
+.login_btn:focus {
+  box-shadow: none;
+  outline: 0px;
+}
+
+.login_container {
+  padding: 0 0;
+}
+
+.input-group-text {
+  background: #f7ba5b;
+  color: white;
+  border: 0;
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.input_user,
+.input_pass:focus {
+  box-shadow: none;
+  outline: 0px;
+}
+
+#messages {
+  background-color: grey;
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.links-wrap {
+  color: #dddddd;
+}
+
+.links-wrap a {
+  color: rgb(34, 248, 255);
+}
+
+.navbar-container {
+  display: none;
+}
+
+.city-form select {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  color: #28a745;
+  background-color: transparent;
+  outline: none;
+}

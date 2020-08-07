@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% content_for :title, "Gossips" %>
+</head>
+<body>
+
+
+  
+  <!-- MAIN BODY -->
+  <section id="gossip-section" class="mb-5">
+          <div class ="welcome-badge text-left mb-5">
+          <div class="container px-2">
+            <div class="display-2 pt-4">
+              <strong>HOORAY!</strong>
+            </div>
+            <div class="display-4">Hi <strong><%= current_user.full_name || current_user.first_name unless current_user.nil? %></strong>!
+            </div>
+              <div class="display-4">
+               Welcome to the Gossip Project!
+            </div>
+
+          </div>
+          </div>
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-10">
+          <h4 class="mt-2">Here is the list gossips of all Moussaillons at THP</h4>
+        </div>
+        <div class="col-lg-2 mt-2">
+          <div>
+          <%= link_to new_gossip_path, :class => 'btn btn-success text-white' do %>
+            <i class="fas fa-plus"></i><span> New Gossip</span>
+          <% end %>
+          
+          </div>
+        </div>
+      </div>
+    
+    <!-- Gossip list -->
+    <%= render "gossips_list" %>
+
+
+    </div>
+  </section>
+
+</body>
+
+</html>

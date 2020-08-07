@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+#welcome-section {
+  position: relative;
+  min-height: 100vh;
+  background-image: image-url('welcome.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -100px;
+
+  .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .welcome-inner {
+    margin-top: 20em;
+    margin-bottom: auto;
+    color: #fff;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  #welcome-section {
+    #welcome-text {
+      font-size: 4rem;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  #welcome-section {
+    #welcome-text {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+.lastest-posts-section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.blog-listing {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.gray-bg {
+  background-color: #f5f5f5;
+}
+/* Blog 
+---------------------*/
+.blog-grid {
+  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+  border-radius: 5px;
+  overflow: hidden;
+  background: #ffffff;
+  margin-top: 60px;
+  margin-bottom: 15px;
+  min-height: 400px;
+  overflow-y: auto;
+
+  &:hover {
+    box-shadow: 0px 1px 8px 2px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.blog-grid .blog-img {
+  position: relative;
+  min-height: 150px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.blog-card-user-name {
+  position: absolute;
+  background: #fc5356;
+  color: #ffffff;
+  padding: 8px 15px;
+  left: 10px;
+  top: 20px;
+  border-radius: 4px;
+  a {
+    text-decoration: none;
+    padding: 2px;
+    span,
+    i {
+      color: #fff;
+    }
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  span {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700;
+  }
+}
+
+.blog-img-heading {
+  padding: 4px;
+  margin-top: 80px;
+  margin-right: 10px;
+  min-width: 200px;
+  float: right;
+
+  span {
+    display: block;
+    padding: auto 20px;
+    top: 20%;
+    text-align: end;
+    overflow-x: hidden;
+  }
+}
+
+.blog-info {
+  padding: 20px;
+}
+.blog-info h5 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+.blog-info h5 a {
+  color: #20247b;
+}
+.blog-info p {
+  margin: 0;
+}
+.blog-info .btn-bar {
+  margin-top: 20px;
+}
+
+.blog-info-text {
+  padding-bottom: 4px;
+  height: 130px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  overflow-y: hidden;
+}
+
+.btn-bar {
+}
+
+// Carousel
+.carousel-nav-icon {
+  height: 48px;
+  width: 48px;
+}
+.carousel-item {
+  .col,
+  .col-sm,
+  .col-md,
+  .col-lg {
+    margin: 8px;
+    background-size: cover;
+    background-position: center center;
+  }
+}

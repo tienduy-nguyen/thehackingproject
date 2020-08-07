@@ -1,0 +1,33 @@
+ <%= form_with(scope: :user, url: signup_path, local: true) do |f|%>
+ <div class='input-group mb-4'>
+   <div class='input-group-prepend'>
+     <span class='input-group-text'>
+       <i class='far fa-envelope'></i>
+     </span>
+   </div>
+   <%= f.email_field :email, class: 'form-control', autofocus: true, placeholder: 'Email', required: true %>
+ </div>
+
+ <div class='input-group mb-4'>
+   <div class='input-group-prepend'>
+     <span class='input-group-text'>
+       <i class='fas fa-key'></i>
+     </span>
+   </div>
+   <%= f.password_field :password, class:'form-control', 
+              autocomplete: false, placeholder: 'Password', 
+              required: true, minlength: 6%>
+ </div>
+ <div class='input-group mb-4'>
+   <div class='input-group-prepend'>
+     <span class='input-group-text'>
+       <i class='fas fa-key'></i>
+     </span>
+   </div>
+   <%= f.password_field :password_confirmation, class:'form-control', 
+              autocomplete: false, placeholder: 'Confirm Password', 
+              required: true, minlength: 6 %>
+ </div>
+ <%= f.submit 'SIGNUP', class:'btn btn-primary form-control' %>
+
+ <% end %>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% content_for :title, "Users" %>
+</head>
+
+<body>
+
+  <!-- MAIN BODY -->
+  <section id="user-section">
+  <div class="container py-4">
+    <div class="mb-4 pt-4 display-4">List of all available users</div>
+    <div class="row">
+
+      <% @users.each do |user| %>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-4">
+        <div class="card card-user">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-4">
+                <div class="pull-left mr-2">
+                  <img src="http://bootdey.com/img/Content/user_1.jpg" class="rounded-circle img-fluid"
+                    alt="user profile image">
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="card-user-item">
+                  <a href="<%= user_path(user.id) %>" class="h5"><%= user.full_name || user.first_name %></a>
+                </div>
+                <div class="card-user-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span><%= user.city.name unless user.city.nil? %></span>
+                </div>
+                <div class="card-user-item">
+                  <i class="fas fa-envelope"></i>
+                  <span><%= user.email %></span>
+                </div>
+                <div class="card-user-item">
+                  <i class="fas fa-at"></i>
+                  <span>Age: <%= user.age unless user.age.nil? %></span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <% end %>
+
+    </div>
+  </div>
+  </section>
+</body>
+
+</html>

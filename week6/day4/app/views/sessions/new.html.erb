@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% content_for :title, "Login" %>
+</head>
+
+<div class="container h-100">
+
+  <div class='row'>
+    <div class='col-md-8 col-lg-8 mx-auto'>
+      <div class='card p-2'>
+        <div class='body'>
+          <div class='card-body'>
+            <h1 class='text-center pb-4 pt-3'>
+              <span class='text-primary'>
+                <i class='fas fa-lock'></i> LOGIN
+              </span>
+            </h1>
+
+            <!-- Form -->
+            <%= render 'form_login'%>
+            <!-- End form -->
+            <div class='text-center mx-auto mt-2'>
+              <span>Or</span>
+              <br>
+              <div class='social-auth d-flex text-center'>
+                <a href='#!' class='btn-li mx-1'>
+                  <i class='fab fa-facebook btn-floating btn-fa fa-3x'></i>
+                </a>
+                <a href='#!' class=' btn-li mx-1'>
+                  <i class='fab fa-google-plus btn-floating btn-ggs fa-3x'></i>
+                </a>
+                <a href='#!' class=' btn-li mx-1'>
+                  <i class='fab fa-twitter btn-floating btn-tw fa-3x'></i>
+                </a>
+                <a href='#!' class=' btn-li mx-1'>
+                  <i class='fab fa-github btn-floating btn-gh fa-3x'></i>
+                </a>
+              </div>
+            </div>
+            <div class='text-center mx-auto mt-4'>
+              <small>
+                <span>Don't have account?</span>
+                <a href="<%= signup_path %>">Sign Up</a>
+                <br>
+                <a href="#">Forgot Password?</a>
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+</body>
+
+</html>

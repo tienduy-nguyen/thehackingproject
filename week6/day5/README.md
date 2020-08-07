@@ -1,5 +1,13 @@
-# THP Gossip Project
-This is my completed gossip project at The Hacking Project
+# THP Gossip Project (Using Session for storing the authentication)
+This is my gossip project at The Hacking Project
+  - Using Bcrypt for password_hash
+  - Using Session to store current_user logged
+  - Home page: Landing page show the last gossips and all gossips with color card
+  - CRUD: Gossip
+  - CRU : User
+  - System Like for gossip by user
+  - System Tag of gossip
+  
 
 
 # The Gossip Project - Views v4.0
@@ -53,5 +61,15 @@ Social network for sharing and commenting on gossip, created as part of The Hack
 - [:v: Hugo Péran Séjourné](https://github.com/HugoPeranSejourne)
 - [:seedling: Mathieu JOLY](https://github.com/mathieu-superpose)
 - [:seedling: Vivien Ploix](https://github.com/Vivien-Ploix)
-- [:fire: Chérif BA](https://github.com/barifche)
 
+
+## Todo
+- [ ] Forget password, Reset password
+- [ ] System Comments with polymorphic
+- [ ] System Like for comments
+- [ ] Present "Load more" for all list gossip in Home Page and Gossips Page
+- [ ] Create page for City and show all gossip by City
+- [ ] Add more fields for User: avatar (with upload file functionality), bio
+- [ ] System Category for gossip post
+- [ ] Possible to create many tags for a gossip post
+- [ ] Deploy to heroku

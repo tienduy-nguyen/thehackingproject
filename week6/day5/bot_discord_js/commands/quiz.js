@@ -1,12 +1,10 @@
-const { Client, MessageEmbed } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 const fetch = require('node-fetch');
-const { prefix, databaseURL, embedColor } = require('../config/config.json');
-const emojis = require('../config/emojiCharacters');
-const { execute } = require('./help');
+const { databaseURL, embedColor } = require('../config/config.json');
 const types = ['multiple', 'boolean'];
 const difficulties = ['easy', 'medium', 'hard'];
 const choices = [':one:', ':two:', ':three:', ':four:'];
-const { shuffle, onlyUnique } = require('../utils/utility');
+const { shuffle } = require('../utils/utility');
 module.exports = {
   name: 'quiz',
   description: 'Pick what type of quiz you want',
@@ -21,16 +19,15 @@ module.exports = {
     let randomNumber = Math.floor(Math.random() * lenData);
     let randomQuestion = data.results[randomNumber];
     let question = decodeURIComponent(randomQuestion.question);
-    let correctAnswer = randomQuestion.correct_answer;
+    let correctAnswer = decodeURIComponent(randomQuestion.correct_answer);
     let incorrectAnswers = randomQuestion.incorrect_answers;
     incorrectAnswers[incorrectAnswers.length] = correctAnswer;
     const allAnswers = shuffle(incorrectAnswers);
 
     //Get emoji for correct answers
-    const emojiAnswer = emojis[allAnswers.indexOf(correctAnswer)];
-
+    const emojiList = ['1️⃣', '2️⃣', '3️⃣', '4️⃣'];
+    const emojiAnswer = emojiList[allAnswers.indexOf(correctAnswer)];
     const printQuestions = [];
-    const printEmojis = [];
 
     for (let i = 0; i < allAnswers.length; ++i) {
       printQuestions.push(
@@ -46,29 +43,35 @@ module.exports = {
         'Use the below reactions to answer this multiple choice question. And you have only one minutes to answer it.'
       );
     const questionDiscord = await message.channel.send(embed);
-    questionDiscord.react(emojis[1]).then((r) => {
-      questionDiscord.react(emojis[2]);
-      questionDiscord.react(emojis[3]);
-      questionDiscord.react(emojis[4]);
-    });
 
     try {
-      const filter = (reaction, user) =>
-        user.id == message.author.id && emojis.includes(reaction.emoji.name);
-
-      const answer = await message.awaitReactions(filter, {
-        max: 1,
-        time: 60000,
-      });
-
-      const ans = answer.first();
-      if (ans.emoji.name == emojiAnswer) {
-        message.reply('Nice job! 10/10! You deserve some cake!');
-      } else {
-        message.reply(`Nope, sorry, it's ${correctAnswer}.`);
-      }
+      await questionDiscord.react(emojiList[0]);
+      await questionDiscord.react(emojiList[1]);
+      await questionDiscord.react(emojiList[2]);
+      await questionDiscord.react(emojiList[3]);
     } catch (error) {
-      console.log('No answer after 1 minutes, operation canceled.');
+      console.error('One of the emojis failed to react.');
     }
+
+    const filter = (reaction, user) => {
+      return (
+        emojiList.includes(reaction.emoji.name) && user.id === message.author.id
+      );
+    };
+
+    questionDiscord
+      .awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
+      .then((collected) => {
+        const reaction = collected.first();
+        if (reaction.emoji.name == emojiAnswer) {
+          message.reply('Nice job! 10/10! You deserve some cake!');
+        } else {
+          message.reply(`Nope, sorry, it's ${emojiAnswer} : ${correctAnswer}.`);
+        }
+      })
+      .catch((collected) => {
+        message.reply('You did not reacted with the reactions.');
+        console.log('No answer after 1 minutes, operation canceled.');
+      });
   },
 };

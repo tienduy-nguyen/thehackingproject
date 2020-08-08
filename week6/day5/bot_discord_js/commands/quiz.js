@@ -26,6 +26,9 @@ module.exports = {
     incorrectAnswers[incorrectAnswers.length] = correctAnswer;
     const allAnswers = shuffle(incorrectAnswers);
 
+    //Get emoji for correct answers
+    const emojiAnswer = emojis[allAnswers.indexOf(correctAnswer)];
+
     const printQuestions = [];
     const printEmojis = [];
 
@@ -38,7 +41,10 @@ module.exports = {
     const embed = new MessageEmbed()
       .setTitle(question)
       .setColor(embedColor)
-      .setDescription(printQuestions);
+      .setDescription(printQuestions)
+      .setFooter(
+        'Use the below reactions to answer this multiple choice question. And you have only one minutes to answer it.'
+      );
     const questionDiscord = await message.channel.send(embed);
     questionDiscord.react(emojis[1]).then((r) => {
       questionDiscord.react(emojis[2]);
@@ -48,22 +54,21 @@ module.exports = {
 
     try {
       const filter = (reaction, user) =>
-        user.id == message.author.id &&
-        (reaction.emoji.name == '👍' || reaction.emoji.name == '👎');
+        user.id == message.author.id && emojis.includes(reaction.emoji.name);
 
       const answer = await message.awaitReactions(filter, {
         max: 1,
-        time: 30000,
+        time: 60000,
       });
 
       const ans = answer.first();
-      if (ans.emoji.name == '👍') {
-        message.reply('You got the question right');
+      if (ans.emoji.name == emojiAnswer) {
+        message.reply('Nice job! 10/10! You deserve some cake!');
       } else {
-        message.reply('That is incorrect.');
+        message.reply(`Nope, sorry, it's ${correctAnswer}.`);
       }
     } catch (error) {
-      console.log('No answer after 30 seconds, operation canceled.');
+      console.log('No answer after 1 minutes, operation canceled.');
     }
   },
 };

@@ -1,4 +1,5 @@
 require('dotenv').config();
+const emojis = require('./emojiCharacters');
 const { Client, MessageEmbed } = require('discord.js');
 const fetch = require('node-fetch');
 
@@ -36,7 +37,10 @@ client.on('message', async (message) => {
     // TODO: Use String.fromCharCode(65+letter) instead of this array?
     const Letters = [':one:', ':two:', ':three:', ':four:'];
 
-    printQuestions = [];
+    const printQuestions = [];
+    const printEmojis = [];
+    const eOne = client.emojis.cache.get('741604359258767441');
+
     for (let i = 0; i < allAnswers.length; ++i) {
       printQuestions.push(`${Letters[i]}: ${allAnswers[i]}`);
     }
@@ -44,28 +48,32 @@ client.on('message', async (message) => {
     const embed = new MessageEmbed()
       .setTitle(question)
       .setColor(0xff0000)
-      .setDescription(printQuestions)
-      .setFooter(
-        'You have one minutes to response this question',
-        'https://i.imgur.com/wSTFkRM.png'
-      );
-    message.channel.send(embed);
+      .setDescription(printQuestions);
+    const questionDiscord = await message.channel.send(embed);
+    questionDiscord.react(emojis[1]).then((r) => {
+      questionDiscord.react(emojis[2]);
+      questionDiscord.react(emojis[3]);
+      questionDiscord.react(emojis[4]);
+    });
 
     try {
-      const filter = (m) => m.author.id == message.author.id;
-      const answer = await message.channel.awaitMessages(filter, {
+      const filter = (reaction, user) =>
+        user.id == message.author.id &&
+        (reaction.emoji.name == '👍' || reaction.emoji.name == '👎');
+
+      const answer = await message.awaitReactions(filter, {
         max: 1,
-        time: 60000,
+        time: 30000,
       });
-      console.log(`Your response answer is: ${answer.first()}`);
+
       const ans = answer.first();
-      if (ans.content.toLowerCase() == correctAnswer.toLowerCase()) {
+      if (ans.emoji.name == '👍') {
         message.reply('You got the question right');
       } else {
         message.reply('That is incorrect.');
       }
     } catch (error) {
-      message.reply('No answer after 10 seconds, operation canceled.');
+      message.reply('No answer after 30 seconds, operation canceled.');
     }
   }
 });

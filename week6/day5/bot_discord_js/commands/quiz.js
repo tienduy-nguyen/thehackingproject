@@ -40,7 +40,7 @@ module.exports = {
       .setColor(embedColor)
       .setDescription(printQuestions)
       .setFooter(
-        'Use the below reactions to answer this multiple choice question. And you have only one minutes to answer it.'
+        '**Notice**: Use the below reactions to answer this multiple choice question. And you have only one minutes to answer it.'
       );
     const questionDiscord = await message.channel.send(embed);
 
@@ -59,19 +59,39 @@ module.exports = {
       );
     };
 
-    questionDiscord
-      .awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
-      .then((collected) => {
-        const reaction = collected.first();
-        if (reaction.emoji.name == emojiAnswer) {
-          message.reply('Nice job! 10/10! You deserve some cake!');
-        } else {
-          message.reply(`Nope, sorry, it's ${emojiAnswer} : ${correctAnswer}.`);
-        }
-      })
-      .catch((collected) => {
-        message.reply('You did not reacted with the reactions.');
-        console.log('No answer after 1 minutes, operation canceled.');
+    try {
+      const collected = await questionDiscord.awaitReactions(filter, {
+        max: 1,
+        time: 60000,
+        errors: ['time'],
       });
+      const reaction = collected.first();
+      if (reaction.emoji.name == emojiAnswer) {
+        await questionDiscord.react('✅');
+
+        const embed = new MessageEmbed()
+          .setTitle(question)
+          .setColor(embedColor)
+          .setDescription(printQuestions)
+          .setFooter('✅ Greeeeeeeeeeeeeeeeeeeeeeeet.');
+        await questionDiscord.edit(embed);
+        await message.reply('Nice job! 10/10! You deserve some cake!');
+      } else {
+        await questionDiscord.react('❌');
+
+        const embed = new MessageEmbed()
+          .setTitle(question)
+          .setColor(embedColor)
+          .setDescription(printQuestions)
+          .setFooter('❌ Oh noooooooooooooooooooooooo.');
+        await questionDiscord.edit(embed);
+        await message.reply(
+          `Nope, sorry, it's ${emojiAnswer} : ${correctAnswer}.`
+        );
+      }
+    } catch (error) {
+      console.error(error.message);
+      message.reply('You did not reacted with the reactions.');
+    }
   },
 };

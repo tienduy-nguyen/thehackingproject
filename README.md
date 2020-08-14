@@ -71,7 +71,7 @@ Training web dev at The Hacking Project
   
 <a name="week5"></a>
 
-### :arrow_forward: Week 5: Discover Ruby framwork and SQL
+### :heavy_check_mark: Week 5: Discover Ruby framwork and SQL
 
 - Day 1: Validating project: Sinatra Framework
 - Day 2: Discover SQL with sqlite3
@@ -83,9 +83,27 @@ Training web dev at The Hacking Project
   
 <a name="week6"></a>
 
-### :clock10: Week 6-7: Ruby On Rails
+### :heavy_check_mark: Week 6: Rails basics: Gossip project
+- Day 1: Discover front & back of rails app
+- Day 2: Routes and forms in rails
+- Day 3: CRUD
+- Day 4: Authenticate user with sessions and bcrypt
+- Day 5: Using cookies for authentication and deploy to heroku
+
+<a name="week7"></a>
+
+### :heavy_check_mark: Week 7: Rails advanced: Eventbrite clone project
+- Day 1: Mailer & event in rails
+- Day 2: Using Devise
+- Day 3: Using service & API
+- Day 4: Asset Pipeline & Active Storage
+- Day 5: Admin dashboard
 
 <a name="week8"></a>
+
+### :clock10: Week 8: Front-End design, HTML, CSS, JavaScript
+
+<a name="week9"></a>
 
 ### :clock10: Week 8-9: Front-End design, HTML, CSS, JavaScript
 

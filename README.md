@@ -79,7 +79,6 @@ Training web dev at The Hacking Project
 - Day 4: Validating project: Relation between databases
 - Day 5: Validation & conception of databases
 
-  :arrow_right: In progress: I'm here
   
 <a name="week6"></a>
 
@@ -102,6 +101,13 @@ Training web dev at The Hacking Project
 <a name="week8"></a>
 
 ### :clock10: Week 8: Front-End design, HTML, CSS, JavaScript
+- Day 1: Base du front-end, & atomic design
+- Day 2: Component design
+- Day 3: Rails, front, & components
+- Day 4: JavaScript  bases
+- Day 5: Work with DOM
+  
+   :arrow_right: In progress: I'm here
 
 <a name="week9"></a>
 
@@ -166,7 +172,23 @@ Training web dev at The Hacking Project
 |  53   | [Rails & SQL](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day3)                                                                   | None                                                        |
 |  54   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day5)                                                                           | None                                                        |
 |  55   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day5)                                                                           |
+
+#### Week 6
+
+|   #   | Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Live Demo  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
+| :---: | :---------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------- |
+|  61   | [Gossip Project Rails](https://github.com/tienduy-nguyen/thp-gossip-project)                                                                                | [Live Demo](https://td-gossip2.herokuapp.com/               |
+
+
+#### Week 7
+
+|   #   | Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Live Demo  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
+| :---: | :---------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------- |
+|  71   | [Event brite clone](https://github.com/tienduy-nguyen/eventbrite-clone)                                                                                     | [Live Demo](https://eventlove.herokuapp.com/                |
+
+
 <a name="license"></a>
+
 
 # 📃 License
 

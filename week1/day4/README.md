@@ -6,7 +6,7 @@ This page must be reponsive and mobile first.
 
 Demo at:
 
-[https://tienduy-nguyen.github.io/thehackingproject/day4/index.html](https://tienduy-nguyen.github.io/thehackingproject/day4/index.html)
+[https://tienduy-nguyen.github.io/thehackingproject/week1/day4/index.html](https://tienduy-nguyen.github.io/thehackingproject/week1/day4/index.html)
 
 Here is 2 versions of project to do:
 

@@ -147,7 +147,6 @@ function toggleLogoSelected() {
     } else {
       console.log('Disable awesome mode');
       logoText.textContent = 'JS & Events';
-      event.preventDefault();
     }
     console.log('logoSelected: ', logoSelected);
     awesomeMode(logoSelected);
@@ -155,13 +154,14 @@ function toggleLogoSelected() {
 }
 
 // keycode: a = 65, b=66, p = 80, y = 89
-function awesomeMode(isSelected) {
-  if (isSelected) {
+function awesomeMode() {
+  if (logoSelected) {
     document.addEventListener('keydown', (event) => {
-      console.log('isSelected: ', isSelected);
+      console.log('can run event key: ', logoSelected);
       if (event.defaultPrevented) {
         return;
       }
+      if (!logoSelected) return;
       const body = document.querySelector('body');
 
       let key = event.key || event.keyCode;
@@ -186,6 +186,10 @@ function awesomeMode(isSelected) {
         default:
           break;
       }
+    });
+  } else {
+    document.addEventListener('keydown', (event) => {
+      return;
     });
   }
 }

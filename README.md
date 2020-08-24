@@ -177,14 +177,14 @@ Training web dev at The Hacking Project
 
 |   #   | Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Live Demo  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
 | :---: | :---------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------- |
-|  61   | [Gossip Project Rails](https://github.com/tienduy-nguyen/thp-gossip-project)                                                                                | [Live Demo](https://td-gossip2.herokuapp.com/               |
+|  61   | [Gossip Project Rails](https://github.com/tienduy-nguyen/thp-gossip-project)                                                                                | [Live Demo](https://td-gossip2.herokuapp.com/)              |
 
 
 #### Week 7
 
 |   #   | Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Live Demo  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
 | :---: | :---------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------- |
-|  71   | [Event brite clone](https://github.com/tienduy-nguyen/eventbrite-clone)                                                                                     | [Live Demo](https://eventlove.herokuapp.com/                |
+|  71   | [Event brite clone](https://github.com/tienduy-nguyen/eventbrite-clone)                                                                                     | [Live Demo](https://eventlove.herokuapp.com/)               |
 
 
 <a name="license"></a>

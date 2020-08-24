@@ -28,6 +28,7 @@ function convertARNToAcid(str) {
   arr.forEach((item) => {
     result.push(ARN[item]);
   });
+
   return result.join('-');
 }
 // Supprime le livre avec l'ID: 133712 ;

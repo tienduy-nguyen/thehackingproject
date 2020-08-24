@@ -99,11 +99,11 @@ function actionBtnView(btnView, cardText, cardImg) {
 // Function : 7
 //----------------------------------------
 function nextBtn() {
-  const cards = document.querySelectorAll('.col-md-4');
   const nextBtn = document
     .querySelector('main')
     .querySelector('a.btn.btn-secondary');
   nextBtn.addEventListener('click', () => {
+    const cards = document.querySelectorAll('.col-md-4');
     const lastCard = cards[cards.length - 1];
     const firstCard = cards[0];
     const parent = lastCard.parentNode;
@@ -116,11 +116,11 @@ function nextBtn() {
 // Function : 8
 //----------------------------------------
 function previousBtn() {
-  const cards = document.querySelectorAll('.col-md-4');
   const nextBtn = document
     .querySelector('main')
     .querySelector('a.btn.btn-primary');
   nextBtn.addEventListener('click', () => {
+    const cards = document.querySelectorAll('.col-md-4');
     const firstCard = cards[0];
     const parent = firstCard.parentNode;
     parent.removeChild(firstCard);
@@ -132,7 +132,23 @@ function previousBtn() {
 //----------------------------------------
 // Function : 9
 //----------------------------------------
-
+let logoSelected = true;
+function toggleLogoSelected() {
+  const logoWrapper = document.querySelector(
+    'a.navbar-brand.d-flex.align-items-center'
+  );
+  const logoText = logoWrapper.querySelector('strong');
+  logoWrapper.addEventListener('click', () => {
+    logoSelected = !logoSelected;
+    if (!logoSelected) {
+      console.log('You can now try some shortkey a,y,p,b for fun.');
+      logoText.textContent = 'JS & Events - Awesome mode';
+    } else {
+      console.log('Disable awesome mode');
+      logoText.textContent = 'JS & Events';
+    }
+  });
+}
 //Already functions
 window.addEventListener('DOMContentLoaded', (event) => {
   footerClickCount = 0;
@@ -142,4 +158,5 @@ window.addEventListener('DOMContentLoaded', (event) => {
   mouseOverBtnView();
   nextBtn();
   previousBtn();
+  toggleLogoSelected();
 });

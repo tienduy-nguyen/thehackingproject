@@ -132,22 +132,62 @@ function previousBtn() {
 //----------------------------------------
 // Function : 9
 //----------------------------------------
-let logoSelected = true;
+let logoSelected = false;
 function toggleLogoSelected() {
   const logoWrapper = document.querySelector(
     'a.navbar-brand.d-flex.align-items-center'
   );
+
   const logoText = logoWrapper.querySelector('strong');
   logoWrapper.addEventListener('click', () => {
     logoSelected = !logoSelected;
-    if (!logoSelected) {
+    if (logoSelected) {
       console.log('You can now try some shortkey a,y,p,b for fun.');
       logoText.textContent = 'JS & Events - Awesome mode';
     } else {
       console.log('Disable awesome mode');
       logoText.textContent = 'JS & Events';
+      event.preventDefault();
     }
+    console.log('logoSelected: ', logoSelected);
+    awesomeMode(logoSelected);
   });
+}
+
+// keycode: a = 65, b=66, p = 80, y = 89
+function awesomeMode(isSelected) {
+  if (isSelected) {
+    document.addEventListener('keydown', (event) => {
+      console.log('isSelected: ', isSelected);
+      if (event.defaultPrevented) {
+        return;
+      }
+      const body = document.querySelector('body');
+
+      let key = event.key || event.keyCode;
+
+      switch (key) {
+        case 'a': //a: 4-md left of screen
+          body.className = '';
+          body.classList.add('col-md-4');
+          break;
+        case 'b': //b: normal mode
+          body.className = '';
+          break;
+        case 'p': //p: 4-md center of screen
+          body.className = '';
+          body.classList.add('col-md-4', 'offset-md-4');
+          break;
+        case 'y': //y: 4-md  right of screen
+          body.className = '';
+          body.classList.add('col-md-4', 'offset-md-8');
+          break;
+
+        default:
+          break;
+      }
+    });
+  }
 }
 //Already functions
 window.addEventListener('DOMContentLoaded', (event) => {
@@ -159,4 +199,5 @@ window.addEventListener('DOMContentLoaded', (event) => {
   nextBtn();
   previousBtn();
   toggleLogoSelected();
+  awesomeMode();
 });

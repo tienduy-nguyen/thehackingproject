@@ -61,9 +61,21 @@ function makeAllCardInGreen() {
   editCard('all', 'green');
 }
 
+//----------------------------------------
+// Function : 5
+//----------------------------------------
+function disableTagLinkBootstrap() {
+  const navBar = document.querySelector('.navbar.box-shadow');
+  const link = document.querySelector('link');
+  navBar.addEventListener('dblclick', () => {
+    link.toggleAttribute('disabled');
+  });
+}
+
 //Already functions
 window.addEventListener('DOMContentLoaded', (event) => {
   footerClickCount = 0;
   makeFirstCardInRed();
   makeAllCardInGreen();
+  disableTagLinkBootstrap();
 });

@@ -72,10 +72,70 @@ function disableTagLinkBootstrap() {
   });
 }
 
+//----------------------------------------
+// Function : 6
+//----------------------------------------
+function mouseOverBtnView() {
+  const cards = document.querySelectorAll('.card.box-shadow');
+  for (let card of cards) {
+    const btnView = card.querySelector('.btn-success');
+    const cardText = card.querySelector('.card-text');
+    const cardImg = card.querySelector('img');
+    actionBtnView(btnView, cardText, cardImg);
+  }
+}
+function actionBtnView(btnView, cardText, cardImg) {
+  btnView.addEventListener('mouseenter', (x) => {
+    cardText.style.color = '#fff';
+    cardImg.style.transform = 'scale(0.8)';
+  });
+  btnView.addEventListener('mouseleave', (x) => {
+    cardText.style.color = '';
+    cardImg.style.transform = 'scale(1)';
+  });
+}
+
+//----------------------------------------
+// Function : 7
+//----------------------------------------
+function nextBtn() {
+  const cards = document.querySelectorAll('.col-md-4');
+  const nextBtn = document
+    .querySelector('main')
+    .querySelector('a.btn.btn-secondary');
+  nextBtn.addEventListener('click', () => {
+    const lastCard = cards[cards.length - 1];
+    const firstCard = cards[0];
+    const parent = lastCard.parentNode;
+    parent.removeChild(lastCard);
+    parent.insertBefore(lastCard, parent.firstChild);
+  });
+}
+
+//----------------------------------------
+// Function : 8
+//----------------------------------------
+function previousBtn() {
+  const cards = document.querySelectorAll('.col-md-4');
+  const nextBtn = document
+    .querySelector('main')
+    .querySelector('a.btn.btn-primary');
+  nextBtn.addEventListener('click', () => {
+    const firstCard = cards[0];
+    const parent = firstCard.parentNode;
+    parent.removeChild(firstCard);
+    const lastCard = cards[cards.length - 1];
+    parent.insertBefore(firstCard, lastCard.nextSibling);
+  });
+}
+
 //Already functions
 window.addEventListener('DOMContentLoaded', (event) => {
   footerClickCount = 0;
   makeFirstCardInRed();
   makeAllCardInGreen();
   disableTagLinkBootstrap();
+  mouseOverBtnView();
+  nextBtn();
+  previousBtn();
 });

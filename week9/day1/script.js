@@ -129,6 +129,10 @@ function previousBtn() {
   });
 }
 
+//----------------------------------------
+// Function : 9
+//----------------------------------------
+
 //Already functions
 window.addEventListener('DOMContentLoaded', (event) => {
   footerClickCount = 0;

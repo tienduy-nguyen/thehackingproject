@@ -133,13 +133,12 @@ function previousBtn() {
 // Function : 9
 //----------------------------------------
 let logoSelected = false;
+const logoWrapper = document.querySelector(
+  'a.navbar-brand.d-flex.align-items-center'
+);
+const logoText = logoWrapper.querySelector('strong');
 function toggleLogoSelected() {
-  const logoWrapper = document.querySelector(
-    'a.navbar-brand.d-flex.align-items-center'
-  );
-
-  const logoText = logoWrapper.querySelector('strong');
-  logoWrapper.addEventListener('click', () => {
+  logoWrapper.addEventListener('mousedown', () => {
     logoSelected = !logoSelected;
     if (logoSelected) {
       console.log('You can now try some shortkey a,y,p,b for fun.');
@@ -149,48 +148,47 @@ function toggleLogoSelected() {
       logoText.textContent = 'JS & Events';
     }
     console.log('logoSelected: ', logoSelected);
-    awesomeMode(logoSelected);
+    awesomeMode();
   });
 }
 
 // keycode: a = 65, b=66, p = 80, y = 89
 function awesomeMode() {
   if (logoSelected) {
-    document.addEventListener('keydown', (event) => {
-      console.log('can run event key: ', logoSelected);
-      if (event.defaultPrevented) {
-        return;
-      }
-      if (!logoSelected) return;
-      const body = document.querySelector('body');
-
-      let key = event.key || event.keyCode;
-
-      switch (key) {
-        case 'a': //a: 4-md left of screen
-          body.className = '';
-          body.classList.add('col-md-4');
-          break;
-        case 'b': //b: normal mode
-          body.className = '';
-          break;
-        case 'p': //p: 4-md center of screen
-          body.className = '';
-          body.classList.add('col-md-4', 'offset-md-4');
-          break;
-        case 'y': //y: 4-md  right of screen
-          body.className = '';
-          body.classList.add('col-md-4', 'offset-md-8');
-          break;
-
-        default:
-          break;
-      }
+    logoWrapper.addEventListener('keydown', (event) => {
+      pickKey(event);
     });
-  } else {
-    document.addEventListener('keydown', (event) => {
-      return;
-    });
+  }
+}
+
+function pickKey(event) {
+  console.log('can run event key: ', logoSelected);
+  if (event.defaultPrevented) {
+    return;
+  }
+  if (!logoSelected) return;
+  const body = document.querySelector('body');
+
+  let key = event.key || event.keyCode;
+
+  switch (key) {
+    case 'a': //a: 4-md left of screen
+      body.className = '';
+      body.classList.add('col-md-4');
+      break;
+    case 'b': //b: normal mode
+      body.className = '';
+      break;
+    case 'p': //p: 4-md center of screen
+      body.className = '';
+      body.classList.add('col-md-4', 'offset-md-4');
+      break;
+    case 'y': //y: 4-md  right of screen
+      body.className = '';
+      body.classList.add('col-md-4', 'offset-md-8');
+      break;
+    default:
+      break;
   }
 }
 //Already functions
@@ -203,5 +201,4 @@ window.addEventListener('DOMContentLoaded', (event) => {
   nextBtn();
   previousBtn();
   toggleLogoSelected();
-  awesomeMode();
 });

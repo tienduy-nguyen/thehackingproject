@@ -1,0 +1,2 @@
+# AJAX in rails applications
+

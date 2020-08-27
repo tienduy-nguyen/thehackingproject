@@ -1,0 +1,285 @@
+<html>
+
+<head>
+  <title>TodolistApp</title>
+  <meta name="csrf-param" content="authenticity_token">
+  <meta name="csrf-token"
+    content="bwSTMyIZUO9y1jLyEgLF/fhouOKctkWKzt9uw97NpVNlhyJIJApBP9eoLD9S06rxFPd1H8jSdR8CItNxNljVXA==">
+
+  <script src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+</head>
+
+<body cz-shortcut-listen="true">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/">Sandbox App</a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link" rel="nofollow" data-method="delete" href="/users/sign_out">Log out</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tasks/new">New task</a>
+        </li>
+
+      </ul>
+      <img class="rounded-circle" height="50px" width="50px"
+        src="http://digitalspyuk.cdnds.net/17/25/320x320/square-1498216547-avatar-neytiri.jpg">
+    </div>
+  </nav>
+
+  <p class="notice"></p>
+  <p class="alert"></p>
+
+  <h1 class="text-center mb-4">Welcome to my todolist app</h1>
+
+  <div class="container">
+
+    <div class="row ml-3">
+      <div class="offset-md-3 col-md-6 offset-md-3">
+        <form class="form" id="contact-form" action="/tasks" accept-charset="UTF-8" data-remote="true" method="post">
+          <input name="utf8" type="hidden" value="✓">
+          <div class="form-group">
+            <label class="form-label" for="Task">Task</label>
+            <input type="text" name="title" id="title" class="form-control" placeholder="Buy burgers">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="Deadline">Deadline</label>
+            <input type="date" name="deadline" id="deadline" class="form-control">
+
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="Category">Category</label>
+            <select name="Category" id="Category" class="form-control">
+              <option selected="selected" value="1">Horror</option>
+              <option value="2">Mythopoeia</option>
+              <option value="3">Fantasy</option>
+              <option value="4">Tall tale</option>
+              <option value="5">Comic/Graphic Novel</option>
+              <option value="6">Fanfiction</option>
+            </select>
+          </div>
+
+          <div class="text-center">
+            <input type="submit" name="commit" value="Create task" class="btn btn-start-order"
+              data-disable-with="Create task">
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <ul>
+        <li class="Horror">Horror</li>
+        <div class="card">
+          <ul>
+            <li>
+              Brandy of the Damned
+              , to read: 07/18/21
+            </li>
+            <li>
+              Consider Phlebas
+              , to read: 05/02/21
+            </li>
+            <li>
+              To a God Unknown
+              , to read: 07/22/21
+            </li>
+          </ul>
+        </div>
+        <li class="Mythopoeia">Mythopoeia</li>
+        <div class="card">
+          <ul>
+            <li>
+              Butter In a Lordly Dish
+              , to read: 11/09/20
+            </li>
+            <li>
+              Françoise Sagan
+              , to read: 05/10/21
+            </li>
+            <li>
+              The Moon by Night
+              , to read: 03/07/21
+            </li>
+          </ul>
+        </div>
+        <li class="Fantasy">Fantasy</li>
+        <div class="card">
+          <ul>
+            <li>
+              I Know Why the Caged Bird Sings
+              , to read: 02/23/21
+            </li>
+            <li>
+              A Handful of Dust
+              , to read: 10/04/20
+            </li>
+            <li>
+              The Curious Incident of the Dog in the Night-Time
+              , to read: 05/03/21
+            </li>
+            <li>
+              Buy milk
+              , to read: 08/27/20
+            </li>
+            <li>
+              Buy sugar
+              , to read: 08/27/20
+            </li>
+            <li>
+              Buy 1kg apple
+              , to read: 08/27/20
+            </li>
+            <li>
+              Buy 1kg apple
+              , to read: 08/27/20
+            </li>
+          </ul>
+        </div>
+        <li class="Tall tale">Tall tale</li>
+        <div class="card">
+          <ul>
+            <li>
+              Consider the Lilies
+              , to read: 09/11/20
+            </li>
+            <li>
+              The Daffodil Sky
+              , to read: 08/29/20
+            </li>
+            <li>
+              The Far-Distant Oxus
+              , to read: 08/31/20
+            </li>
+          </ul>
+        </div>
+        <li class="Comic/Graphic Novel">Comic/Graphic Novel</li>
+        <div class="card">
+          <ul>
+            <li>
+              Let Us Now Praise Famous Men
+              , to read: 09/14/20
+            </li>
+            <li>
+              Consider Phlebas
+              , to read: 09/19/20
+            </li>
+            <li>
+              A Scanner Darkly
+              , to read: 09/03/20
+            </li>
+          </ul>
+        </div>
+        <li class="Fanfiction">Fanfiction</li>
+        <div class="card">
+          <ul>
+            <li>
+              Unweaving the Rainbow
+              , to read: 09/04/20
+            </li>
+            <li>
+              Blithe Spirit
+              , to read: 08/28/20
+            </li>
+            <li>
+              An Acceptable Time
+              , to read: 09/08/20
+            </li>
+          </ul>
+        </div>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="card col-3">
+          <img class="rounded-circle" src="https://robohash.org/insedet.png?size=300x300&amp;set=set1">
+        </div>
+        <div class="card col-3">
+          <img class="rounded-circle" src="https://robohash.org/quiautipsum.png?size=300x300&amp;set=set1">
+        </div>
+        <div class="card col-3">
+          <img class="rounded-circle" src="https://robohash.org/aliquidsaepeet.png?size=300x300&amp;set=set1">
+        </div>
+        <div class="card col-3">
+          <img class="rounded-circle" src="https://robohash.org/errorestet.png?size=300x300&amp;set=set1">
+        </div>
+        <div class="card col-3">
+          <img class="rounded-circle" src="https://robohash.org/omnisdeseruntsunt.png?size=300x300&amp;set=set1">
+        </div>
+        <div class="card col-3">
+          <img class="rounded-circle" src="https://robohash.org/velquisquamquia.png?size=300x300&amp;set=set1">
+        </div>
+        <div class="card col-3">
+          <img class="rounded-circle" src="https://robohash.org/velitetaperiam.png?size=300x300&amp;set=set1">
+        </div>
+        <div class="card col-3">
+          <img class="rounded-circle" src="https://robohash.org/doloredebitiset.png?size=300x300&amp;set=set1">
+        </div>
+        <div class="card col-3">
+          <img class="rounded-circle" src="https://robohash.org/temporeexcepturiea.png?size=300x300&amp;set=set1">
+        </div>
+        <div class="card col-3">
+          <img class="rounded-circle" src="https://robohash.org/porrooptioautem.png?size=300x300&amp;set=set1">
+        </div>
+        <div class="card col-3">
+          <img class="rounded-circle" src="https://robohash.org/debitiseiusut.png?size=300x300&amp;set=set1">
+        </div>
+        <div class="card col-3">
+          <img class="rounded-circle" src="https://robohash.org/voluptasiuredolor.png?size=300x300&amp;set=set1">
+        </div>
+        <div class="card col-3">
+          <img class="rounded-circle" src="https://robohash.org/estlaboreut.png?size=300x300&amp;set=set1">
+        </div>
+        <div class="card col-3">
+          <img class="rounded-circle" src="https://robohash.org/vitaenamnisi.png?size=300x300&amp;set=set1">
+        </div>
+        <div class="card col-3">
+          <img class="rounded-circle" src="https://robohash.org/inquasdoloremque.png?size=300x300&amp;set=set1">
+        </div>
+        <div class="card col-3">
+          <img class="rounded-circle" src="https://robohash.org/utporroaut.png?size=300x300&amp;set=set1">
+        </div>
+        <div class="card col-3">
+          <img class="rounded-circle" src="https://robohash.org/quisquamipsamtotam.png?size=300x300&amp;set=set1">
+        </div>
+        <div class="card col-3">
+          <img class="rounded-circle" src="https://robohash.org/rerumcumvoluptatem.png?size=300x300&amp;set=set1">
+        </div>
+        <div class="card col-3">
+        </div>
+        <div class="card col-3">
+        </div>
+        <div class="card col-3">
+        </div>
+        <div class="card col-3">
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+  <div id="lbdictex_find_popup" class="lbexpopup hidden" style="position: absolute; top: 0px; left: 0px;">
+    <div class="lbexpopup_top">
+      <h2 class="fl popup_title">&nbsp;</h2>
+      <ul>
+        <li><a class="close_main popup_close" href="#">&nbsp;</a></li>
+      </ul>
+      <div class="clr"></div>
+    </div>
+    <div class="popup_details"></div>
+    <div class="popup_powered">abc</div>
+  </div>
+  <div id="lbdictex_ask_mark" class="hidden" style="position: absolute; top: 0px; left: 0px;"><a
+      class="lbdictex_ask_select" href="#">&nbsp;</a></div>
+</body>
+
+</html>

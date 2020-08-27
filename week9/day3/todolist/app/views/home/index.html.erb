@@ -9,9 +9,7 @@
       <% category.tasks.each do |task|  %>
       <div class="d-flex justify-content-between" id="task_<%= task.id%>">
       <li style="list-style: none; margin-left: -20px;" class="<%= task.is_done? ? 'task-end' : '' %>">
-        <%= check_box_tag :status, 1, task.status , class:"mr-2", 
-            data: { remote: true, url: task_path(task), 
-            params: { id: task.id, status: task.status }.to_param, method: "PATCH" }%>
+       <%= check_box_tag :task, task.status, task.status , data: { remote: true, url: task_path(task), params: { id: task.id, origin: "checkbox"}.to_param, method: "put" }%>
         <%= task.title  %>
         <% unless task.deadline.nil? %>
           , to read: <%= task.deadline.strftime('%D')  %>
@@ -19,7 +17,9 @@
       </li>
       <div class="">
         <a href="<%= edit_task_path(task) %>"><i class="fas fa-pencil-alt text-success mr-2"></i></a>
-         <a href="<%= task_path(task.id) %>" data-method="DELETE" data-remote="true"><i class="fas fa-trash-alt text-danger mr-2"></i></a>
+        <%= link_to task_path(task), remote: true, method: :delete , data: {confirm: "Are you sure?"} do %>
+            <i class="fas fa-trash-alt text-danger mr-2"></i>
+        <% end %>
       </div>
 
       </div>

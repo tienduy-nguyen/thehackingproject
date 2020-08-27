@@ -1,0 +1,6 @@
+function toggleTaskStatus() {
+  const taskWrapper = document.getElementById('task_<%= @task.id %>').querySelector('li');
+  taskWrapper.classList.toggle('task-end');
+}
+
+toggleTaskStatus();

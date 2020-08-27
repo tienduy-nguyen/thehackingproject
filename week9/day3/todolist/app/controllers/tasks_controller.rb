@@ -27,14 +27,26 @@ before_action :authenticate_user!
   end
 
   def update
-    @task = Task.find(params[:id])
-    @task.update(task_params)
-    puts @task.status
-    respond_to do |format|
-      format.html{redirect_to root_path}
-      format.js{}
-    end
-    flash[:notice] = "Task edited"
+    if params[:origin] == "checkbox" 
+      @task = Task.find(params[:id])
+      (!params[:task])? (@task.update(status: false)):(@task.update(status: true))
+      respond_to do |format|
+        format.html {
+        redirect_to root_path }
+        format.js { }
+        flash[:notice] = "Task Status edited"
+      end
+    else 
+      @task = Task.find(params[:id])
+      @task.update(task_params)
+      puts @task.status
+      respond_to do |format|
+        format.html{redirect_to root_path}
+        format.js{}
+      end
+      flash[:notice] = "Task edited"
+    end 
+   
   end
 
 

@@ -1,4 +1,5 @@
- 
-<li id="email_<%= @email.id%>">
-  <%= link_to @email.object, email_path(@email), remote: true %>
+  <li id="email_<%= email.id%>" 
+          class="<%= email.read ? 'text-muted' : 'font-weight-bold'%>"
+          >
+            <%= link_to email.object, email_path(email), remote: true %>
 </li>

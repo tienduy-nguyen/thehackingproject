@@ -1,0 +1,17 @@
+function showEmail(){
+  const emailElement = document.getElementById("email_<%= @email.id %>")
+  <% if @email.read %>
+    emailElement.className = ""
+  <% else %>
+    emailElement.className = "font-weight-bold")
+  <% end %>
+
+  const oldEmailBody = document.getElementById("content-child")
+    oldEmailBody?.parentNode.removeChild(oldEmailBody)
+
+
+  const emailDisplay = document.getElementById("email-display")
+  emailDisplay.insertAdjacentHTML("beforeend", "<%= j render 'show', email: @email %>")
+}
+
+showEmail()

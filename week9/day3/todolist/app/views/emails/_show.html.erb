@@ -1,0 +1,20 @@
+<div id="content-child">
+  <div class="d-flex justify-content-between">
+    <h4><%= @email.object %></h4>
+    <div id='mail-display-buttons'>
+      <%= link_to email_path(@email), data: {:confirm => 'Are you sure?'}, 
+      class: 'mr-2',
+      :method => :delete, remote: true  do %>
+        <i class="fas fa-pencil-alt text-success"></i>
+      <% end %>
+      <%= link_to email_path(@email,invertRead: true), 
+      class: 'mr-2',
+      remote: true, :method => :put do %>
+        <i class="fas fa-trash-alt text-danger"></i>
+    <% end %>
+    </div>
+  </div>
+
+  <p><%= @email.body %></p>
+ 
+</div>

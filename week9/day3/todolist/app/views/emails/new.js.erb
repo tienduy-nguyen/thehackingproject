@@ -1,0 +1,6 @@
+function newEmail(){
+  const mailList = document.querySelector('.email-list');
+  mailList.insertAdjacentHTML("beforeend","<%= j render 'new_email', email: @email %>")
+}
+
+newEmail()

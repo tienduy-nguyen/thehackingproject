@@ -7,7 +7,7 @@
 
   <div class="form-group">
     <%= label_tag("When is it due for ?") %>
-    <%= date_field_tag(:deadline, @task.deadline)  %>
+    <%= date_field_tag(:deadline,date_without_time(@task.deadline))  %>
   </div>
     <%= submit_tag("Edit task", class: "btn btn-info") %>
 <% end %>

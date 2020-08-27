@@ -1,24 +1,5 @@
-# README
+# Todo List App & Gmail Like
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is project I'am working at THP.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Demo online: [Gmail Like](https://td-gmail.herokuapp.com/)

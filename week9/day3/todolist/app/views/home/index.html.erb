@@ -8,7 +8,10 @@
     <ul class="<%= category.title %>">
       <% category.tasks.each do |task|  %>
       <div class="d-flex justify-content-between" id="task_<%= task.id%>">
-      <li>
+      <li style="list-style: none; margin-left: -20px;" class="<%= task.is_done? ? 'task-end' : '' %>">
+        <%= check_box_tag :status, 1, task.status , class:"mr-2", 
+            data: { remote: true, url: task_path(task), 
+            params: { id: task.id, status: task.status }.to_param, method: "PATCH" }%>
         <%= task.title  %>
         <% unless task.deadline.nil? %>
           , to read: <%= task.deadline.strftime('%D')  %>

@@ -5,8 +5,8 @@
     <%= link_to 'Get a new mail', new_email_path,remote: true, class: "btn btn-primary offset-sm-9"%>
   </div>
   <div class="mail-content row">
-    <div class="email-object col-md-4 border-right">
-      <ul class="email-list">
+    <div class="email-object col-md-4 border-right px-0">
+      <ul class="email-list px-0">
         <% @emails.each do |email| %>
           <li id="email_<%= email.id%>" 
           class="<%= email.read ? '' : 'font-weight-bold'%>"

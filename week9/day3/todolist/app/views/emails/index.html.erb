@@ -1,0 +1,21 @@
+ 
+<p id="notice"><%= notice %></p>
+<div class="container mail-container border">
+  <div class="mail-headers row border d-flex p-3">
+    <h4>THPmail</h4>
+    <%= link_to 'Get a new mail', new_email_path,remote: true, class: "btn btn-primary offset-sm-9"%>
+  </div>
+  <div class="mail-content row">
+    <div class="mail-list">
+      <ul>
+        <% @emails.each do |email| %>
+          <li id="<%= email.id%>" <% if email.read  %> class="font-weight-bold" <% end %> >
+            <%= link_to email.object, email_path(email), remote: true %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="border" id="mail-display">
+    </div>
+  </div>
+</div>

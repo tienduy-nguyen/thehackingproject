@@ -9,10 +9,10 @@ before_action :authenticate_user!
     @category = Category.find(category_params)
     @task.category = @category
     if @task.save
-      flash[:notice] = "Task created"
+      flash[:success] = "Task created"
     else
  
-      flash[:notice] = "Please try again"
+      flash[:error] = "Please try again"
     end
     respond_to do |format| 
       format.html{redirect_to root_path}
@@ -34,7 +34,7 @@ before_action :authenticate_user!
         format.html {
         redirect_to root_path }
         format.js { }
-        flash[:notice] = "Task Status edited"
+        flash[:success] = "Task Status edited"
       end
     else 
       @task = Task.find(params[:id])
@@ -44,7 +44,7 @@ before_action :authenticate_user!
         format.html{redirect_to root_path}
         format.js{}
       end
-      flash[:notice] = "Task edited"
+      flash[:success] = "Task edited"
     end 
    
   end

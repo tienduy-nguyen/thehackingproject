@@ -1,2 +1,15 @@
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+
+<section id="alert-section">
+      <% flash.each do |key, value| %>
+      <div class="alert-dismissible text-center p-2 container <%= flash_class(key) %>">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <%= value unless value.blank? %>
+      </div>
+      <% end %>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  $(".alert").fadeOut(6000);
+});
+</script>

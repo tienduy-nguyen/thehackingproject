@@ -2,7 +2,10 @@
   <% @tasks.each do |task|  %>
     <li>
       <%= task.title %>,
+       <% unless task.deadline.nil? %>
       "Deadline : " <%=  task.deadline.strftime("%D")  %>
+
+       <% end %>
        <%= link_to "Edit this task", edit_task_path(task) %>
     </li>
   <% end %>

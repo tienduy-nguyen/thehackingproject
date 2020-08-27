@@ -7,12 +7,19 @@
   <div class="card">
     <ul class="<%= category.title %>">
       <% category.tasks.each do |task|  %>
+      <div class="d-flex justify-content-between" id="task_<%= task.id%>">
       <li>
         <%= task.title  %>
         <% unless task.deadline.nil? %>
           , to read: <%= task.deadline.strftime('%D')  %>
         <% end %>
       </li>
+      <div class="">
+        <a href="<%= edit_task_path(task) %>"><i class="fas fa-pencil-alt text-success mr-2"></i></a>
+         <a href="<%= task_path(task.id) %>" data-method="DELETE" data-remote="true"><i class="fas fa-trash-alt text-danger mr-2"></i></a>
+      </div>
+
+      </div>
       <% end %>
     </ul>
   </div>

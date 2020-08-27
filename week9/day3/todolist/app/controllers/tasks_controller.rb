@@ -40,7 +40,11 @@ before_action :authenticate_user!
   def destroy
     @task = Task.find(params[:id])
     @task.destroy
-    redirect_to root_path
+    respond_to do |format|
+      format.html{redirect_back(fallback_location: root_path)}
+      format.js{}
+    end
+    
   end
 
 

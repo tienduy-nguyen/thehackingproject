@@ -1,0 +1,5 @@
+function remove(element){
+element.parentNode.removeChild(element)
+}
+
+remove(document.getElementById("task_<%= @task.id %>"))

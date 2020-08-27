@@ -3,7 +3,7 @@ class EmailsController < ApplicationController
   before_action :set_email, only: [:show, :edit, :update, :destroy]
 
   def index
-    @emails = Email.all
+    @emails = Email.all.order(created_at: :desc)
   end
 
   def show
@@ -43,6 +43,29 @@ class EmailsController < ApplicationController
 
   def update
 
+    if params[:invertRead]
+      @email.update(read: false)
+      puts "click un read"
+      respond_to do |format|
+        format.html{}
+        format.js{}
+      end
+    else
+      respond_to do |format|
+        if @email.update(email_params)
+          format.html{redirect_to @email}
+          format.json{render :show, status: :ok, location: @email}
+          format.js{}
+          flash[:success] = "Email was succesfully updated!"
+
+        else
+          format.html{render :edit}
+          format.json{render json: @email.errors, status: :unprocessable_entity}
+          format.js{}
+        end
+      end
+
+    end
   end
 
   def destroy

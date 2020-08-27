@@ -5,12 +5,12 @@
       <%= link_to email_path(@email), data: {:confirm => 'Are you sure?'}, 
       class: 'mr-2',
       :method => :delete, remote: true  do %>
-        <i class="fas fa-pencil-alt text-success"></i>
+        <i class="fas fa-trash-alt text-danger"></i>
       <% end %>
       <%= link_to email_path(@email,invertRead: true), 
       class: 'mr-2',
       remote: true, :method => :put do %>
-        <i class="fas fa-trash-alt text-danger"></i>
+        <i class="fas fa-eye-slash text-muted"></i>
     <% end %>
     </div>
   </div>

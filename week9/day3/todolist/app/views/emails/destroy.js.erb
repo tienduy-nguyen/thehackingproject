@@ -1,0 +1,8 @@
+function deleteEmail(){
+  const email = document.getElementById("email_<%= @email.id %>")
+  email.parentNode.removeChild(email)
+   const oldEmailBody = document.getElementById("content-child")
+    oldEmailBody?.parentNode.removeChild(oldEmailBody)
+}
+
+deleteEmail()

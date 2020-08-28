@@ -1,0 +1,31 @@
+
+function getEmailBody(){
+  const emailNodeList = document.querySelector(".email-list").querySelectorAll('li');
+  for(let emailNode of emailNodeList){
+     selectEmail(emailNode)
+  }
+
+}
+function selectEmail(emailNode){
+  emailNode.addEventListener('click', ()=>{
+    const email_id = emailNode.id.replace(/email_/,'')
+    fetchMail(emailNode, email_id)
+  })
+}
+async function fetchMail(emailNode,id){
+  const response = await fetch(`/emails/${id}`)
+  const emailObject = await response.json()
+  console.log(emailObject)
+  console.log(emailObject.id)
+  // const email = Email.find(id)
+  // if(email.read){
+  //   email.className =""
+  // } else{
+  //   email.className ="font-weight-bold"
+  // }
+  const oldEmailBody = document.getElementById("content-child")
+    oldEmailBody?.parentNode.removeChild(oldEmailBody)
+
+
+}
+getEmailBody()

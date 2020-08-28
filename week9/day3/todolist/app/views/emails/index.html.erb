@@ -10,6 +10,10 @@
         <% @emails.each do |email| %>
           <li id="email_<%= email.id%>" 
           class="<%= email.read ? '' : 'font-weight-bold'%>"
+         data-remote="true"
+         data-url="<%= email_path(email)%>"
+         data-method="GET"
+         data-params="origin=email-item"
           >
             <%= link_to email.object, email_path(email), remote: true %>
           </li>
@@ -20,3 +24,8 @@
     </div>
   </div>
 </div>
+
+<script>
+
+</script>
+

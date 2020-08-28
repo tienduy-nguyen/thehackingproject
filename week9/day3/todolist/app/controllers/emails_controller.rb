@@ -7,11 +7,14 @@ class EmailsController < ApplicationController
   end
 
   def show
+    puts "------------------------"
+    puts params
     @email.update(read: true) if !@email.read
-
+    # render json: @email.to_json
     respond_to do |format|
       format.html{}
       format.js{}
+      format.json{}
     end
   end
 

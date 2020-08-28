@@ -1,4 +1,5 @@
 function showEmail(){
+alert("Click from outside link")
   const emailElement = document.getElementById("email_<%= @email.id %>")
   <% if @email.read %>
     emailElement.className = ""

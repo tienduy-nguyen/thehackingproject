@@ -54,7 +54,6 @@ In The Hacking Project bootcamp, we learn about:
 - Day 3: Start learning git, github and deploy online google page of day 2 with githubpage
 - Day 4: Start learning bootstrap and create our page startup
 - Day 5: Create a landing page
-- Weekend: Review ourselves
 
 <a name="week2"></a>
 

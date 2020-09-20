@@ -118,7 +118,7 @@ In The Hacking Project bootcamp, we learn about:
 
 <a name="week8"></a>
 
-### :clock10: Week 8: Front-End design, HTML, CSS, JavaScript
+### :heavy_check_mark: Week 8: Front-End design, HTML, CSS, JavaScript
 - Day 1: Base du front-end, & atomic design
 - Day 2: Validating project: create Kit UI for Eventbrite project
 - Day 3: Using Kit UI in rails app
@@ -147,7 +147,7 @@ In The Hacking Project bootcamp, we learn about:
 - Team project: each team choose subject for their project. Project open-source or project for their startup.
 -  My team has choose to build a plate-form [Feedward](http://getfeedward.com) 
 
-:arrow_right: Done! Yayyyyyyyyyyyyyyy!
+:arrow_right: Done! Yayyyyyyyyyyyyyyy! --> Keep continuing ...
 ---
 
 <a name="completedprojects"></a>
@@ -163,7 +163,7 @@ In The Hacking Project bootcamp, we learn about:
 |  13   | [BestMotherFunckingWebsite](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day1)                                                                              | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/week1/day1/BestMotherFuckingWebsite.html)   |
 |  14   | [Google Page](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day2)                                                                                            | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/week1/day2/index.html)                      |
 |  15   | [The Surfing Project](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1/day4)                                                                                    | [Live Demo](https://tienduy-nguyen.github.io/thehackingproject/week1/day4/index.html)                      |
-|  16   | Landing Page                                                                                                                                                                         | In progress                                                                                                |
+
 
 #### Week 2
 

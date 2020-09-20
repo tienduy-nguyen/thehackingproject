@@ -8,11 +8,30 @@ Training web dev at The Hacking Project
 
 ---
 
+
 <div align="center">
   <img src="https://img.shields.io/badge/Licence-MIT-green" alt="License">
   <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/tienduy-nguyen/thehackingproject">
 </div>
 
+---
+
+
+This is my repository for all the projects I worked day by day with the coding bootcamp at [The Hacking Project](https://www.thehackingproject.org/) in France.
+
+In The Hacking Project bootcamp, we learn about:
+- How to work with team via Git and Github
+- Html, CSS, JavaScript, Jquery, AJAX, Bootstrap
+- Atomic design
+- Ruby: coding challenge, web crawling, bit twitter, bot discord
+- Sinatra and Ruby on Rails framework
+- Design database and PostgreSQL
+- How to build the product with with Agile Method
+- Pair and peer programming
+- Using tool management
+
+
+---
 ## 📄 Table of Contents
 
 | Week             | Week               | Others                                  |
@@ -107,16 +126,29 @@ Training web dev at The Hacking Project
 - Day 4: JavaScript basic
 - Day 5: Work with DOM
   
-   :arrow_right: In progress: I'm here
+   
 
 <a name="week9"></a>
 
-### :clock10: Week 8-9: Front-End design, HTML, CSS, JavaScript
+### :heavy_check_mark: Week 9: JavaScript in Rails application
+- Day 1: Validating project: Working with DOM of JavaScript
+- Day 2: Javascript in rails applications
+- Day 3: AJAX in rails
+- Day 4: Validating project: Gmail-like using AJAX
+- Day 5: Github advanced: workflow git
 
 <a name="week10"></a>
 
-### :clock10: Week 10-12: Final project
+### :heavy_check_mark: Week 10: Team project
+- Team project e-commerce to sell the pictures of kitty 
 
+<a name="week11"></a>
+
+### :heavy_check_mark: Week 10-12: Final project
+- Team project: each team choose subject for their project. Project open-source or project for their startup.
+-  My team has choose to build a plate-form [Feedward](http://getfeedward.com) 
+
+:arrow_right: Done! Yayyyyyyyyyyyyyyy!
 ---
 
 <a name="completedprojects"></a>
@@ -185,6 +217,33 @@ Training web dev at The Hacking Project
 |   #   | Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Live Demo  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
 | :---: | :---------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------- |
 |  71   | [Event brite clone](https://github.com/tienduy-nguyen/eventbrite-clone)                                                                                     | [Live Demo](https://eventlove.herokuapp.com/)               |
+
+#### Week 8
+
+|   #   | Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Live Demo  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
+| :---: | :---------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------- |
+|  71   | [Event brite clone](https://github.com/tienduy-nguyen/eventbrite-clone)                                                                                     | [Live Demo](https://eventlove.herokuapp.com/)               |
+
+#### Week 9
+
+|   #   | Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Live Demo  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
+| :---: | :---------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------- |
+|  71   | [Event brite clone](https://github.com/tienduy-nguyen/eventbrite-clone)                                                                                     | [Live Demo](https://eventlove.herokuapp.com/)               |
+
+
+
+#### Week 10
+
+|   #   | Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Live Demo  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
+| :---: | :---------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------- |
+|  101  | [Project team: Ecommerce: Hello kitty](https://github.com/tienduy-nguyen/chatonmaton)                                                                       | [Live Demo](http://dev-chatonmaton.herokuapp.com/)          |
+
+
+#### Week 11-12
+
+|   #   | Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Live Demo  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
+| :---: | :---------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------- |
+|  111  | Project final: Feedward                                                                                                                                     | [http://getfeedward.com/](http://getfeedward.com/)          |
 
 
 <a name="license"></a>

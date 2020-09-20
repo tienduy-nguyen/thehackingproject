@@ -192,7 +192,7 @@ In The Hacking Project bootcamp, we learn about:
 |  42   | [Mini combat game](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day2)                                                                                  | None                                                       |
 |  43   | [Scrapping and save to json, csv](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day3)                                                                   | None                                                       |
 |  44   | [Game Tic Tac Toe](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day4)                                                                                  | None                                                       |
-|  45   | [Gossip Project](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day5)                                                                                    | None                                                       |
+|  45   | [Gossip Project](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4/day5)                                                                                    | [Live demo](https://td-gossip.herokuapp.com/)              |
 
 #### Week 5
 

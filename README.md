@@ -131,7 +131,7 @@ In The Hacking Project bootcamp, we learn about:
 <a name="week9"></a>
 
 ### :heavy_check_mark: Week 9: JavaScript in Rails application
-- Day 1: Validating project: Working with DOM of JavaScript
+- Day 1: Validating project: Todo list
 - Day 2: Javascript in rails applications
 - Day 3: AJAX in rails
 - Day 4: Validating project: Gmail-like using AJAX
@@ -202,8 +202,7 @@ In The Hacking Project bootcamp, we learn about:
 |  51   | [Gossip Project with Sinatra Framwork](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day1)                                          | [Live Demo](https://td-gossip.herokuapp.com/)               |
 |  52   | [Sqlite3](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day2)                                                                       | None                                                        |
 |  53   | [Rails & SQL](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day3)                                                                   | None                                                        |
-|  54   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day5)                                                                           | None                                                        |
-|  55   | [...](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5/day5)                                                                           |
+
 
 #### Week 6
 
@@ -220,15 +219,17 @@ In The Hacking Project bootcamp, we learn about:
 
 #### Week 8
 
-|   #   | Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Live Demo  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
-| :---: | :---------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------- |
-|  71   | [Event brite clone](https://github.com/tienduy-nguyen/eventbrite-clone)                                                                                     | [Live Demo](https://eventlove.herokuapp.com/)               |
+|   #   | Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Live Demo  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   |
+| :---: | :---------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------ |
+|  81   | [Kit UI](https://github.com/tienduy-nguyen/kit-ui)                                                                                                          | [Live Demo](https://adev42.com/kit-ui/index.html)             |
+|  82   | [JS DOM](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week8/day4)                                                                        | [Live Demo](https://adev42.com/thehackingproject/week8/day4/) |
 
 #### Week 9
 
 |   #   | Project &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Live Demo  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
 | :---: | :---------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------- |
-|  71   | [Event brite clone](https://github.com/tienduy-nguyen/eventbrite-clone)                                                                                     | [Live Demo](https://eventlove.herokuapp.com/)               |
+|  91   | [Todo list](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week9/day3/todolist)                                                            | [Live Demo](https://td-gmail.herokuapp.com/users/sign_in)   |
+|  92   | [Gmail-like](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week9/day3/todolist)                                                           | [Live Demo](https://td-gmail.herokuapp.com/users/sign_in)   |
 
 
 

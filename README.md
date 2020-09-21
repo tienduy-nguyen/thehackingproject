@@ -34,14 +34,17 @@ In The Hacking Project bootcamp, we learn about:
 ---
 ## 📄 Table of Contents
 
-| Week             | Week               | Others                                  |
-| :--------------- | :----------------- | :-------------------------------------- |
-| [Week 1](#week1) | [Week 7](#week7)   | [Completed Projects](#completeprojects) |
-| [Week 2](#week2) | [Week 8](#week8)   | [License](#license)                     |
-| [Week 3](#week3) | [Week 9](#week9)   |                                         |
-| [Week 4](#week4) | [Week 10](#week10) |                                         |
-| [Week 5](#week5) | [Week 11](#week11) |                                         |
-| [Week 6](#week6) | [Week 12](#week12) |                                         |
+
+  | Week Program     | Week    Program       | Others                                  |      | Week Repo                                                                      | Week Repo                                                                           |
+  | :--------------- | :-------------------- | :-------------------------------------- | :--- | :----------------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
+  | [Week 1](#week1) | [Week 7](#week7)      | [Completed Projects](#completeprojects) |      | [Week1](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week1) | [Week7](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week7)      |
+  | [Week 2](#week2) | [Week 8](#week8)      | [License](#license)                     |      | [Week2](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week2) | [Week8](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week8)      |
+  | [Week 3](#week3) | [Week 9](#week9)      |                                         |      | [Week3](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week3) | [Week9](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week9)      |
+  | [Week 4](#week4) | [Week 10](#week10)    |                                         |      | [Week4](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week4) | [Week10](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week10)    |
+  | [Week 5](#week5) | [Week 11](#week11-12) |                                         |      | [Week5](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week5) | [Week11](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week11)    |
+  | [Week 6](#week6) | [Week 12](#week12)    |                                         |      | [Week6](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week6) | [Week12](https://github.com/tienduy-nguyen/thehackingproject/tree/master/week11-12) |
+
+
 
 ## :chart_with_upwards_trend: Training program
 
@@ -51,7 +54,7 @@ In The Hacking Project bootcamp, we learn about:
 
 - Day 1: Start learning HTML, CSS and create the first page: MotherFuckingWebsite with 3 different versions
 - Day 2: Validating project: Reproduce google page
-- Day 3: Start learning git, github and deploy online google page of day 2 with githubpage
+- Day 3: Start learning git, github and deploy online google page of day 2 with Github pages
 - Day 4: Start learning bootstrap and create our page startup
 - Day 5: Create a landing page
 

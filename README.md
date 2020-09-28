@@ -30,6 +30,7 @@ In The Hacking Project bootcamp, we learn about:
 - Pair and peer programming
 - Using tool management
 
+Now, I'am in THP-Next:  [Check it out](https://github.com/tienduy-nguyen/thp-next)
 
 ---
 ## 📄 Table of Contents
@@ -151,6 +152,9 @@ In The Hacking Project bootcamp, we learn about:
 -  My team has choose to build a plate-form [Feedward](http://getfeedward.com) 
 
 :arrow_right: Done! Yayyyyyyyyyyyyyyy! --> Keep continuing ...
+
+Now, I'am in THP-Next:  [Check it out](https://github.com/tienduy-nguyen/thp-next)
+
 ---
 
 <a name="completedprojects"></a>
